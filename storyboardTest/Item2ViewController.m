@@ -10,6 +10,8 @@
 
 @interface Item2ViewController ()
 
+@property(nonatomic,strong) NSMutableArray *blocks;
+
 @end
 
 @implementation Item2ViewController
@@ -41,6 +43,24 @@
     };
     double squareOfFive = square(5.0);
     NSLog(@"squareOfFive is %f",squareOfFive);
+}
+
+-(IBAction)blockTest3:(id)sender
+{
+    //解决内存泄露的办法
+    __weak Item2ViewController *weakSelf = self;
+    _blocks = [[NSMutableArray alloc] initWithCapacity:5];
+    [_blocks addObject:^{
+       // [self blockTest3Operation];//这里在block里引用self 会出现一个强指针周期问题(由于Array 是强指针，而block里也引用的强指针，如果有任何一个离开了当前的堆内存，则会导致内存泄露)
+       //解决内存泄露的办法
+        [weakSelf blockTest3Operation];
+    }];
+
+}
+
+-(void)blockTest3Operation
+{
+    NSLog(@"blockTest3Operation");
 }
 
 -(void)addUnaryOperation:(NSString*) operation witchExecutesBlock:_opBlock

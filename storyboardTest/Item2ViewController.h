@@ -14,4 +14,6 @@
 
 -(IBAction)blockTest2:(id)sender;
 
+-(IBAction)blockTest3:(id)sender;
+
 @end
