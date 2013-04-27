@@ -28,12 +28,35 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self initBackToIndexBtn];
+}
+
+-(void)initBackToIndexBtn
+{
+    self.navigationController.navigationBar.userInteractionEnabled = YES;
+    if (self.backToHomeBtn && self.backToHomeBtn.superview)
+    {   [self.backToHomeBtn removeFromSuperview];
+        [self.navigationItem setRightBarButtonItem:nil];
+    }
+    self.backToHomeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 42, 30)];
+    [self.backToHomeBtn setBackgroundImage:[UIImage imageNamed:@"topbar_btn.png"] forState:UIControlStateNormal];
+    self.backToHomeBtn.titleLabel.text = @"确定";
+
+    self.backToHomeBtn.titleLabel.font = [UIFont systemFontOfSize:12.0];
+    [self.backToHomeBtn addTarget:self action:@selector(backToIndex) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchDown];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backToHomeBtn];
+    NSLog(@"aaaaaa%@",self.navigationItem.rightBarButtonItem);
 }
 
 -(IBAction)openBaiduWebView
 {
     [self.webViewController loadRequest];
     [self.navigationController pushViewController:self.webViewController animated:YES];
+}
+
+-(void)backToIndex
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(IBAction)writeCacheToFile
@@ -68,6 +91,7 @@
 
     return _webViewController;
 }
+
 
 - (void)didReceiveMemoryWarning
 {

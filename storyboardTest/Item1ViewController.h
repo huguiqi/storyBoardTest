@@ -13,6 +13,8 @@
 
 @property(nonatomic,strong) WFWebViewDemo *webViewController;
 
+@property(nonatomic,strong) UIButton *backToHomeBtn;
+
 -(IBAction)openBaiduWebView;
 -(IBAction)writeCacheToFile;
 

@@ -199,7 +199,7 @@
             </objects>
             <point key="canvasLocation" x="102" y="1228"/>
         </scene>
-        <!--Item1 View Controller - Item 1-->
+        <!--Item1 View Controller - 第一个Item-->
         <scene sceneID="SvR-KZ-4vG">
             <objects>
                 <viewController id="RNy-GM-QUq" customClass="Item1ViewController" sceneMemberID="viewController">
@@ -256,6 +256,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="IUU-cC-WfF"/>
+                    <navigationItem key="navigationItem" title="第一个Item" id="4p0-vT-xgb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6be-dl-m8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
