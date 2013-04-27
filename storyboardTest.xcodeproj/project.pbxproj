@@ -26,6 +26,7 @@
 		22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FECF81164FFE3800720705 /* WFLoginViewViewController.m */; };
 		22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FECF84164FFE6200720705 /* WFCityListViewController.m */; };
 		22FFBE84171477F900A3D396 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFBE83171477F900A3D396 /* FileManager.m */; };
+		35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */; };
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		22FECF84164FFE6200720705 /* WFCityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCityListViewController.m; sourceTree = "<group>"; };
 		22FFBE82171477F900A3D396 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		22FFBE83171477F900A3D396 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		35015173172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+NSCalendar_Category.h"; sourceTree = "<group>"; };
+		35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+NSCalendar_Category.m"; sourceTree = "<group>"; };
 		35A62CB1172A605000F1A367 /* topbar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_btn.png; sourceTree = "<group>"; };
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +86,7 @@
 		1BBDFBB304D87956C41940DF /* common */ = {
 			isa = PBXGroup;
 			children = (
+				35015172172BAF5C00D72B8C /* catearey */,
 				22FFBE81171477D900A3D396 /* fileManager */,
 			);
 			name = common;
@@ -247,6 +251,15 @@
 			name = fileManager;
 			sourceTree = "<group>";
 		};
+		35015172172BAF5C00D72B8C /* catearey */ = {
+			isa = PBXGroup;
+			children = (
+				35015173172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.h */,
+				35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */,
+			);
+			name = catearey;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +340,7 @@
 				22FB90981710774C007A3933 /* WFScrollViewDemo.m in Sources */,
 				22FFBE84171477F900A3D396 /* FileManager.m in Sources */,
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,
+				35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,5 +17,6 @@
 
 -(IBAction)openBaiduWebView;
 -(IBAction)writeCacheToFile;
+-(IBAction)compareDateDays:(id)sender;
 
 @end

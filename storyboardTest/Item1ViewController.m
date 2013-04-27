@@ -8,6 +8,8 @@
 
 #import "Item1ViewController.h"
 #import "FileManager.h"
+#import "NSCalendar+NSCalendar_Category.h"
+
 
 @interface Item1ViewController ()
 
@@ -79,6 +81,30 @@
     NSLog(@"passUrl is %@",passUrl);
 }
 
+#pragma --比较日期的天数，支持不同年代的天数返回
+-(IBAction)compareDateDays:(id)sender
+{
+    NSString *testDateStr = [NSString stringWithFormat:@"2013-04-01"];
+    NSString *testDateStr2 = [NSString stringWithFormat:@"2013-04-3"];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    NSDate *startDate = [df dateFromString:testDateStr];
+    NSDate *endDate = [df dateFromString:testDateStr2];
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSInteger days = [gregorian daysFromDate:startDate toDate:endDate];
+
+//    NSUInteger unitFlags = NSMonthCalendarUnit | NSDayCalendarUnit;
+//    
+//    NSDateComponents *components = [gregorian components:unitFlags fromDate:startDate toDate:endDate options:0];
+//    
+//    NSInteger months = [components month];
+//    NSInteger days = [components day];
+    
+    NSLog(@"---days is %i",days);
+}
+
+
 
 -(WFWebViewDemo *) webViewController
 {
@@ -98,5 +124,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
