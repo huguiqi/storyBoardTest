@@ -16,4 +16,8 @@
 
 -(IBAction)blockTest3:(id)sender;
 
+-(IBAction)blockTestForQueue:(id)sender;
+
+@property(nonatomic,retain)IBOutlet UILabel *blockLabel;
+
 @end

@@ -58,6 +58,47 @@
 
 }
 
+#pragma --blockTestForQueue block的多线程用法
+-(IBAction)blockTestForQueue:(id)sender
+{
+//    [self asyncQueue];//异步
+    [self syncQueue];//同步
+}
+
+-(void)asyncQueue
+{
+    //把block放到队列里去执行
+    dispatch_queue_t blockQueue =  dispatch_queue_create("block_queue_test", NULL);
+    //异步
+    dispatch_async(blockQueue, ^(void){
+        NSLog(@"the block_queue block gone----");
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            //把这块要执行的代码块放到主线程里去执行，一般用于在非主线程的block块里没法执行的代码放到主线程
+            self.blockLabel.text = @"main_queue";
+            NSLog(@"the main queue gone---");
+        });
+        NSLog(@"the block_queue block finish----");
+    });
+    NSLog(@"blockTestForQueue gone---");
+}
+
+-(void)syncQueue
+{
+    //把block放到队列里去执行
+    dispatch_queue_t blockQueue =  dispatch_queue_create("block_queue_test", NULL);
+    dispatch_async(blockQueue, ^(void){
+        NSLog(@"the block_queue block gone----");
+        //同步
+        dispatch_sync(dispatch_get_main_queue(), ^(void){
+            //把这块要执行的代码块放到主线程里去执行，一般用于在非主线程的block块里没法执行的代码放到主线程
+            self.blockLabel.text = @"main_queue";
+            NSLog(@"the main queue gone---");
+        });
+        NSLog(@"the block_queue block finish----");
+    });
+    NSLog(@"blockTestForQueue gone---");
+}
+
 -(void)blockTest3Operation
 {
     NSLog(@"blockTest3Operation");
@@ -74,5 +115,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
