@@ -29,6 +29,7 @@
 		35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */; };
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
+		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+NSCalendar_Category.m"; sourceTree = "<group>"; };
 		35A62CB1172A605000F1A367 /* topbar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_btn.png; sourceTree = "<group>"; };
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
+		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
+		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				22FB908F171050A5007A3933 /* Item1ViewController.m */,
 				226C65051726CE2000050864 /* Item2ViewController.h */,
 				226C65061726CE2000050864 /* Item2ViewController.m */,
+				35F1BAF817326F2500FBE740 /* Item3ViewController.h */,
+				35F1BAF917326F2500FBE740 /* Item3ViewController.m */,
 			);
 			name = barItem;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				22FFBE84171477F900A3D396 /* FileManager.m in Sources */,
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,
 				35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */,
+				35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

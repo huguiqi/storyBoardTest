@@ -17,14 +17,6 @@
 
 @implementation Item1ViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -104,7 +96,29 @@
     NSLog(@"---days is %i",days);
 }
 
+-(IBAction)writeToUserDefaults:(id)sender
+{
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithUser:@"xiaohei"];
+    NSMutableArray *cityArray = [[NSMutableArray alloc] initWithCapacity:3];
+    [cityArray addObject:@"aaaaa"];
+    [cityArray addObject:@"bbbb"];
+    [defaults setObject:cityArray forKey:@"recentThreeCities"];
+//   BOOL isSave = [defaults synchronize];
+//    if (isSave) {
+//        NSLog(@"save defaults success!!");
+//    }
+  
+}
 
+-(IBAction)readUserDefaults:(id)sender
+{
+    NSUserDefaults *defaults2 = [[NSUserDefaults alloc] init];
+    NSArray *array = [defaults2 arrayForKey:@"recentThreeCities"];
+    NSString *countStr =[NSString stringWithFormat:@"array count is %i",[array count]];
+    NSLog(@"array count is %i",[array count]);
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message: countStr delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+    [alertView show];
+}
 
 -(WFWebViewDemo *) webViewController
 {
