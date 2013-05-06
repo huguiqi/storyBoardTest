@@ -20,5 +20,6 @@
 -(IBAction)compareDateDays:(id)sender;
 -(IBAction)writeToUserDefaults:(id)sender;
 -(IBAction)readUserDefaults:(id)sender;
+-(IBAction)rangeArray:(id)sender;
 
 @end

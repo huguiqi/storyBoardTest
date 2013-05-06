@@ -85,39 +85,47 @@
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSInteger days = [gregorian daysFromDate:startDate toDate:endDate];
-
-//    NSUInteger unitFlags = NSMonthCalendarUnit | NSDayCalendarUnit;
-//    
-//    NSDateComponents *components = [gregorian components:unitFlags fromDate:startDate toDate:endDate options:0];
-//    
-//    NSInteger months = [components month];
-//    NSInteger days = [components day];
     
     NSLog(@"---days is %i",days);
 }
 
 -(IBAction)writeToUserDefaults:(id)sender
 {
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithUser:@"xiaohei"];
+//    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithUser:@"xiaohei"];//one method
+    
     NSMutableArray *cityArray = [[NSMutableArray alloc] initWithCapacity:3];
     [cityArray addObject:@"aaaaa"];
     [cityArray addObject:@"bbbb"];
-    [defaults setObject:cityArray forKey:@"recentThreeCities"];
-//   BOOL isSave = [defaults synchronize];
-//    if (isSave) {
-//        NSLog(@"save defaults success!!");
-//    }
-  
+//    [defaults setObject:cityArray forKey:@"recentThreeCities"];
+    [[NSUserDefaults standardUserDefaults] setObject:cityArray forKey:@"recentThreeCities2"];
+    
 }
 
 -(IBAction)readUserDefaults:(id)sender
 {
-    NSUserDefaults *defaults2 = [[NSUserDefaults alloc] init];
-    NSArray *array = [defaults2 arrayForKey:@"recentThreeCities"];
+//    NSUserDefaults *defaults2 = [[NSUserDefaults alloc] init];
+    NSArray *array = [[NSUserDefaults standardUserDefaults] arrayForKey:@"recentThreeCities2"];
+    NSLog(@"count is %i",[array count]);
+//    NSArray *array = [defaults2 arrayForKey:@"recentThreeCities"];
     NSString *countStr =[NSString stringWithFormat:@"array count is %i",[array count]];
     NSLog(@"array count is %i",[array count]);
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message: countStr delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
     [alertView show];
+}
+
+#pragma simple reverseArraySort
+-(IBAction)rangeArray:(id)sender
+{
+    NSMutableArray *cityArray = [[NSMutableArray alloc] initWithCapacity:3];
+    [cityArray addObject:@"aaaaa"];
+    [cityArray addObject:@"bbbb"];
+    [cityArray addObject:@"cccc"];
+    [cityArray addObject:@"dddd"];
+    NSArray *rangeArray = [cityArray subarrayWithRange:NSMakeRange(2, 2)];
+   NSEnumerator *enumt = [rangeArray reverseObjectEnumerator];
+    NSArray *tempArray = [enumt allObjects];
+    NSLog(@"rangeArray count is %i",[rangeArray count]);
+        NSLog(@"tempArray count is %i",[tempArray count]);
 }
 
 -(WFWebViewDemo *) webViewController

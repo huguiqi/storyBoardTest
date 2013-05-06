@@ -15,7 +15,4 @@ int main(int argc, char *argv[])
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([WFAppDelegate class]));
     }
-//NSString *a = @"PinYin";
-//    NSLog(@"this is %d", [a substringFromIndex:0]);
-//    return 0;
 }
