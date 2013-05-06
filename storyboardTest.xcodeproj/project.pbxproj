@@ -27,6 +27,8 @@
 		22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FECF84164FFE6200720705 /* WFCityListViewController.m */; };
 		22FFBE84171477F900A3D396 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FFBE83171477F900A3D396 /* FileManager.m */; };
 		35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */; };
+		3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */; };
+		3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D1211737A737002F74D6 /* AccelerometerViewController.m */; };
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
@@ -66,6 +68,10 @@
 		22FFBE83171477F900A3D396 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		35015173172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+NSCalendar_Category.h"; sourceTree = "<group>"; };
 		35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+NSCalendar_Category.m"; sourceTree = "<group>"; };
+		3501D11D1737A6B1002F74D6 /* AccelerometerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerFilter.h; sourceTree = "<group>"; };
+		3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
+		3501D1201737A737002F74D6 /* AccelerometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerViewController.h; sourceTree = "<group>"; };
+		3501D1211737A737002F74D6 /* AccelerometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerViewController.m; sourceTree = "<group>"; };
 		35A62CB1172A605000F1A367 /* topbar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_btn.png; sourceTree = "<group>"; };
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		22FB908D171048C8007A3933 /* barItem */ = {
 			isa = PBXGroup;
 			children = (
+				3501D11C1737A68E002F74D6 /* accelerometerDemo */,
 				22FB9092171074BE007A3933 /* scrollViewDemo */,
 				2295571816F2227000C0DBD2 /* webViewDemo */,
 				22FB908E171050A5007A3933 /* Item1ViewController.h */,
@@ -265,6 +272,17 @@
 			name = catearey;
 			sourceTree = "<group>";
 		};
+		3501D11C1737A68E002F74D6 /* accelerometerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3501D11D1737A6B1002F74D6 /* AccelerometerFilter.h */,
+				3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */,
+				3501D1201737A737002F74D6 /* AccelerometerViewController.h */,
+				3501D1211737A737002F74D6 /* AccelerometerViewController.m */,
+			);
+			name = accelerometerDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +365,8 @@
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,
 				35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */,
 				35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */,
+				3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */,
+				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
