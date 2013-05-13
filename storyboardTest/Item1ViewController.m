@@ -10,6 +10,8 @@
 #import "FileManager.h"
 #import "NSCalendar+NSCalendar_Category.h"
 
+#define kUMEnable false
+
 
 @interface Item1ViewController ()
 
@@ -126,6 +128,14 @@
     NSArray *tempArray = [enumt allObjects];
     NSLog(@"rangeArray count is %i",[rangeArray count]);
         NSLog(@"tempArray count is %i",[tempArray count]);
+}
+
+-(IBAction)testDefine:(id)sender{
+    if (kUMEnable) {
+        NSLog(@"kUmEnable is true");
+    }else{
+         NSLog(@"kUmEnable is false");
+    }
 }
 
 -(WFWebViewDemo *) webViewController

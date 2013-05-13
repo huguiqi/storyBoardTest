@@ -22,4 +22,6 @@
 -(IBAction)readUserDefaults:(id)sender;
 -(IBAction)rangeArray:(id)sender;
 
+-(IBAction)testDefine:(id)sender;
+
 @end
