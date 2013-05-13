@@ -157,7 +157,6 @@
 		22FECF48164FFCA600720705 = {
 			isa = PBXGroup;
 			children = (
-				35BD56FF173A3B8000606275 /* AudioToolbox.framework */,
 				22FECF5D164FFCA600720705 /* storyboardTest */,
 				22FECF56164FFCA600720705 /* Frameworks */,
 				22FECF54164FFCA600720705 /* Products */,
@@ -175,6 +174,7 @@
 		22FECF56164FFCA600720705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35BD56FF173A3B8000606275 /* AudioToolbox.framework */,
 				22FECF57164FFCA600720705 /* UIKit.framework */,
 				22FECF59164FFCA600720705 /* Foundation.framework */,
 				22FECF5B164FFCA600720705 /* CoreGraphics.framework */,
