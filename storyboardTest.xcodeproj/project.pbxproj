@@ -33,8 +33,8 @@
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
-		35BD5700173A3B8000606275 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
+		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,9 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35BD5700173A3B8000606275 /* AudioToolbox.framework in Frameworks */,
 				22FECF58164FFCA600720705 /* UIKit.framework in Frameworks */,
 				22FECF5A164FFCA600720705 /* Foundation.framework in Frameworks */,
+				35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */,
 				22FECF5C164FFCA600720705 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
