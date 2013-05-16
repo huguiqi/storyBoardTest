@@ -55,6 +55,18 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    
+//    [UIView animateWithDuration:0.1 delay:0.0 options:UIViewAnimationOptionRepeat animations:^{
+//        //        ((FADViewController *)self.sourceViewController).view.alpha = 0.0;
+//        [UIView setAnimationRepeatCount:10];
+//        //        i = -i;
+//        ((FADViewController *)self.sourceViewController).yellowButton.layer.transform = CATransform3DRotate(transformRotated, M_PI * 0.04, 0, 0, 1);
+//    }completion:^(BOOL isFinished){
+//        
+//    }];
+//   
+//    
+//    CATransform3D transformRotated = CATransform3DRotate(yellowTransform, M_PI * -0.02, 0, 0, 1);
 }
 
 - (void)didReceiveMemoryWarning
