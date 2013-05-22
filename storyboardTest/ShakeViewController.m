@@ -70,7 +70,7 @@
 {
 }
 
-
+#pragma 是否允许横竖屏感应
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
