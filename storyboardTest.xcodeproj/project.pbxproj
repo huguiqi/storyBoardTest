@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		226C65071726CE2000050864 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C65061726CE2000050864 /* Item2ViewController.m */; };
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
+		22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC618B175653520079C4AE /* AboutGeometryViewController.m */; };
 		22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C64EC01745353900C4D18E /* QuartzCore.framework */; };
 		22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB908F171050A5007A3933 /* Item1ViewController.m */; };
 		22FB9095171076D9007A3933 /* IMG_1142.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22FB9094171076D9007A3933 /* IMG_1142.JPG */; };
@@ -43,6 +44,8 @@
 		226C65061726CE2000050864 /* Item2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
 		2295571916F222CC00C0DBD2 /* WFWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFWebViewDemo.h; sourceTree = "<group>"; };
 		2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFWebViewDemo.m; sourceTree = "<group>"; };
+		22BC618A175653520079C4AE /* AboutGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutGeometryViewController.h; sourceTree = "<group>"; };
+		22BC618B175653520079C4AE /* AboutGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutGeometryViewController.m; sourceTree = "<group>"; };
 		22C64EC01745353900C4D18E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22FB908E171050A5007A3933 /* Item1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item1ViewController.h; sourceTree = "<group>"; };
 		22FB908F171050A5007A3933 /* Item1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item1ViewController.m; sourceTree = "<group>"; };
@@ -121,9 +124,19 @@
 			name = webViewDemo;
 			sourceTree = "<group>";
 		};
+		22BC6188175652860079C4AE /* UIViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				22BC618A175653520079C4AE /* AboutGeometryViewController.h */,
+				22BC618B175653520079C4AE /* AboutGeometryViewController.m */,
+			);
+			name = UIViewDemo;
+			sourceTree = "<group>";
+		};
 		22FB908D171048C8007A3933 /* barItem */ = {
 			isa = PBXGroup;
 			children = (
+				22BC6188175652860079C4AE /* UIViewDemo */,
 				354890741739FA8000E1EF4B /* shakeDemo */,
 				3501D11C1737A68E002F74D6 /* accelerometerDemo */,
 				22FB9092171074BE007A3933 /* scrollViewDemo */,
@@ -401,6 +414,7 @@
 				3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */,
 				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
 				3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */,
+				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

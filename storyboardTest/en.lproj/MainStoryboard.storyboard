@@ -352,6 +352,21 @@
                                     <action selector="testDefine:" destination="RNy-GM-QUq" eventType="touchUpInside" id="JdE-6Y-sbc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bFQ-kB-5Pl">
+                                <rect key="frame" x="164" y="152" width="115" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="UIViewDemo">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="puH-3k-mSe" kind="push" id="ALu-ka-hjH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -394,6 +409,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fih-P0-PcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="557" y="582"/>
+        </scene>
+        <!--About Geometry View Controller - UIView视图与几何动画-->
+        <scene sceneID="Vrw-94-Hhk">
+            <objects>
+                <viewController id="puH-3k-mSe" customClass="AboutGeometryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fT-zh-e4p">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZaV-9l-LYX">
+                                <rect key="frame" x="11" y="11" width="110" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CGRectTest">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testCGRect:" destination="puH-3k-mSe" eventType="touchUpInside" id="Tjk-FA-cPT"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="jZu-bR-LWt">
+                                <rect key="frame" x="67" y="70" width="160" height="117"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIView视图与几何动画" id="nL7-gq-kEK"/>
+                    <connections>
+                        <outlet property="testView" destination="jZu-bR-LWt" id="EKL-Rj-pHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1WY-hD-671" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="1249"/>
         </scene>
         <!--Bar Item View Controller-->
         <scene sceneID="PDh-xL-7he">
@@ -565,6 +620,13 @@
         <image name="Default.png" width="320" height="480"/>
     </resources>
     <classes>
+        <class className="AboutGeometryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutGeometryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="testCGRect:"/>
+                <relationship kind="outlet" name="testView" candidateClass="UIView"/>
+            </relationships>
+        </class>
         <class className="AccelerometerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AccelerometerViewController.h"/>
         </class>
@@ -600,9 +662,6 @@
                 <relationship kind="outlet" name="shadeView" candidateClass="UIView"/>
             </relationships>
         </class>
-        <class className="WFBarItemViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WFBarItemViewController.h"/>
-        </class>
         <class className="WFCityListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WFCityListViewController.h"/>
             <relationships>
@@ -614,7 +673,6 @@
             <relationships>
                 <relationship kind="action" name="backgroupTap:"/>
                 <relationship kind="action" name="clickSomething:"/>
-                <relationship kind="action" name="showCityListView:"/>
                 <relationship kind="action" name="slideAgeChange:"/>
                 <relationship kind="action" name="textFieldDoneEditing:"/>
                 <relationship kind="action" name="toBarItemView:"/>
