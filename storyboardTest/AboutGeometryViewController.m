@@ -37,14 +37,35 @@
     if(!CGRectIntersectsRect(button.frame, _testView.frame)){
            NSLog(@"CGRectIntersection result is false");
     }
-    //7,CGRectZero 矩形常量
+    //7,CGRectZero 矩形常量(0,0,0,0)
 
 }
 
 #pragma --UIView.transform about
 -(IBAction)testTransform:(id)sender{
-    //1,iphone支持仿射变换(affine transformation)
-    //todo
+    //1,iphone支持仿射变换(affine transformation),此实现是core graphics实现的一部分，仿射变换有：旋转，伸缩，转化
+    self.testView.transform = CGAffineTransformMakeRotation(M_PI*0.03);//按照180 * 0.03角度去顺时针旋转
+    //如果想还原视图，则要将transform属性设置为恒等变换--CGAffineTransformIdentity
+//    self.testView.transform = CGAffineTransformIdentity;
+    
+}
+
+#pragma --UIView.transform 动画
+-(IBAction)testTransformAnima:(id)sender{
+    
+    [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionRepeat | UIViewAnimationCurveEaseInOut | UIViewAnimationCurveLinear | UIViewAnimationOptionRepeat
+         animations:^(void){
+             [UIView setAnimationRepeatCount:3.0];
+         self.testView.transform = CGAffineTransformMakeRotation(M_PI*0.03);//按照180 * 0.03角度去顺时针旋转
+              self.testView.transform = CGAffineTransformMakeRotation(M_PI*-0.03);//按照180 * 0.03角度去逆时针旋转
+    } completion:^(BOOL finished){
+        //如果想还原视图，则要将transform属性设置为恒等变换--CGAffineTransformIdentity
+            self.testView.transform = CGAffineTransformIdentity;
+    }];
+    
+   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
