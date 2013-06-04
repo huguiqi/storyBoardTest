@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		226C65071726CE2000050864 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C65061726CE2000050864 /* Item2ViewController.m */; };
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
+		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
+		22A87860175E437800E82C69 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785F175E437800E82C69 /* IndexViewController.m */; };
 		22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC618B175653520079C4AE /* AboutGeometryViewController.m */; };
 		22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C64EC01745353900C4D18E /* QuartzCore.framework */; };
 		22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB908F171050A5007A3933 /* Item1ViewController.m */; };
@@ -44,6 +46,10 @@
 		226C65061726CE2000050864 /* Item2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
 		2295571916F222CC00C0DBD2 /* WFWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFWebViewDemo.h; sourceTree = "<group>"; };
 		2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFWebViewDemo.m; sourceTree = "<group>"; };
+		22A8785A175E429600E82C69 /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
+		22A8785B175E429600E82C69 /* MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddress.m; sourceTree = "<group>"; };
+		22A8785E175E437800E82C69 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		22A8785F175E437800E82C69 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		22BC618A175653520079C4AE /* AboutGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutGeometryViewController.h; sourceTree = "<group>"; };
 		22BC618B175653520079C4AE /* AboutGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutGeometryViewController.m; sourceTree = "<group>"; };
 		22C64EC01745353900C4D18E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -109,6 +115,7 @@
 		1BBDFBB304D87956C41940DF /* common */ = {
 			isa = PBXGroup;
 			children = (
+				22A87859175E426F00E82C69 /* utils */,
 				35015172172BAF5C00D72B8C /* catearey */,
 				22FFBE81171477D900A3D396 /* fileManager */,
 			);
@@ -122,6 +129,24 @@
 				2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */,
 			);
 			name = webViewDemo;
+			sourceTree = "<group>";
+		};
+		22A87859175E426F00E82C69 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				22A8785A175E429600E82C69 /* MacAddress.h */,
+				22A8785B175E429600E82C69 /* MacAddress.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		22A8785D175E436200E82C69 /* index */ = {
+			isa = PBXGroup;
+			children = (
+				22A8785E175E437800E82C69 /* IndexViewController.h */,
+				22A8785F175E437800E82C69 /* IndexViewController.m */,
+			);
+			name = index;
 			sourceTree = "<group>";
 		};
 		22BC6188175652860079C4AE /* UIViewDemo */ = {
@@ -232,6 +257,7 @@
 		22FECF7A164FFDA600720705 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22A8785D175E436200E82C69 /* index */,
 				22FB908D171048C8007A3933 /* barItem */,
 				22FECF7F164FFDF600720705 /* sectionDemo */,
 				22FECF7E164FFDEE00720705 /* city */,
@@ -415,6 +441,8 @@
 				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
 				3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */,
 				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
+				22A8785C175E429600E82C69 /* MacAddress.m in Sources */,
+				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

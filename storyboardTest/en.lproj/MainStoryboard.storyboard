@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Index View Controller-->
         <scene sceneID="t1a-X1-Hse">
             <objects>
-                <viewController id="kIm-ag-wVt" sceneMemberID="viewController">
+                <viewController id="kIm-ag-wVt" customClass="IndexViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DaL-Fz-4Bx">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IAC-BK-PtS">
-                                <rect key="frame" x="124" y="191" width="73" height="44"/>
+                                <rect key="frame" x="44" y="66" width="73" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button">
@@ -25,6 +25,21 @@
                                 </state>
                                 <connections>
                                     <segue destination="2" kind="push" id="JdI-1t-qUV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lVE-I8-RM5">
+                                <rect key="frame" x="44" y="126" width="165" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="testGetMacAddress">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testMacAddress:" destination="kIm-ag-wVt" eventType="touchUpInside" id="NdF-DE-oVJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -673,6 +688,12 @@
         </class>
         <class className="AccelerometerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AccelerometerViewController.h"/>
+        </class>
+        <class className="IndexViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IndexViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="testMacAddress:"/>
+            </relationships>
         </class>
         <class className="Item1ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Item1ViewController.h"/>
