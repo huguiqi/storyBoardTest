@@ -10,6 +10,8 @@
 
 @interface AboutGeometryViewController ()
 
+@property(nonatomic,weak) IBOutlet UIView *pointView;
+
 @end
 
 @implementation AboutGeometryViewController
@@ -63,9 +65,41 @@
             self.testView.transform = CGAffineTransformIdentity;
     }];
     
-   
-    
-    
+}
+
+#pragma --UIview.convertPoint
+-(IBAction)testConvertPoint:(id)sender{
+    CGPoint originPoint = CGPointMake(50, 100);
+    //没看到效果
+    [self.testView convertPoint:originPoint fromView:self.pointView];
+}
+
+-(IBAction)testRect:(id)sender{
+    //等比例添加一个view到另一个view中，不改变原来的view比例，用以适合父View
+    [self fitInSize:self.pointView.frame.size];
+}
+
+// Ensure that both dimensions fit within the given size by scaling down
+- (void) fitInSize: (CGSize) aSize
+{
+	CGFloat scale;
+	CGRect newframe = self.testView.frame;
+	
+	if (newframe.size.height && (newframe.size.height > aSize.height))
+	{
+		scale = aSize.height / newframe.size.height;
+		newframe.size.width *= scale;
+		newframe.size.height *= scale;
+	}
+	
+	if (newframe.size.width && (newframe.size.width >= aSize.width))
+	{
+		scale = aSize.width / newframe.size.width;
+		newframe.size.width *= scale;
+		newframe.size.height *= scale;
+	}
+	
+	self.pointView.frame = newframe;
 }
 
 - (void)didReceiveMemoryWarning
