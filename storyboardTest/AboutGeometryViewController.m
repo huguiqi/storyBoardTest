@@ -74,6 +74,15 @@
     [self.testView convertPoint:originPoint fromView:self.pointView];
 }
 
+
+#pragma --UIview.convertPoint
+-(IBAction)testMoveView:(id)sender{
+    //如果要对一个视图进行移动位置的动作，可以通过两种方式：frame,center
+    //但iphone SDK不希望通过改变框架来移动视图，则推荐使用改变center的方式改变视图位置，但这种方法很不直观，如果它本身有一个setOrigin的方法去只修改原点位置，那是最好的，但sdk里没有这个函数
+    NSLog(@"testView center.x:%f,center.y:%f",self.testView.center.x,self.testView.center.y);
+    self.testView.center = CGPointMake(100, 117);
+}
+
 -(IBAction)testRect:(id)sender{
     //等比例添加一个view到另一个view中，不改变原来的view比例，用以适合父View
     [self fitInSize:self.pointView.frame.size];
