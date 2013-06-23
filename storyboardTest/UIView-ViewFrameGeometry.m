@@ -189,4 +189,31 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center)
 	
 	self.frame = newframe;	
 }
+
+
+#pragma mark Random
+// Make sure you've run srandom() elsewhere in the program
+// Thanks to August Joki and manitoba98
+- (CGPoint) randomCenterInView: (UIView *) aView withInsets: (UIEdgeInsets) insets
+{
+	// Move in by the inset amount and then by size of the subview
+	CGRect innerRect = UIEdgeInsetsInsetRect([aView bounds], insets);
+	CGRect subRect = CGRectInset(innerRect, self.frame.size.width / 2.0f, self.frame.size.height / 2.0f);
+	NSLog(@"frame.width:%f,frame.height:%f",self.frame.size.width,self.frame.size.height);
+	// Return a random point
+	float rx = (float)(random() % (int)floor(subRect.size.width));
+	float ry = (float)(random() % (int)floor(subRect.size.height));
+	return CGPointMake(rx + subRect.origin.x, ry + subRect.origin.y);
+}
+
+- (CGPoint) randomCenterInView: (UIView *) aView withInset: (float) inset
+{
+	UIEdgeInsets insets = UIEdgeInsetsMake(inset, inset, inset, inset);
+	return [self randomCenterInView:aView withInsets:insets];
+}
+
+- (void) moveToRandomLocationInSuperviewAnimated: (BOOL) animated
+{
+	self.center = [self randomCenterInView:self.superview withInset:5];
+}
 @end

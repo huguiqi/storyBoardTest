@@ -12,6 +12,8 @@
 		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
 		22A87860175E437800E82C69 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785F175E437800E82C69 /* IndexViewController.m */; };
 		22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC618B175653520079C4AE /* AboutGeometryViewController.m */; };
+		22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */; };
+		22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC837C1770B26700E71986 /* UIViewCenterViewController.m */; };
 		22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C64EC01745353900C4D18E /* QuartzCore.framework */; };
 		22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB908F171050A5007A3933 /* Item1ViewController.m */; };
 		22FB9095171076D9007A3933 /* IMG_1142.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22FB9094171076D9007A3933 /* IMG_1142.JPG */; };
@@ -52,6 +54,10 @@
 		22A8785F175E437800E82C69 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
 		22BC618A175653520079C4AE /* AboutGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutGeometryViewController.h; sourceTree = "<group>"; };
 		22BC618B175653520079C4AE /* AboutGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutGeometryViewController.m; sourceTree = "<group>"; };
+		22BC83781770B0A900E71986 /* UIView-ViewFrameGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView-ViewFrameGeometry.h"; sourceTree = "<group>"; };
+		22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView-ViewFrameGeometry.m"; sourceTree = "<group>"; };
+		22BC837B1770B26700E71986 /* UIViewCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCenterViewController.h; sourceTree = "<group>"; };
+		22BC837C1770B26700E71986 /* UIViewCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCenterViewController.m; sourceTree = "<group>"; };
 		22C64EC01745353900C4D18E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22FB908E171050A5007A3933 /* Item1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item1ViewController.h; sourceTree = "<group>"; };
 		22FB908F171050A5007A3933 /* Item1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item1ViewController.m; sourceTree = "<group>"; };
@@ -152,10 +158,22 @@
 		22BC6188175652860079C4AE /* UIViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				22BC83771770B07B00E71986 /* UIViewCenterTest */,
 				22BC618A175653520079C4AE /* AboutGeometryViewController.h */,
 				22BC618B175653520079C4AE /* AboutGeometryViewController.m */,
 			);
 			name = UIViewDemo;
+			sourceTree = "<group>";
+		};
+		22BC83771770B07B00E71986 /* UIViewCenterTest */ = {
+			isa = PBXGroup;
+			children = (
+				22BC83781770B0A900E71986 /* UIView-ViewFrameGeometry.h */,
+				22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */,
+				22BC837B1770B26700E71986 /* UIViewCenterViewController.h */,
+				22BC837C1770B26700E71986 /* UIViewCenterViewController.m */,
+			);
+			name = UIViewCenterTest;
 			sourceTree = "<group>";
 		};
 		22FB908D171048C8007A3933 /* barItem */ = {
@@ -443,6 +461,8 @@
 				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
 				22A8785C175E429600E82C69 /* MacAddress.m in Sources */,
 				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
+				22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */,
+				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

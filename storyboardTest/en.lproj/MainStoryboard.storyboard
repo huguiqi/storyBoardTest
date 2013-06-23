@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -368,10 +368,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bFQ-kB-5Pl">
-                                <rect key="frame" x="164" y="152" width="115" height="44"/>
+                                <rect key="frame" x="142" y="152" width="160" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="UIViewDemo">
+                                <state key="normal" title="UIViewFrameDemo">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -380,6 +380,21 @@
                                 </state>
                                 <connections>
                                     <segue destination="puH-3k-mSe" kind="push" id="ALu-ka-hjH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xJD-Rs-EQW">
+                                <rect key="frame" x="154" y="199" width="152" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="UIViewCenterTest">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZrJ-Df-qJL" kind="push" id="03l-Ot-Uyt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -546,19 +561,42 @@
             </objects>
             <point key="canvasLocation" x="557" y="1249"/>
         </scene>
-        <!--View Controller-->
+        <!--View Center View Controller - UIViewCenterTest-->
         <scene sceneID="8mU-ao-V4b">
             <objects>
-                <viewController id="ZrJ-Df-qJL" sceneMemberID="viewController">
+                <viewController id="ZrJ-Df-qJL" customClass="UIViewCenterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8UX-JB-xr1">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JCj-rG-LLC">
+                                <rect key="frame" x="42" y="41" width="73" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testCenter:" destination="ZrJ-Df-qJL" eventType="touchUpInside" id="d6Q-h8-xuT"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="UIViewCenterTest" id="dtv-a2-ANu">
+                        <barButtonItem key="backBarButtonItem" title="回去" id="RMo-LO-vAk"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="view" destination="8UX-JB-xr1" id="gvM-eq-lth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02K-EA-biG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077" y="1249"/>
+            <point key="canvasLocation" x="997" y="582"/>
         </scene>
         <!--Bar Item View Controller-->
         <scene sceneID="PDh-xL-7he">
@@ -746,11 +784,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutGeometryViewController.h"/>
             <relationships>
                 <relationship kind="action" name="testCGRect:"/>
-                <relationship kind="action" name="testConvertPoint:"/>
                 <relationship kind="action" name="testMoveView:"/>
-                <relationship kind="action" name="testRect:"/>
                 <relationship kind="action" name="testTransform:"/>
-                <relationship kind="action" name="testTransformAnima:"/>
                 <relationship kind="outlet" name="pointView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="testView" candidateClass="UIView"/>
             </relationships>
@@ -794,6 +829,12 @@
             <relationships>
                 <relationship kind="outlet" name="button" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="shadeView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="UIViewCenterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewCenterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="testCenter:"/>
             </relationships>
         </class>
         <class className="WFCityListViewController" superclassName="UIViewController">

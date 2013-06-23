@@ -70,8 +70,12 @@
 #pragma --UIview.convertPoint
 -(IBAction)testConvertPoint:(id)sender{
     CGPoint originPoint = CGPointMake(50, 100);
+    NSLog(@"testView point:%f,%f",self.testView.frame.origin.x,self.testView.frame.origin.y);
+    NSLog(@"pointView point:%f,%f",self.pointView.frame.origin.x,self.pointView.frame.origin.y);
     //没看到效果
     [self.testView convertPoint:originPoint fromView:self.pointView];
+        NSLog(@"testView point:%f,%f",self.testView.frame.origin.x,self.testView.frame.origin.y);
+    NSLog(@"pointView point:%f,%f",self.pointView.frame.origin.x,self.pointView.frame.origin.y);
 }
 
 
