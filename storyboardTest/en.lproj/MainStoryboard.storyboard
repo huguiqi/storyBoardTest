@@ -397,6 +397,36 @@
                                     <segue destination="ZrJ-Df-qJL" kind="push" id="03l-Ot-Uyt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lfL-ZC-Vxt">
+                                <rect key="frame" x="180" y="250" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="淡入淡出">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uio-wQ-zrA" kind="push" id="XBo-Pb-lwL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="He4-mc-FeK">
+                                <rect key="frame" x="174" y="301" width="85" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="翻页动画">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0Da-PB-gQf" kind="push" id="ZsD-4v-uof"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -598,6 +628,32 @@
             </objects>
             <point key="canvasLocation" x="997" y="582"/>
         </scene>
+        <!--Crosswise View Controller-->
+        <scene sceneID="Bd5-EN-2si">
+            <objects>
+                <viewController id="Uio-wQ-zrA" customClass="CrosswiseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ayd-3x-TUk">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" image="cover320x416.png" id="zK2-jq-igE">
+                                <rect key="frame" x="0.0" y="40" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="center" image="BFlyCircle.png" id="L8F-12-YRU">
+                                <rect key="frame" x="60" y="43" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k9Z-su-gbC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYU-hg-AGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="1255"/>
+        </scene>
         <!--Bar Item View Controller-->
         <scene sceneID="PDh-xL-7he">
             <objects>
@@ -733,6 +789,49 @@
             </objects>
             <point key="canvasLocation" x="102" y="1881"/>
         </scene>
+        <!--View Curl Up Or Down View Controller-->
+        <scene sceneID="Usn-AE-GQw">
+            <objects>
+                <viewController id="0Da-PB-gQf" customClass="UIViewCurlUpOrDownViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JbE-xC-eQU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" image="cover320x416.png" id="p5F-WS-fJA" userLabel="Primary Backsplash">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="m3i-Nt-wsh" userLabel="Black Backdrop">
+                                <rect key="frame" x="-47" y="-134" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view clearsContextBeforeDrawing="NO" tag="100" contentMode="scaleToFill" id="r0h-aj-FUE" userLabel="White Backdrop">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="998" contentMode="center" image="BFlyCircleMaroon.png" id="kdB-Mb-1jM" userLabel="Maroon Butterfly">
+                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    </imageView>
+                                    <imageView opaque="NO" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="center" image="BFlyCircle.png" id="avN-Ap-irv" userLabel="Purple Butterfly">
+                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CHa-6G-anL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEM-yY-eT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1915"/>
+        </scene>
         <!--City List View Controller-->
         <scene sceneID="wa5-u8-aSp">
             <objects>
@@ -777,14 +876,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BFlyCircle.png" width="200" height="200"/>
+        <image name="BFlyCircleMaroon.png" width="16" height="16"/>
         <image name="Default.png" width="320" height="480"/>
+        <image name="cover320x416.png" width="320" height="416"/>
     </resources>
     <classes>
         <class className="AboutGeometryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutGeometryViewController.h"/>
             <relationships>
                 <relationship kind="action" name="testCGRect:"/>
-                <relationship kind="action" name="testMoveView:"/>
                 <relationship kind="action" name="testTransform:"/>
                 <relationship kind="outlet" name="pointView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="testView" candidateClass="UIView"/>
@@ -792,6 +893,9 @@
         </class>
         <class className="AccelerometerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AccelerometerViewController.h"/>
+        </class>
+        <class className="CrosswiseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrosswiseViewController.h"/>
         </class>
         <class className="IndexViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IndexViewController.h"/>
@@ -833,9 +937,9 @@
         </class>
         <class className="UIViewCenterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewCenterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="testCenter:"/>
-            </relationships>
+        </class>
+        <class className="UIViewCurlUpOrDownViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewCurlUpOrDownViewController.h"/>
         </class>
         <class className="WFCityListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WFCityListViewController.h"/>
@@ -848,6 +952,7 @@
             <relationships>
                 <relationship kind="action" name="backgroupTap:"/>
                 <relationship kind="action" name="clickSomething:"/>
+                <relationship kind="action" name="showCityListView:"/>
                 <relationship kind="action" name="slideAgeChange:"/>
                 <relationship kind="action" name="textFieldDoneEditing:"/>
                 <relationship kind="action" name="toBarItemView:"/>

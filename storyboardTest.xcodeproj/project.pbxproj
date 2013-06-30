@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */; };
 		226C65071726CE2000050864 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C65061726CE2000050864 /* Item2ViewController.m */; };
+		22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22736AAD1778859D00BADFE7 /* CrosswiseViewController.m */; };
+		22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AAF17788F9000BADFE7 /* BFlyCircle.png */; };
+		22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB017788F9000BADFE7 /* cover 480x300-take2.png */; };
+		22736AB417788F9000BADFE7 /* cover320x416.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB117788F9000BADFE7 /* cover320x416.png */; };
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
 		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
 		22A87860175E437800E82C69 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785F175E437800E82C69 /* IndexViewController.m */; };
@@ -44,8 +49,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2244B6CD17807BD70029F7FA /* UIViewCurlUpOrDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCurlUpOrDownViewController.h; sourceTree = "<group>"; };
+		2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCurlUpOrDownViewController.m; sourceTree = "<group>"; };
 		226C65051726CE2000050864 /* Item2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item2ViewController.h; sourceTree = "<group>"; };
 		226C65061726CE2000050864 /* Item2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
+		22736AAC1778859D00BADFE7 /* CrosswiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrosswiseViewController.h; sourceTree = "<group>"; };
+		22736AAD1778859D00BADFE7 /* CrosswiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrosswiseViewController.m; sourceTree = "<group>"; };
+		22736AAF17788F9000BADFE7 /* BFlyCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BFlyCircle.png; sourceTree = "<group>"; };
+		22736AB017788F9000BADFE7 /* cover 480x300-take2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover 480x300-take2.png"; sourceTree = "<group>"; };
+		22736AB117788F9000BADFE7 /* cover320x416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover320x416.png; sourceTree = "<group>"; };
 		2295571916F222CC00C0DBD2 /* WFWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFWebViewDemo.h; sourceTree = "<group>"; };
 		2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFWebViewDemo.m; sourceTree = "<group>"; };
 		22A8785A175E429600E82C69 /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
@@ -128,6 +140,24 @@
 			name = common;
 			sourceTree = "<group>";
 		};
+		2244B6CC17807B990029F7FA /* curlUPOrDown */ = {
+			isa = PBXGroup;
+			children = (
+				2244B6CD17807BD70029F7FA /* UIViewCurlUpOrDownViewController.h */,
+				2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */,
+			);
+			name = curlUPOrDown;
+			sourceTree = "<group>";
+		};
+		22736AAB1778850000BADFE7 /* crosswiseAndVertical */ = {
+			isa = PBXGroup;
+			children = (
+				22736AAC1778859D00BADFE7 /* CrosswiseViewController.h */,
+				22736AAD1778859D00BADFE7 /* CrosswiseViewController.m */,
+			);
+			name = crosswiseAndVertical;
+			sourceTree = "<group>";
+		};
 		2295571816F2227000C0DBD2 /* webViewDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +188,8 @@
 		22BC6188175652860079C4AE /* UIViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2244B6CC17807B990029F7FA /* curlUPOrDown */,
+				22736AAB1778850000BADFE7 /* crosswiseAndVertical */,
 				22BC83771770B07B00E71986 /* UIViewCenterTest */,
 				22BC618A175653520079C4AE /* AboutGeometryViewController.h */,
 				22BC618B175653520079C4AE /* AboutGeometryViewController.m */,
@@ -206,6 +238,9 @@
 		22FB90931710752E007A3933 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				22736AAF17788F9000BADFE7 /* BFlyCircle.png */,
+				22736AB017788F9000BADFE7 /* cover 480x300-take2.png */,
+				22736AB117788F9000BADFE7 /* cover320x416.png */,
 				35A62CB1172A605000F1A367 /* topbar_btn.png */,
 				35A62CB2172A605000F1A367 /* topbar_btn@2x.png */,
 				22FB9094171076D9007A3933 /* IMG_1142.JPG */,
@@ -433,6 +468,9 @@
 				35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */,
 				35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */,
 				35BD56FE173A3B1F00606275 /* glass.wav in Resources */,
+				22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */,
+				22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */,
+				22736AB417788F9000BADFE7 /* cover320x416.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +501,8 @@
 				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
 				22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */,
 				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
+				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
+				2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
