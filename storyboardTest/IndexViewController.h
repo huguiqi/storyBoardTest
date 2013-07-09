@@ -10,4 +10,6 @@
 
 @interface IndexViewController : UIViewController
 
+@property(nonatomic,weak) IBOutlet UIView *topView;
+
 @end
