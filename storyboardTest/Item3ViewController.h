@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface Item3ViewController : UIViewController
+@interface Item3ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+
+-(IBAction)testCameraPhoto:(id)sender;
 
 @end

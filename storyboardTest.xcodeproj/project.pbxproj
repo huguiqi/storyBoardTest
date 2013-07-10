@@ -19,6 +19,7 @@
 		22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC618B175653520079C4AE /* AboutGeometryViewController.m */; };
 		22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */; };
 		22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC837C1770B26700E71986 /* UIViewCenterViewController.m */; };
+		22C19C18178DA1D000DE31C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C19C17178DA1D000DE31C1 /* MobileCoreServices.framework */; };
 		22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C64EC01745353900C4D18E /* QuartzCore.framework */; };
 		22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB908F171050A5007A3933 /* Item1ViewController.m */; };
 		22FB9095171076D9007A3933 /* IMG_1142.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 22FB9094171076D9007A3933 /* IMG_1142.JPG */; };
@@ -71,6 +72,7 @@
 		22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView-ViewFrameGeometry.m"; sourceTree = "<group>"; };
 		22BC837B1770B26700E71986 /* UIViewCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCenterViewController.h; sourceTree = "<group>"; };
 		22BC837C1770B26700E71986 /* UIViewCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCenterViewController.m; sourceTree = "<group>"; };
+		22C19C17178DA1D000DE31C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		22C64EC01745353900C4D18E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		22FB908E171050A5007A3933 /* Item1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item1ViewController.h; sourceTree = "<group>"; };
 		22FB908F171050A5007A3933 /* Item1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item1ViewController.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C19C18178DA1D000DE31C1 /* MobileCoreServices.framework in Frameworks */,
 				22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */,
 				22FECF58164FFCA600720705 /* UIKit.framework in Frameworks */,
 				22FECF5A164FFCA600720705 /* Foundation.framework in Frameworks */,
@@ -272,6 +275,7 @@
 		22FECF56164FFCA600720705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22C19C17178DA1D000DE31C1 /* MobileCoreServices.framework */,
 				22C64EC01745353900C4D18E /* QuartzCore.framework */,
 				35BD56FF173A3B8000606275 /* AudioToolbox.framework */,
 				22FECF57164FFCA600720705 /* UIKit.framework */,
