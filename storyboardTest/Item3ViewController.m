@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    //以下为了检测用户手机设备照相机与拙朴功能是否可用的另类写法，其实和正规写法效果是一样的，由于没有开发者账号，无法装真机，看效果，等我申请了开发者账号再写
     if ([self isCameraAvailable] &&
         [self doesCameraSupportTakingPhotos]){
         UIImagePickerController *controller = [[UIImagePickerController alloc] init];
@@ -98,8 +98,8 @@
     NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
     if ([mediaType isEqualToString:(__bridge NSString *)kUTTypeMovie])
     {
-        NSURL *urlOfVideo =(NSURL *) [info objectForKey:UIImagePickerControllerMediaURL];
-        NSLog(@"Video URL = %@", urlOfVideo);
+        NSURL *urlOfVideo =[info objectForKey:UIImagePickerControllerMediaURL];
+        NSLog(@"Video URL =%@", urlOfVideo);
     }else if ([mediaType isEqualToString:(__bridge NSString *)kUTTypeImage]){
         /* Let's get the metadata. This is only for images. Not videos */
         NSDictionary *metadata = [info objectForKey:
@@ -115,7 +115,7 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     
-    
+    NSLog(@"imagePickerControllerDidCancel %@",picker);
 }
 
     
