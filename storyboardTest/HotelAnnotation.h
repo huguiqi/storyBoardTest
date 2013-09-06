@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface HotelAnnotation : NSObject
+@interface HotelAnnotation : NSObject<MKAnnotation>
+
+@property(nonatomic) CLLocationCoordinate2D thieCoordinate;
+@property (nonatomic, copy) NSString *place;
+@property (nonatomic, copy) NSString *imageName;
+
+@property(nonatomic,copy) NSString *hotelId;
+@property (nonatomic, assign) NSInteger price;
+
+
 
 @end

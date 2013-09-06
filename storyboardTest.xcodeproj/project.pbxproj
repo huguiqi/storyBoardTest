@@ -41,6 +41,14 @@
 		35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */; };
 		3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */; };
 		3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D1211737A737002F74D6 /* AccelerometerViewController.m */; };
+		3526E11417CAF6950065E360 /* teagarden.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E11217CAF6950065E360 /* teagarden.png */; };
+		3526E11517CAF6950065E360 /* teagarden@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E11317CAF6950065E360 /* teagarden@2x.png */; };
+		3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3526E11917CAFA2E0065E360 /* HotelAnnotation.m */; };
+		3526E11D17CB1F930065E360 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526E11B17CB1F7D0065E360 /* CoreLocation.framework */; };
+		3526E12017CB25C80065E360 /* HotelAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3526E11F17CB25C80065E360 /* HotelAnnotationView.m */; };
+		3526E12317CB4C9C0065E360 /* map_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12117CB4C9C0065E360 /* map_bubble.png */; };
+		3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12217CB4C9C0065E360 /* map_bubble@2x.png */; };
+		3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3527181417978F8F005FA9CA /* UserDefaultHelper.m */; };
 		3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354890791739FC7300E1EF4B /* ShakeViewController.m */; };
 		35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35603FD6178C0100000D0BB5 /* CustomeSugue.m */; };
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
@@ -48,6 +56,8 @@
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
+		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
+		35F92C5917C74FF000D505CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F92C5717C74FD200D505CD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +117,17 @@
 		3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
 		3501D1201737A737002F74D6 /* AccelerometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerViewController.h; sourceTree = "<group>"; };
 		3501D1211737A737002F74D6 /* AccelerometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerViewController.m; sourceTree = "<group>"; };
+		3526E11217CAF6950065E360 /* teagarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teagarden.png; sourceTree = "<group>"; };
+		3526E11317CAF6950065E360 /* teagarden@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teagarden@2x.png"; sourceTree = "<group>"; };
+		3526E11817CAFA2E0065E360 /* HotelAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelAnnotation.h; sourceTree = "<group>"; };
+		3526E11917CAFA2E0065E360 /* HotelAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelAnnotation.m; sourceTree = "<group>"; };
+		3526E11B17CB1F7D0065E360 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3526E11E17CB25C80065E360 /* HotelAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelAnnotationView.h; sourceTree = "<group>"; };
+		3526E11F17CB25C80065E360 /* HotelAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelAnnotationView.m; sourceTree = "<group>"; };
+		3526E12117CB4C9C0065E360 /* map_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_bubble.png; sourceTree = "<group>"; };
+		3526E12217CB4C9C0065E360 /* map_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_bubble@2x.png"; sourceTree = "<group>"; };
+		3527181317978F8F005FA9CA /* UserDefaultHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultHelper.h; sourceTree = "<group>"; };
+		3527181417978F8F005FA9CA /* UserDefaultHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultHelper.m; sourceTree = "<group>"; };
 		354890781739FC7300E1EF4B /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		354890791739FC7300E1EF4B /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		35603FD5178C0100000D0BB5 /* CustomeSugue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeSugue.h; sourceTree = "<group>"; };
@@ -117,6 +138,9 @@
 		35BD56FF173A3B8000606275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
 		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
+		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
+		35F92C5517C74FA800D505CD /* MapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitViewController.m; sourceTree = "<group>"; };
+		35F92C5717C74FD200D505CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +151,11 @@
 				22C19C18178DA1D000DE31C1 /* MobileCoreServices.framework in Frameworks */,
 				22C64EC11745353900C4D18E /* QuartzCore.framework in Frameworks */,
 				22FECF58164FFCA600720705 /* UIKit.framework in Frameworks */,
+				35F92C5917C74FF000D505CD /* MapKit.framework in Frameworks */,
 				22FECF5A164FFCA600720705 /* Foundation.framework in Frameworks */,
 				35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */,
 				22FECF5C164FFCA600720705 /* CoreGraphics.framework in Frameworks */,
+				3526E11D17CB1F930065E360 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +202,7 @@
 		22A87859175E426F00E82C69 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				3527181217978F6C005FA9CA /* Helper */,
 				22A8785A175E429600E82C69 /* MacAddress.h */,
 				22A8785B175E429600E82C69 /* MacAddress.m */,
 			);
@@ -217,6 +244,7 @@
 		22FB908D171048C8007A3933 /* barItem */ = {
 			isa = PBXGroup;
 			children = (
+				35F92C5317C74F7200D505CD /* MapViewDemo */,
 				35603FD4178C00E8000D0BB5 /* customerSugueDemo */,
 				22BC6188175652860079C4AE /* UIViewDemo */,
 				354890741739FA8000E1EF4B /* shakeDemo */,
@@ -245,6 +273,10 @@
 		22FB90931710752E007A3933 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				3526E12117CB4C9C0065E360 /* map_bubble.png */,
+				3526E12217CB4C9C0065E360 /* map_bubble@2x.png */,
+				3526E11217CAF6950065E360 /* teagarden.png */,
+				3526E11317CAF6950065E360 /* teagarden@2x.png */,
 				22736AAF17788F9000BADFE7 /* BFlyCircle.png */,
 				22736AB017788F9000BADFE7 /* cover 480x300-take2.png */,
 				22736AB117788F9000BADFE7 /* cover320x416.png */,
@@ -275,6 +307,8 @@
 		22FECF56164FFCA600720705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3526E11B17CB1F7D0065E360 /* CoreLocation.framework */,
+				35F92C5717C74FD200D505CD /* MapKit.framework */,
 				22C19C17178DA1D000DE31C1 /* MobileCoreServices.framework */,
 				22C64EC01745353900C4D18E /* QuartzCore.framework */,
 				35BD56FF173A3B8000606275 /* AudioToolbox.framework */,
@@ -398,6 +432,26 @@
 			name = accelerometerDemo;
 			sourceTree = "<group>";
 		};
+		3526E11717CAF9E60065E360 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3526E11817CAFA2E0065E360 /* HotelAnnotation.h */,
+				3526E11917CAFA2E0065E360 /* HotelAnnotation.m */,
+				3526E11E17CB25C80065E360 /* HotelAnnotationView.h */,
+				3526E11F17CB25C80065E360 /* HotelAnnotationView.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3527181217978F6C005FA9CA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3527181317978F8F005FA9CA /* UserDefaultHelper.h */,
+				3527181417978F8F005FA9CA /* UserDefaultHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		354890741739FA8000E1EF4B /* shakeDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +476,16 @@
 				35BD56FD173A3B1F00606275 /* glass.wav */,
 			);
 			name = sound;
+			sourceTree = "<group>";
+		};
+		35F92C5317C74F7200D505CD /* MapViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3526E11717CAF9E60065E360 /* Model */,
+				35F92C5417C74FA800D505CD /* MapKitViewController.h */,
+				35F92C5517C74FA800D505CD /* MapKitViewController.m */,
+			);
+			name = MapViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +552,10 @@
 				22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */,
 				22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */,
 				22736AB417788F9000BADFE7 /* cover320x416.png in Resources */,
+				3526E11417CAF6950065E360 /* teagarden.png in Resources */,
+				3526E11517CAF6950065E360 /* teagarden@2x.png in Resources */,
+				3526E12317CB4C9C0065E360 /* map_bubble.png in Resources */,
+				3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +589,10 @@
 				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
 				2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */,
 				35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */,
+				3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */,
+				35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */,
+				3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */,
+				3526E12017CB25C80065E360 /* HotelAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

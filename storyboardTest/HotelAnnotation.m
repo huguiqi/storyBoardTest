@@ -10,4 +10,22 @@
 
 @implementation HotelAnnotation
 
+- (CLLocationCoordinate2D)coordinate;
+{
+    return self.thieCoordinate;
+}
+
+
+- (NSString *)title
+{
+    return self.place;
+}
+
+// optional
+- (NSString *)subtitle
+{
+    return self.place;
+}
+
+
 @end

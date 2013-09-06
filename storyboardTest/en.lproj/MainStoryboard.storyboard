@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -64,6 +64,36 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tay-b1-uMB">
+                                <rect key="frame" x="20" y="268" width="135" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="testUserDefault">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testUserDefault:" destination="kIm-ag-wVt" eventType="touchUpInside" id="0cO-2C-X0H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qSX-au-oke">
+                                <rect key="frame" x="20" y="333" width="90" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="mapView">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2sf-fw-9SK" kind="push" id="UGB-WM-PT6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1026,6 +1056,35 @@
             </objects>
             <point key="canvasLocation" x="3" y="-739"/>
         </scene>
+        <!--Map Kit View Controller-->
+        <scene sceneID="Rzj-TF-e2d">
+            <objects>
+                <viewController id="2sf-fw-9SK" customClass="MapKitViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tYv-rc-Z02">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="3ka-A6-ueO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="552"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2sf-fw-9SK" id="2Im-n6-QJ3"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tjz-1x-zAx"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="3ka-A6-ueO" id="TRi-xd-tom"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msN-Lw-CAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="-739"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BFlyCircle.png" width="200" height="200"/>
@@ -1033,120 +1092,12 @@
         <image name="Default.png" width="320" height="480"/>
         <image name="cover320x416.png" width="320" height="416"/>
     </resources>
-    <classes>
-        <class className="AboutGeometryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutGeometryViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="testCGRect:"/>
-                <relationship kind="action" name="testConvertPoint:"/>
-                <relationship kind="action" name="testMoveView:"/>
-                <relationship kind="action" name="testRect:"/>
-                <relationship kind="action" name="testTransform:"/>
-                <relationship kind="action" name="testTransformAnima:"/>
-                <relationship kind="outlet" name="pointView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="testView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="AccelerometerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AccelerometerViewController.h"/>
-        </class>
-        <class className="CrosswiseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrosswiseViewController.h"/>
-        </class>
-        <class className="IndexViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IndexViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="testMacAddress:"/>
-                <relationship kind="outlet" name="topView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="Item1ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Item1ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="compareDateDays:"/>
-                <relationship kind="action" name="openBaiduWebView"/>
-                <relationship kind="action" name="rangeArray:"/>
-                <relationship kind="action" name="readUserDefaults:"/>
-                <relationship kind="action" name="testDefine:"/>
-                <relationship kind="action" name="writeCacheToFile"/>
-                <relationship kind="action" name="writeToUserDefaults:"/>
-            </relationships>
-        </class>
-        <class className="Item2ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Item2ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="blockTest1:"/>
-                <relationship kind="action" name="blockTest2:"/>
-                <relationship kind="action" name="blockTest3:"/>
-                <relationship kind="action" name="blockTestForQueue:"/>
-                <relationship kind="outlet" name="blockLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="Item3ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Item3ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="testCameraPhoto:"/>
-            </relationships>
-        </class>
-        <class className="ShakeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ShakeViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="shadeView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="UIViewCenterViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewCenterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="testCenter:"/>
-            </relationships>
-        </class>
-        <class className="UIViewCurlUpOrDownViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewCurlUpOrDownViewController.h"/>
-        </class>
-        <class className="WFBarItemViewController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WFBarItemViewController.h"/>
-        </class>
-        <class className="WFCityListViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WFCityListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cityTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="WFLoginViewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WFLoginViewViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroupTap:"/>
-                <relationship kind="action" name="clickSomething:"/>
-                <relationship kind="action" name="showCityListView:"/>
-                <relationship kind="action" name="slideAgeChange:"/>
-                <relationship kind="action" name="textFieldDoneEditing:"/>
-                <relationship kind="action" name="toBarItemView:"/>
-                <relationship kind="action" name="toggleController:"/>
-                <relationship kind="action" name="turnSwitchEvent:"/>
-                <relationship kind="outlet" name="ageFiled" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="buttonOK" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="conditionView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="passwordFiled" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="switchOFF" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="switchON" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="userNameField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="WFScrollViewDemo" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WFScrollViewDemo.h"/>
-            <relationships>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Tqf-N3-fyY"/>
+        <segue reference="5JU-H3-JJ1"/>
     </inferredMetricsTieBreakers>
 </document>

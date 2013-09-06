@@ -125,7 +125,16 @@
 
 #pragma --mark tableView-titleForHeaderInSection 设置组标题
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    tableView.tableHeaderView.backgroundColor = [UIColor clearColor];
     return [self.keys objectAtIndex:section];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *headView =  [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 30)];
+    [headView setBackgroundColor:[UIColor clearColor]];
+    return headView;
+                         
 }
 
 

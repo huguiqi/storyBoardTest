@@ -8,6 +8,7 @@
 
 #import "IndexViewController.h"
 #import "MacAddress.h"
+#import "UserDefaultHelper.h"
 
 @interface IndexViewController ()
 
@@ -29,6 +30,33 @@
     NSLog(@"current macAddress:%@",[MacAddress currentAddress]);
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"current address %@",[MacAddress currentAddress] ] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alertView show];
+}
+
+-(IBAction)testUserDefault:(id)sender
+{
+    static const NSInteger N_ENTRIES = 26;
+    NSDictionary *asciiDict;
+    NSString *keyArray[N_ENTRIES];
+    NSNumber *valueArray[N_ENTRIES];
+    NSInteger i;
+    
+    for (i = 0; i < N_ENTRIES; i++) {
+        
+        char charValue = 'a' + i;
+        NSString *cstr = [NSString stringWithFormat:@"a%i",i ];
+        keyArray[i] = cstr;
+        valueArray[i] = [NSNumber numberWithChar:charValue];
+    }
+    
+    asciiDict = [NSDictionary dictionaryWithObjects:(id *)valueArray
+                                            forKeys:(id *)keyArray count:N_ENTRIES];
+    [UserDefaultHelper writeToCache:[asciiDict mutableCopy] key:@"myDefaultTest"];
+    
+    NSMutableDictionary *testDefaultDict = [UserDefaultHelper readFromCache:@"myDefaultTest"];
+    NSLog(@"----a0 is %@",[testDefaultDict objectForKey:@"a0"]);
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
