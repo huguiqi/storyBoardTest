@@ -72,6 +72,7 @@
 		3570AB6F18113C2000C851D2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB6E18113C2000C851D2 /* CoreTelephony.framework */; };
 		3570AB7118113C2F00C851D2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7018113C2F00C851D2 /* libstdc++.dylib */; };
 		3570AB7318113C3E00C851D2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7218113C3E00C851D2 /* libz.dylib */; };
+		3579CB791820B7B1008163A5 /* JJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579CB781820B7B1008163A5 /* JJNavigationBar.m */; };
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
@@ -190,6 +191,8 @@
 		3570AB6E18113C2000C851D2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3570AB7018113C2F00C851D2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		3570AB7218113C3E00C851D2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3579CB771820B7B1008163A5 /* JJNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNavigationBar.h; sourceTree = "<group>"; };
+		3579CB781820B7B1008163A5 /* JJNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNavigationBar.m; sourceTree = "<group>"; };
 		35A62CB1172A605000F1A367 /* topbar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_btn.png; sourceTree = "<group>"; };
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 		35BD56FD173A3B1F00606275 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				22A87859175E426F00E82C69 /* utils */,
 				35015172172BAF5C00D72B8C /* catearey */,
 				22FFBE81171477D900A3D396 /* fileManager */,
+				3579CB771820B7B1008163A5 /* JJNavigationBar.h */,
+				3579CB781820B7B1008163A5 /* JJNavigationBar.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -789,6 +794,7 @@
 				35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */,
 				3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */,
 				35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */,
+				3579CB791820B7B1008163A5 /* JJNavigationBar.m in Sources */,
 				3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */,
 				3526E12017CB25C80065E360 /* HotelAnnotationView.m in Sources */,
 			);
@@ -892,7 +898,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "storyboardTest/storyboardTest-Prefix.pch";
 				INFOPLIST_FILE = "storyboardTest/storyboardTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat,
@@ -920,7 +926,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "storyboardTest/storyboardTest-Prefix.pch";
 				INFOPLIST_FILE = "storyboardTest/storyboardTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat,
