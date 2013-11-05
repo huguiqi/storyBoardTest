@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ghd-BF-mco">
-                                <rect key="frame" x="131" y="267" width="78" height="35"/>
+                                <rect key="frame" x="121" y="236" width="78" height="35"/>
                                 <state key="normal" title="确定">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -159,6 +159,16 @@
                                 </state>
                                 <connections>
                                     <action selector="toBarItemView:" destination="2" eventType="touchUpInside" id="8Ar-3P-hSc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hGB-EU-bIi">
+                                <rect key="frame" x="60" y="283" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="navigationBar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNavigationBar:" destination="2" eventType="touchUpInside" id="JqV-7N-Ip7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -272,7 +282,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1PI-KS-MqA" kind="push" id="jOs-ar-A5B"/>
+                                    <segue destination="1PI-KS-MqA" kind="modal" id="jOs-ar-A5B"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="blE-AK-VpZ">

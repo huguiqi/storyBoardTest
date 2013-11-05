@@ -45,5 +45,7 @@
 
 -(IBAction)toBarItemView:(id)sender;
 
+-(IBAction)showNavigationBar:(id)sender;
+
   
 @end

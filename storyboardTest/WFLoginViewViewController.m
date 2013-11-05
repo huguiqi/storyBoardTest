@@ -12,6 +12,9 @@
 #import "WFBarItemViewController.h"
 
 @interface WFLoginViewViewController ()
+{
+    BOOL isHidden;
+}
 
 @end
 
@@ -27,6 +30,12 @@
     self.cityListViewController.cityDelegate = self;
     [self.cityListViewController.view addGestureRecognizer:tapGR];
 
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
 
 -(void)noticePushBarController:(WFBarItemViewController *)barItemController{
@@ -136,6 +145,16 @@
     [self.navigationController pushViewController:barItemViewController animated:YES];
 }
 
+
+-(IBAction)showNavigationBar:(id)sender
+{
+    if(self.navigationController.navigationBarHidden == YES){
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }else{
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+    
+}
 
 
 @end
