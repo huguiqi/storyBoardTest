@@ -76,6 +76,7 @@
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
+		35CDBFD61828CC16001B1A6E /* WFJJViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
@@ -197,6 +198,8 @@
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 		35BD56FD173A3B1F00606275 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		35BD56FF173A3B8000606275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		35CDBFD41828CC16001B1A6E /* WFJJViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJViewViewController.h; sourceTree = "<group>"; };
+		35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJJViewViewController.m; sourceTree = "<group>"; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
 		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				22FFBE81171477D900A3D396 /* fileManager */,
 				3579CB771820B7B1008163A5 /* JJNavigationBar.h */,
 				3579CB781820B7B1008163A5 /* JJNavigationBar.m */,
+				35CDBFD41828CC16001B1A6E /* WFJJViewViewController.h */,
+				35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -791,6 +796,7 @@
 				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
 				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
 				2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */,
+				35CDBFD61828CC16001B1A6E /* WFJJViewViewController.m in Sources */,
 				35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */,
 				3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */,
 				35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */,
