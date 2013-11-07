@@ -76,7 +76,9 @@
 		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
 		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
-		35CDBFD61828CC16001B1A6E /* WFJJViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */; };
+		35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */; };
+		35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */; };
+		35CDBFDC1828CDC6001B1A6E /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
@@ -198,8 +200,12 @@
 		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 		35BD56FD173A3B1F00606275 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		35BD56FF173A3B8000606275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		35CDBFD41828CC16001B1A6E /* WFJJViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJViewViewController.h; sourceTree = "<group>"; };
-		35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJJViewViewController.m; sourceTree = "<group>"; };
+		35CDBFD41828CC16001B1A6E /* WFJJNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJNavigationViewController.h; sourceTree = "<group>"; };
+		35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJJNavigationViewController.m; sourceTree = "<group>"; };
+		35CDBFD71828CCC5001B1A6E /* WFJJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJViewController.h; sourceTree = "<group>"; };
+		35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJJViewController.m; sourceTree = "<group>"; };
+		35CDBFDA1828CDC6001B1A6E /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
 		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
@@ -245,8 +251,10 @@
 				22FFBE81171477D900A3D396 /* fileManager */,
 				3579CB771820B7B1008163A5 /* JJNavigationBar.h */,
 				3579CB781820B7B1008163A5 /* JJNavigationBar.m */,
-				35CDBFD41828CC16001B1A6E /* WFJJViewViewController.h */,
-				35CDBFD51828CC16001B1A6E /* WFJJViewViewController.m */,
+				35CDBFD41828CC16001B1A6E /* WFJJNavigationViewController.h */,
+				35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */,
+				35CDBFD71828CCC5001B1A6E /* WFJJViewController.h */,
+				35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 		22A87859175E426F00E82C69 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				35CDBFDA1828CDC6001B1A6E /* DeviceInfo.h */,
+				35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */,
 				3527181217978F6C005FA9CA /* Helper */,
 				22A8785A175E429600E82C69 /* MacAddress.h */,
 				22A8785B175E429600E82C69 /* MacAddress.m */,
@@ -789,6 +799,7 @@
 				3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */,
 				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
 				3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */,
+				35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */,
 				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
 				22A8785C175E429600E82C69 /* MacAddress.m in Sources */,
 				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
@@ -796,9 +807,10 @@
 				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
 				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
 				2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */,
-				35CDBFD61828CC16001B1A6E /* WFJJViewViewController.m in Sources */,
+				35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */,
 				35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */,
 				3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */,
+				35CDBFDC1828CDC6001B1A6E /* DeviceInfo.m in Sources */,
 				35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */,
 				3579CB791820B7B1008163A5 /* JJNavigationBar.m in Sources */,
 				3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  WFJJViewViewController.h
+//  WFJJViewController.h
 //  storyboardTest
 //
 //  Created by 胡 桂祁 on 11/5/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WFJJViewViewController : UINavigationController
+@interface WFJJViewController : UIViewController
 
 @end
