@@ -35,7 +35,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
 }
 
 -(void)noticePushBarController:(WFBarItemViewController *)barItemController{

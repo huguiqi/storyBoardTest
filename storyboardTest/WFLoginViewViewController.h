@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "WFCityListViewController.h"
+#import "WFJJViewController.h"
 
-@interface WFLoginViewViewController : UIViewController <CityListViewDelegate>
+@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate>
 {
     CGPoint startLocation;
 }

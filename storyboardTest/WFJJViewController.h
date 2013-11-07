@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WFJJNavigationViewController.h"
 
-@interface WFJJViewController : UIViewController
+@interface WFJJViewController : UIViewController<NavigationBackDelegate>
 
 @end

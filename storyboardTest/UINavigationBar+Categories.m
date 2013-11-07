@@ -8,6 +8,7 @@
 
 #define _USE_CUSTOM_NAV_
 #define __NAVBAR_USE_IMAGE__
+#define _ISIPHONE_ (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
 #import <QuartzCore/QuartzCore.h>
 #import "UINavigationBar+Categories.h"
@@ -47,8 +48,6 @@
     UIButton *BackBtn = [[UIButton alloc] initWithFrame:CGRectMake(0.0, 0.0, 65.0, 30.0)];
     [BackBtn setBackgroundImage:[UIImage imageNamed:@"blueBackBtn.png"] forState:UIControlStateNormal];
     [BackBtn setBackgroundImage:[UIImage imageNamed:@"blueBackBtnPressed.png"] forState:UIControlStateHighlighted];
-    //[BackBtn.titleLabel setFont:[UIFont systemFontOfSize: 14]];
-    //[BackBtn setTitle:[NSString stringWithFormat:@" %@", title] forState:UIControlStateNormal];
     [BackBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *BackBarBtn = [[UIBarButtonItem alloc] initWithCustomView:BackBtn];
     target.navigationItem.leftBarButtonItem = BackBarBtn;

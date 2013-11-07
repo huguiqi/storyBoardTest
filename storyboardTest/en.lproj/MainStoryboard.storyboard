@@ -790,12 +790,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="998" contentMode="center" image="BFlyCircleMaroon.png" id="kdB-Mb-1jM" userLabel="Maroon Butterfly">
-                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <rect key="frame" x="60.000000000000007" y="40" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="center" image="BFlyCircle.png" id="avN-Ap-irv" userLabel="Purple Butterfly">
-                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <rect key="frame" x="60.000000000000007" y="40" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </imageView>
@@ -838,10 +838,10 @@
             </objects>
             <point key="canvasLocation" x="737" y="-64"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="6cr-bE-Rgq">
             <objects>
-                <navigationController definesPresentationContext="YES" id="1Fn-rb-Bve" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" id="1Fn-rb-Bve" customClass="WFJJNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fyA-Am-NCj">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.62745098040000002" green="0.54901960780000003" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>

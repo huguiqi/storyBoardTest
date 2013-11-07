@@ -19,7 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithWhite:0.962 alpha:1.000];
     self.navigationItem.hidesBackButton = YES;
 }
 

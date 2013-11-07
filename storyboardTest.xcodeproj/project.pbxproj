@@ -49,6 +49,7 @@
 		3526E12317CB4C9C0065E360 /* map_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12117CB4C9C0065E360 /* map_bubble.png */; };
 		3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12217CB4C9C0065E360 /* map_bubble@2x.png */; };
 		3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3527181417978F8F005FA9CA /* UserDefaultHelper.m */; };
+		3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */; };
 		3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354890791739FC7300E1EF4B /* ShakeViewController.m */; };
 		35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35603FD6178C0100000D0BB5 /* CustomeSugue.m */; };
 		3570AB141811281A00C851D2 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB131811281A00C851D2 /* libMobClickLibrary.a */; };
@@ -153,6 +154,8 @@
 		3526E12217CB4C9C0065E360 /* map_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_bubble@2x.png"; sourceTree = "<group>"; };
 		3527181317978F8F005FA9CA /* UserDefaultHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultHelper.h; sourceTree = "<group>"; };
 		3527181417978F8F005FA9CA /* UserDefaultHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultHelper.m; sourceTree = "<group>"; };
+		3540AEF4182B7D1C006B12FD /* UINavigationBar+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Categories.h"; sourceTree = "<group>"; };
+		3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Categories.m"; sourceTree = "<group>"; };
 		354890781739FC7300E1EF4B /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		354890791739FC7300E1EF4B /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		35603FD5178C0100000D0BB5 /* CustomeSugue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeSugue.h; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 		35015172172BAF5C00D72B8C /* catearey */ = {
 			isa = PBXGroup;
 			children = (
+				3540AEF4182B7D1C006B12FD /* UINavigationBar+Categories.h */,
+				3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */,
 				35015173172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.h */,
 				35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */,
 			);
@@ -795,6 +800,7 @@
 				22FFBE84171477F900A3D396 /* FileManager.m in Sources */,
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,
 				35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */,
+				3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */,
 				35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */,
 				3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */,
 				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
