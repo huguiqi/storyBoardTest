@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "WFJJViewController.h"
 
-@interface MapKitViewController : UIViewController<MKMapViewDelegate>
+@interface MapKitViewController :WFJJViewController <MKMapViewDelegate>
 
 @property(nonatomic,weak) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) NSMutableArray *mapAnnotations;
