@@ -16,6 +16,7 @@
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
 		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
 		22A87860175E437800E82C69 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785F175E437800E82C69 /* IndexViewController.m */; };
+		22B39A81182BECFE0027B360 /* FloatTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B39A80182BECFE0027B360 /* FloatTable.m */; };
 		22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC618B175653520079C4AE /* AboutGeometryViewController.m */; };
 		22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC83791770B0A900E71986 /* UIView-ViewFrameGeometry.m */; };
 		22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BC837C1770B26700E71986 /* UIViewCenterViewController.m */; };
@@ -103,6 +104,8 @@
 		22A8785B175E429600E82C69 /* MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddress.m; sourceTree = "<group>"; };
 		22A8785E175E437800E82C69 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		22A8785F175E437800E82C69 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		22B39A7F182BECFE0027B360 /* FloatTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatTable.h; sourceTree = "<group>"; };
+		22B39A80182BECFE0027B360 /* FloatTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatTable.m; sourceTree = "<group>"; };
 		22BC618A175653520079C4AE /* AboutGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutGeometryViewController.h; sourceTree = "<group>"; };
 		22BC618B175653520079C4AE /* AboutGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutGeometryViewController.m; sourceTree = "<group>"; };
 		22BC83781770B0A900E71986 /* UIView-ViewFrameGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView-ViewFrameGeometry.h"; sourceTree = "<group>"; };
@@ -505,6 +508,8 @@
 			children = (
 				3540AEF7182B8E0E006B12FD /* FloatDemoViewController.h */,
 				3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */,
+				22B39A7F182BECFE0027B360 /* FloatTable.h */,
+				22B39A80182BECFE0027B360 /* FloatTable.m */,
 			);
 			name = floatView;
 			sourceTree = "<group>";
@@ -795,6 +800,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FECF64164FFCA600720705 /* main.m in Sources */,
+				22B39A81182BECFE0027B360 /* FloatTable.m in Sources */,
 				22FECF68164FFCA600720705 /* WFAppDelegate.m in Sources */,
 				22FECF74164FFCA600720705 /* WFViewController.m in Sources */,
 				22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */,

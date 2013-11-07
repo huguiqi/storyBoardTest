@@ -10,4 +10,6 @@
 
 @interface FloatDemoViewController : WFJJViewController
 
+@property(nonatomic,weak) IBOutlet UIView *floatView;
+
 @end
