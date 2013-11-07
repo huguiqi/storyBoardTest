@@ -162,13 +162,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hGB-EU-bIi">
-                                <rect key="frame" x="60" y="283" width="46" height="30"/>
+                                <rect key="frame" x="55" y="278" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="navigationBar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="showNavigationBar:" destination="2" eventType="touchUpInside" id="JqV-7N-Ip7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="StB-JJ-IAD">
+                                <rect key="frame" x="58" y="310" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="浮动效果">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FnS-4f-4vb" kind="push" id="WxR-aN-ZQu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="512"/>
+            <point key="canvasLocation" x="68" y="255"/>
         </scene>
         <!--Item2 View Controller - blockTest-->
         <scene sceneID="k5F-ey-GYh">
@@ -597,7 +607,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TU2-TW-1iQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="512"/>
+            <point key="canvasLocation" x="550" y="255"/>
         </scene>
         <!--View Controller - TableViewTest-->
         <scene sceneID="v6C-LM-YW3">
@@ -631,6 +641,30 @@
             </objects>
             <point key="canvasLocation" x="1103" y="1739"/>
         </scene>
+        <!--Float Demo View Controller-->
+        <scene sceneID="DME-0Z-N62">
+            <objects>
+                <viewController id="FnS-4f-4vb" customClass="FloatDemoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdb-dp-LUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3F7-C4-qVB">
+                                <rect key="frame" x="85" y="128" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="效果1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aE4-vn-8dP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1P-jk-xb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="952"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="YP7-8A-lem">
             <objects>
@@ -657,7 +691,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39W-2E-i8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="1407"/>
+            <point key="canvasLocation" x="-473" y="703"/>
         </scene>
         <!--Item3 View Controller - 测试代码-->
         <scene sceneID="5E1-6I-YlK">
@@ -836,7 +870,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ra-G5-Wwo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637" y="-558"/>
+            <point key="canvasLocation" x="550" y="-565"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="6cr-bE-Rgq">
