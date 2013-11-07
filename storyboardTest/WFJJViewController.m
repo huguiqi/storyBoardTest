@@ -25,7 +25,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-   
     ((WFJJNavigationViewController *)self.navigationController).backDelegate = self;
     [self.navigationController setNavigationBarHidden:NO animated:animated];
 }
