@@ -922,8 +922,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI,
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "storyboardTest/storyboardTest-Prefix.pch";
@@ -931,11 +931,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/Wechat,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMAnalytics,
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat\"",
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/Wechat\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -950,8 +950,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI,
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/TencentOpenAPI\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "storyboardTest/storyboardTest-Prefix.pch";
@@ -959,11 +959,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/UMSocial_Sdk_3.1,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/Wechat,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMSocial_Sdk_3.1,
-					/Users/huguiqi/Public/workspace/github/storyBoardTest/storyboardTest/Library/UMAnalytics,
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1/frameworks/Wechat\"",
+					"\"$(SRCROOT)/storyboardTest/UMSocial_Sdk_3.1\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1/frameworks/Wechat\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMSocial_Sdk_3.1\"",
+					"\"$(SRCROOT)/storyboardTest/Library/UMAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
