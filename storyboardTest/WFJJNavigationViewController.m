@@ -8,6 +8,7 @@
 
 #import "WFJJNavigationViewController.h"
 #import "DeviceInfo.h"
+#import "UINavigationBar+Categories.h"
 
 @interface WFJJNavigationViewController ()
 

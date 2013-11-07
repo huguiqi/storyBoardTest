@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol NavigationBackDelegate <NSObject>
+
+-(void)back;
+
+@end
+
 @interface WFJJNavigationViewController : UINavigationController<UIActionSheetDelegate>
 
 
