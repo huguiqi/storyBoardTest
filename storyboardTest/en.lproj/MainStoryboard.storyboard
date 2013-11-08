@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Index View Controller - 主页-->
@@ -704,7 +704,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="floatEffect1:" destination="FnS-4f-4vb" eventType="touchUpInside" id="qtA-cC-Dkc"/>
+                                    <action selector="floatViewClick:" destination="Cq1-Sh-a9D" eventType="touchUpInside" id="PZj-mK-iqR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YT5-BZ-c0T">
@@ -715,9 +715,30 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view hidden="YES" alpha="0.10000000000000001" contentMode="scaleToFill" id="Cq1-Sh-a9D">
-                                <rect key="frame" x="-40" y="151" width="180" height="20"/>
+                            <view hidden="YES" alpha="0.10000000000000001" contentMode="scaleToFill" id="Cq1-Sh-a9D" customClass="FloatViewControl">
+                                <rect key="frame" x="50" y="151" width="180" height="132"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="enI-FD-czl">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="132"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FloatViewCell" id="PIx-Ku-iBq">
+                                                <rect key="frame" x="0.0" y="1" width="180" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PIx-Ku-iBq" id="fAE-Ka-nca">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Cq1-Sh-a9D" id="rKo-CM-m2r"/>
+                                            <outlet property="delegate" destination="Cq1-Sh-a9D" id="UXz-xA-wr0"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -725,6 +746,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="aE4-vn-8dP"/>
                     <connections>
+                        <outlet property="floatEffectBtn1" destination="3F7-C4-qVB" id="cGF-4P-LAu"/>
                         <outlet property="floatView" destination="Cq1-Sh-a9D" id="QJY-Fh-EA4"/>
                     </connections>
                 </viewController>

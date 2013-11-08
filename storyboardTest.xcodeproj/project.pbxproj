@@ -56,6 +56,7 @@
 		3540AF01182C74D4006B12FD /* hotel-topbar-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AEFF182C74D4006B12FD /* hotel-topbar-back@2x.png */; };
 		3540AF04182C74EC006B12FD /* hotel-topbar-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AF02182C74EC006B12FD /* hotel-topbar-phone.png */; };
 		3540AF05182C74EC006B12FD /* hotel-topbar-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AF03182C74EC006B12FD /* hotel-topbar-phone@2x.png */; };
+		3540AF08182C79CB006B12FD /* FloatViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AF07182C79CB006B12FD /* FloatViewControl.m */; };
 		3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354890791739FC7300E1EF4B /* ShakeViewController.m */; };
 		35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35603FD6178C0100000D0BB5 /* CustomeSugue.m */; };
 		3570AB141811281A00C851D2 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB131811281A00C851D2 /* libMobClickLibrary.a */; };
@@ -168,6 +169,8 @@
 		3540AEFF182C74D4006B12FD /* hotel-topbar-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-back@2x.png"; sourceTree = "<group>"; };
 		3540AF02182C74EC006B12FD /* hotel-topbar-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-phone.png"; sourceTree = "<group>"; };
 		3540AF03182C74EC006B12FD /* hotel-topbar-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-phone@2x.png"; sourceTree = "<group>"; };
+		3540AF06182C79CB006B12FD /* FloatViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatViewControl.h; sourceTree = "<group>"; };
+		3540AF07182C79CB006B12FD /* FloatViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatViewControl.m; sourceTree = "<group>"; };
 		354890781739FC7300E1EF4B /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		354890791739FC7300E1EF4B /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		35603FD5178C0100000D0BB5 /* CustomeSugue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeSugue.h; sourceTree = "<group>"; };
@@ -516,6 +519,8 @@
 				3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */,
 				22B39A7F182BECFE0027B360 /* FloatTable.h */,
 				22B39A80182BECFE0027B360 /* FloatTable.m */,
+				3540AF06182C79CB006B12FD /* FloatViewControl.h */,
+				3540AF07182C79CB006B12FD /* FloatViewControl.m */,
 			);
 			name = floatView;
 			sourceTree = "<group>";
@@ -833,6 +838,7 @@
 				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
 				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
 				2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */,
+				3540AF08182C79CB006B12FD /* FloatViewControl.m in Sources */,
 				35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */,
 				35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */,
 				3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */,

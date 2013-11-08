@@ -7,9 +7,10 @@
 //
 
 #import "WFJJViewController.h"
+#import "FloatViewControl.h"
 
-@interface FloatDemoViewController : WFJJViewController
+@interface FloatDemoViewController : WFJJViewController<FloatViewDelegate>
 
-@property(nonatomic,weak) IBOutlet UIView *floatView;
-
+@property(nonatomic,weak) IBOutlet FloatViewControl *floatView;
+@property(nonatomic,weak) IBOutlet UIButton *floatEffectBtn1;
 @end
