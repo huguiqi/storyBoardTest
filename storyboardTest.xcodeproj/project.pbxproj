@@ -52,6 +52,10 @@
 		3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3527181417978F8F005FA9CA /* UserDefaultHelper.m */; };
 		3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */; };
 		3540AEF9182B8E0E006B12FD /* FloatDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */; };
+		3540AF00182C74D4006B12FD /* hotel-topbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AEFE182C74D4006B12FD /* hotel-topbar-back.png */; };
+		3540AF01182C74D4006B12FD /* hotel-topbar-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AEFF182C74D4006B12FD /* hotel-topbar-back@2x.png */; };
+		3540AF04182C74EC006B12FD /* hotel-topbar-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AF02182C74EC006B12FD /* hotel-topbar-phone.png */; };
+		3540AF05182C74EC006B12FD /* hotel-topbar-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AF03182C74EC006B12FD /* hotel-topbar-phone@2x.png */; };
 		3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354890791739FC7300E1EF4B /* ShakeViewController.m */; };
 		35603FD7178C0100000D0BB5 /* CustomeSugue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35603FD6178C0100000D0BB5 /* CustomeSugue.m */; };
 		3570AB141811281A00C851D2 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB131811281A00C851D2 /* libMobClickLibrary.a */; };
@@ -76,8 +80,6 @@
 		3570AB7118113C2F00C851D2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7018113C2F00C851D2 /* libstdc++.dylib */; };
 		3570AB7318113C3E00C851D2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7218113C3E00C851D2 /* libz.dylib */; };
 		3579CB791820B7B1008163A5 /* JJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579CB781820B7B1008163A5 /* JJNavigationBar.m */; };
-		35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB1172A605000F1A367 /* topbar_btn.png */; };
-		35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A62CB2172A605000F1A367 /* topbar_btn@2x.png */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
 		35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */; };
 		35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */; };
@@ -162,6 +164,10 @@
 		3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Categories.m"; sourceTree = "<group>"; };
 		3540AEF7182B8E0E006B12FD /* FloatDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatDemoViewController.h; sourceTree = "<group>"; };
 		3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatDemoViewController.m; sourceTree = "<group>"; };
+		3540AEFE182C74D4006B12FD /* hotel-topbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-back.png"; sourceTree = "<group>"; };
+		3540AEFF182C74D4006B12FD /* hotel-topbar-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-back@2x.png"; sourceTree = "<group>"; };
+		3540AF02182C74EC006B12FD /* hotel-topbar-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-phone.png"; sourceTree = "<group>"; };
+		3540AF03182C74EC006B12FD /* hotel-topbar-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-topbar-phone@2x.png"; sourceTree = "<group>"; };
 		354890781739FC7300E1EF4B /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
 		354890791739FC7300E1EF4B /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
 		35603FD5178C0100000D0BB5 /* CustomeSugue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeSugue.h; sourceTree = "<group>"; };
@@ -205,8 +211,6 @@
 		3570AB7218113C3E00C851D2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3579CB771820B7B1008163A5 /* JJNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNavigationBar.h; sourceTree = "<group>"; };
 		3579CB781820B7B1008163A5 /* JJNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNavigationBar.m; sourceTree = "<group>"; };
-		35A62CB1172A605000F1A367 /* topbar_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_btn.png; sourceTree = "<group>"; };
-		35A62CB2172A605000F1A367 /* topbar_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar_btn@2x.png"; sourceTree = "<group>"; };
 		35BD56FD173A3B1F00606275 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		35BD56FF173A3B8000606275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		35CDBFD41828CC16001B1A6E /* WFJJNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJNavigationViewController.h; sourceTree = "<group>"; };
@@ -371,6 +375,10 @@
 		22FB90931710752E007A3933 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				3540AF02182C74EC006B12FD /* hotel-topbar-phone.png */,
+				3540AF03182C74EC006B12FD /* hotel-topbar-phone@2x.png */,
+				3540AEFE182C74D4006B12FD /* hotel-topbar-back.png */,
+				3540AEFF182C74D4006B12FD /* hotel-topbar-back@2x.png */,
 				3526E12117CB4C9C0065E360 /* map_bubble.png */,
 				3526E12217CB4C9C0065E360 /* map_bubble@2x.png */,
 				3526E11217CAF6950065E360 /* teagarden.png */,
@@ -378,8 +386,6 @@
 				22736AAF17788F9000BADFE7 /* BFlyCircle.png */,
 				22736AB017788F9000BADFE7 /* cover 480x300-take2.png */,
 				22736AB117788F9000BADFE7 /* cover320x416.png */,
-				35A62CB1172A605000F1A367 /* topbar_btn.png */,
-				35A62CB2172A605000F1A367 /* topbar_btn@2x.png */,
 				22FB9094171076D9007A3933 /* IMG_1142.JPG */,
 			);
 			name = img;
@@ -763,6 +769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3540AF05182C74EC006B12FD /* hotel-topbar-phone@2x.png in Resources */,
 				3570AB6818113B4A00C851D2 /* UMSShareListController.xib in Resources */,
 				3570AB6118113B4A00C851D2 /* UMSCommentDetailController.xib in Resources */,
 				3570AB6718113B4A00C851D2 /* UMSnsAccountViewController.xib in Resources */,
@@ -774,15 +781,16 @@
 				22FECF6E164FFCA600720705 /* Default-568h@2x.png in Resources */,
 				22FECF71164FFCA600720705 /* MainStoryboard.storyboard in Resources */,
 				22FB9095171076D9007A3933 /* IMG_1142.JPG in Resources */,
+				3540AF04182C74EC006B12FD /* hotel-topbar-phone.png in Resources */,
 				3570AB6318113B4A00C851D2 /* UMSCommentInputControlleriPad.xib in Resources */,
+				3540AF01182C74D4006B12FD /* hotel-topbar-back@2x.png in Resources */,
 				3570AB6918113B4A00C851D2 /* UMSocialSDKResourcesNew.bundle in Resources */,
-				35A62CB3172A605000F1A367 /* topbar_btn.png in Resources */,
-				35A62CB4172A605000F1A367 /* topbar_btn@2x.png in Resources */,
 				35BD56FE173A3B1F00606275 /* glass.wav in Resources */,
 				3570AB5C18113B4A00C851D2 /* UMSocialLocalizable.strings in Resources */,
 				22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */,
 				3570AB6518113B4A00C851D2 /* UMShareEditViewControlleriPad.xib in Resources */,
 				3570AB6418113B4A00C851D2 /* UMShareEditViewController.xib in Resources */,
+				3540AF00182C74D4006B12FD /* hotel-topbar-back.png in Resources */,
 				22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */,
 				22736AB417788F9000BADFE7 /* cover320x416.png in Resources */,
 				3526E11417CAF6950065E360 /* teagarden.png in Resources */,
