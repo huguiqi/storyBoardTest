@@ -1,6 +1,6 @@
 //
 //  FloatViewControl.h
-//  storyboardTest
+//  JinJiangTravalPlus
 //
 //  Created by 胡 桂祁 on 11/8/13.
 //  Copyright (c) 2013 huguiqi. All rights reserved.
@@ -10,7 +10,7 @@
 
 @protocol FloatViewDelegate <NSObject>
 
--(void)selectRow:(NSString *)text;
+-(void)selectRow:(id)obj;
 
 @end
 
@@ -20,6 +20,9 @@
 
 @property (nonatomic,strong) NSIndexPath *lastIndexPath;
 
+@property(nonatomic,weak) IBOutlet UITableView *tableView;
+
+@property(nonatomic,strong) NSMutableArray *elems;
 
 -(IBAction)floatViewClick:(id)sender;
 

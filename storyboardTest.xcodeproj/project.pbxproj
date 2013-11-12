@@ -42,6 +42,7 @@
 		35015175172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 35015174172BAFD100D72B8C /* NSCalendar+NSCalendar_Category.m */; };
 		3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */; };
 		3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501D1211737A737002F74D6 /* AccelerometerViewController.m */; };
+		35166F6E1831C8A400F82BAA /* FloatViewObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 35166F6D1831C8A400F82BAA /* FloatViewObj.m */; };
 		3526E11417CAF6950065E360 /* teagarden.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E11217CAF6950065E360 /* teagarden.png */; };
 		3526E11517CAF6950065E360 /* teagarden@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E11317CAF6950065E360 /* teagarden@2x.png */; };
 		3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3526E11917CAFA2E0065E360 /* HotelAnnotation.m */; };
@@ -150,6 +151,8 @@
 		3501D11E1737A6B1002F74D6 /* AccelerometerFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerFilter.m; sourceTree = "<group>"; };
 		3501D1201737A737002F74D6 /* AccelerometerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerViewController.h; sourceTree = "<group>"; };
 		3501D1211737A737002F74D6 /* AccelerometerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerViewController.m; sourceTree = "<group>"; };
+		35166F6C1831C8A400F82BAA /* FloatViewObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatViewObj.h; sourceTree = "<group>"; };
+		35166F6D1831C8A400F82BAA /* FloatViewObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatViewObj.m; sourceTree = "<group>"; };
 		3526E11217CAF6950065E360 /* teagarden.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teagarden.png; sourceTree = "<group>"; };
 		3526E11317CAF6950065E360 /* teagarden@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teagarden@2x.png"; sourceTree = "<group>"; };
 		3526E11817CAFA2E0065E360 /* HotelAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelAnnotation.h; sourceTree = "<group>"; };
@@ -515,6 +518,7 @@
 		22FECF7F164FFDF600720705 /* floatView */ = {
 			isa = PBXGroup;
 			children = (
+				35166F6B1831C89A00F82BAA /* Model */,
 				3540AEF7182B8E0E006B12FD /* FloatDemoViewController.h */,
 				3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */,
 				22B39A7F182BECFE0027B360 /* FloatTable.h */,
@@ -554,6 +558,15 @@
 				3501D1211737A737002F74D6 /* AccelerometerViewController.m */,
 			);
 			name = accelerometerDemo;
+			sourceTree = "<group>";
+		};
+		35166F6B1831C89A00F82BAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35166F6C1831C8A400F82BAA /* FloatViewObj.h */,
+				35166F6D1831C8A400F82BAA /* FloatViewObj.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		3526E11717CAF9E60065E360 /* Model */ = {
@@ -817,6 +830,7 @@
 				22FECF68164FFCA600720705 /* WFAppDelegate.m in Sources */,
 				22FECF74164FFCA600720705 /* WFViewController.m in Sources */,
 				22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */,
+				35166F6E1831C8A400F82BAA /* FloatViewObj.m in Sources */,
 				22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */,
 				2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */,
 				22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */,

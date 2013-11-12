@@ -913,12 +913,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="998" contentMode="center" image="BFlyCircleMaroon.png" id="kdB-Mb-1jM" userLabel="Maroon Butterfly">
-                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <rect key="frame" x="60.000000000000007" y="40" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </imageView>
                                     <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="center" image="BFlyCircle.png" id="avN-Ap-irv" userLabel="Purple Butterfly">
-                                        <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                        <rect key="frame" x="60.000000000000007" y="40" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </imageView>
