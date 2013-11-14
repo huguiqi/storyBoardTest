@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WFJJViewController.h"
 
-@interface WFScrollViewDemo : UIViewController<UIScrollViewDelegate>
+@interface WFScrollViewDemo : WFJJViewController<UIScrollViewDelegate>
 
 @property (nonatomic,weak) IBOutlet UIImageView *imageView;
 @property (nonatomic,weak) IBOutlet UIScrollView *scrollView;
