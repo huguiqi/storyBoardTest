@@ -37,12 +37,12 @@
     
 //}
 
--(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-     NSLog(@"ContentOffset  x is  %f,yis %f",scrollView.contentOffset.x,scrollView.contentOffset.y);
-    
-     self.scrollView.frame = CGRectMake(scrollFrame.origin.x, scrollFrame.origin.y - scrollView.contentOffset.y, scrollFrame.size.width, scrollFrame.size.height);
-}
+//-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+//{
+//     NSLog(@"ContentOffset  x is  %f,yis %f",scrollView.contentOffset.x,scrollView.contentOffset.y);
+//    
+//     self.scrollView.frame = CGRectMake(scrollFrame.origin.x, scrollFrame.origin.y - scrollView.contentOffset.y, scrollFrame.size.width, scrollFrame.size.height);
+//}
 
 - (void)didReceiveMemoryWarning
 {
