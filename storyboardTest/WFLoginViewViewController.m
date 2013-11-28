@@ -29,6 +29,8 @@
 //        tapGR.delegate = self.cityListViewController;
     self.cityListViewController.cityDelegate = self;
     [self.cityListViewController.view addGestureRecognizer:tapGR];
+    
+    //a way of  custom keyboardWindow
     passwordFiled.delegate = self;
 }
 
