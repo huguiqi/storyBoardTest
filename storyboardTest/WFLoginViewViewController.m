@@ -29,7 +29,7 @@
 //        tapGR.delegate = self.cityListViewController;
     self.cityListViewController.cityDelegate = self;
     [self.cityListViewController.view addGestureRecognizer:tapGR];
-
+    passwordFiled.delegate = self;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -41,6 +41,47 @@
     [self.navigationController pushViewController:barItemController animated:YES];
 }
 
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self performSelector:@selector(addDoneButtonToKeyboard) withObject:nil afterDelay:0.1];
+}
+
+#pragma keyboard custom
+- (void)addDoneButtonToKeyboard {
+    // create custom button
+	UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    doneButton.tag=8;
+	doneButton.frame = CGRectMake(0, 0, 106, 53);
+	doneButton.adjustsImageWhenHighlighted = NO;
+	[doneButton setTitle:@"完成" forState:UIControlStateNormal];
+    [doneButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //    [doneButton setImage:nimg forState:UIControlStateNormal];
+    //    [doneButton setImage:himg forState:UIControlStateHighlighted];
+	[doneButton addTarget:self action:@selector(done) forControlEvents:UIControlEventTouchUpInside];
+	// locate keyboard view
+    int cnt=[[UIApplication sharedApplication] windows].count;
+	UIWindow* keyboardWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:cnt-1];
+    doneButton.frame = CGRectMake(0, keyboardWindow.frame.size.height-53, 106, 53);
+    [keyboardWindow addSubview:doneButton];
+    
+    NSLog(@"keyboard:%@ %@ %@",NSStringFromCGRect(keyboardWindow.frame),NSStringFromCGRect(doneButton.frame),keyboardWindow.subviews);
+}
+
+- (void) done   {
+    [passwordFiled resignFirstResponder];
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+    [self removeButtonFromKeyboard];
+}
+
+- (void)removeButtonFromKeyboard {
+    // locate keyboard view
+    int cnt=[[UIApplication sharedApplication] windows].count;
+	UIWindow* keyboardWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:cnt-1];
+    [[keyboardWindow viewWithTag:8] removeFromSuperview];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

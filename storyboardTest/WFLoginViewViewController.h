@@ -10,7 +10,7 @@
 #import "WFCityListViewController.h"
 #import "WFJJViewController.h"
 
-@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate>
+@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate,UITextFieldDelegate>
 {
     CGPoint startLocation;
 }
