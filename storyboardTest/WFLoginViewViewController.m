@@ -10,10 +10,14 @@
 #import "WFLoginViewViewController.h"
 #import "WFCityListViewController.h"
 #import "WFBarItemViewController.h"
+#import "DeviceInfo.h"
+
+#define RGB UIColor =
 
 @interface WFLoginViewViewController ()
 {
     BOOL isHidden;
+    UIColor *keyboardColor;
 }
 
 @end
@@ -32,6 +36,7 @@
     
     //a way of  custom keyboardWindow
     passwordFiled.delegate = self;
+    keyboardColor = [DeviceInfo systemVersion]<7.0?[UIColor colorWithRed:0.3725 green:0.4000 blue:0.4510 alpha:1]:[UIColor whiteColor];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -60,7 +65,10 @@
     [doneButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     //    [doneButton setImage:nimg forState:UIControlStateNormal];
     //    [doneButton setImage:himg forState:UIControlStateHighlighted];
-	[doneButton addTarget:self action:@selector(done) forControlEvents:UIControlEventTouchUpInside];
+    
+	[doneButton addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
+    [doneButton addTarget:self action:@selector(doneDown:) forControlEvents:UIControlEventTouchDown];
+    
 	// locate keyboard view
     int cnt=[[UIApplication sharedApplication] windows].count;
 	UIWindow* keyboardWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:cnt-1];
@@ -70,8 +78,22 @@
     NSLog(@"keyboard:%@ %@ %@",NSStringFromCGRect(keyboardWindow.frame),NSStringFromCGRect(doneButton.frame),keyboardWindow.subviews);
 }
 
-- (void) done   {
+- (void) done:(id)sender
+{
     [passwordFiled resignFirstResponder];
+}
+
+-(void)doneDown:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    [button setBackgroundColor:keyboardColor];
+    [self performSelector:@selector(resetDoneDownBg:) withObject:button afterDelay:0.5];
+}
+
+-(void)resetDoneDownBg:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    [button setBackgroundColor:[UIColor clearColor]];
 }
 
 - (void) textFieldDidEndEditing:(UITextField *)textField {
