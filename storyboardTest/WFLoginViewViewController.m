@@ -12,7 +12,7 @@
 #import "WFBarItemViewController.h"
 #import "DeviceInfo.h"
 
-#define RGB UIColor =
+#define RGB 
 
 @interface WFLoginViewViewController ()
 {

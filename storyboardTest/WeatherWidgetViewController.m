@@ -22,9 +22,11 @@
 
 - (void)viewDidLoad
 {
-//    self.weatherView.frame = CGRectMake(0, 26, 43, 55);
     [super viewDidLoad];
-//    [self.weatherView setAutoresizesSubviews:YES];
+    self.weatherView.layer.borderWidth = 1.5;
+    self.weatherView.layer.borderColor = [[UIColor colorWithRed:81.0/255.0 green:162.0/255.0 blue:238.0/255.0 alpha:1.0] CGColor];
+    self.weatherView.layer.cornerRadius=5;
+    
 }
 
 -(IBAction)showWeatherDetail:(id)sender
