@@ -830,16 +830,26 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3cG-Q2-0xF" appends="YES" id="0Jx-bD-aAK"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="swipeGesture" destination="3cG-Q2-0xF" id="coG-wt-0MQ"/>
                         <outlet property="weatherStatusBtn" destination="cKi-Mr-KF9" id="dpA-M3-AHr"/>
                         <outlet property="weatherView" destination="huq-0b-wcl" id="2L1-9Z-W0n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3J-BR-47e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="3cG-Q2-0xF">
+                    <connections>
+                        <action selector="testGesture:" destination="apz-yn-2eE" id="F9H-zL-rLK"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="20" y="-1239"/>
         </scene>

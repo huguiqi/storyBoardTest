@@ -27,6 +27,8 @@
     self.weatherView.layer.borderColor = [[UIColor colorWithRed:81.0/255.0 green:162.0/255.0 blue:238.0/255.0 alpha:1.0] CGColor];
     self.weatherView.layer.cornerRadius=5;
     
+    
+    
 }
 
 -(IBAction)showWeatherDetail:(id)sender
@@ -34,6 +36,20 @@
     UIButton *btn = (UIButton *) sender;
     NSNumber *weatherFrameWidth = [NSNumber numberWithFloat:btn.tag==MIN_TAG?39.0:294.0];
     btn.tag = btn.tag==MIN_TAG?MAX_TAG:MIN_TAG;
+    [UIView animateWithDuration:0.4 animations:^{
+        self.weatherView.frame = CGRectMake(self.weatherView.frame.origin.x, self.weatherView.frame.origin.y, [weatherFrameWidth floatValue], self.weatherView.frame.size.height);
+    }];
+}
+
+-(IBAction)testGesture:(id)sender
+{
+    NSNumber *weatherFrameWidth = [NSNumber numberWithFloat:UISwipeGestureRecognizerDirectionLeft == self.swipeGesture.direction?39.0:294.0];
+    if (UISwipeGestureRecognizerDirectionRight == self.swipeGesture.direction) {
+        self.swipeGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    }else{
+        self.swipeGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    }
+    
     [UIView animateWithDuration:0.4 animations:^{
         self.weatherView.frame = CGRectMake(self.weatherView.frame.origin.x, self.weatherView.frame.origin.y, [weatherFrameWidth floatValue], self.weatherView.frame.size.height);
     }];

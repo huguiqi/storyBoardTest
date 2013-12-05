@@ -11,9 +11,12 @@
 @interface WeatherWidgetViewController : UIViewController
 
 @property(nonatomic,weak) IBOutlet UIButton *weatherStatusBtn;
-@property(nonatomic,weak) IBOutlet UIView *weatherView;
+@property(nonatomic,weak) IBOutlet UIControl *weatherView;
+@property(nonatomic,weak) IBOutlet UISwipeGestureRecognizer *swipeGesture;
 
 
 -(IBAction)showWeatherDetail:(id)sender;
+
+-(IBAction)testGesture:(id)sender;
 
 @end
