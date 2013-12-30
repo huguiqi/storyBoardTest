@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -264,6 +264,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W82-ov-Azb">
+                                <rect key="frame" x="156" y="64" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="contrainsTest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2B5-ZJ-FNe" kind="push" id="Hfv-o7-73b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -275,6 +285,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pa8-IT-0al" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1103" y="84"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lfa-tT-0xX">
+            <objects>
+                <viewController id="2B5-ZJ-FNe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7X-Q0-sh6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="7f3-8j-BSH">
+                                <rect key="frame" x="75" y="50" width="150" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CaD-qL-quG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSy-EE-0oM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="-28"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Ac-oc-BuG">
@@ -313,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uo-8B-nFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="68"/>
+            <point key="canvasLocation" x="1644" y="552"/>
         </scene>
         <!--Scroll Demo2 View Controller-->
         <scene sceneID="I6C-21-Ny5">
@@ -349,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ix8-Pz-jEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="378"/>
+            <point key="canvasLocation" x="2568" y="255"/>
         </scene>
         <!--Item1 View Controller - 第一个Item-->
         <scene sceneID="SvR-KZ-4vG">
@@ -612,7 +644,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WY-hD-671" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="3153"/>
+            <point key="canvasLocation" x="1644" y="3007"/>
         </scene>
         <!--View Center View Controller - UIViewCenterTest-->
         <scene sceneID="8mU-ao-V4b">
@@ -644,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02K-EA-biG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="1584"/>
+            <point key="canvasLocation" x="1644" y="1752"/>
         </scene>
         <!--Crosswise View Controller-->
         <scene sceneID="Bd5-EN-2si">
@@ -670,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYU-hg-AGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="885"/>
+            <point key="canvasLocation" x="1644" y="1141"/>
         </scene>
         <!--Bar Item View Controller-->
         <scene sceneID="PDh-xL-7he">
@@ -1111,7 +1143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEM-yY-eT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="2367"/>
+            <point key="canvasLocation" x="1644" y="2367"/>
         </scene>
         <!--City List View Controller-->
         <scene sceneID="wa5-u8-aSp">
