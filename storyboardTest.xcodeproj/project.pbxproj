@@ -93,6 +93,8 @@
 		35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */; };
 		35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */; };
 		35CDBFDC1828CDC6001B1A6E /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */; };
+		35E4F2E21890F1B400675916 /* WFBarItemViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 35E4F2E01890F1B400675916 /* WFBarItemViewController.h */; };
+		35E4F2E31890F1B400675916 /* WFBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4F2E11890F1B400675916 /* WFBarItemViewController.m */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
@@ -242,6 +244,8 @@
 		35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFJJViewController.m; sourceTree = "<group>"; };
 		35CDBFDA1828CDC6001B1A6E /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		35E4F2E01890F1B400675916 /* WFBarItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFBarItemViewController.h; sourceTree = "<group>"; };
+		35E4F2E11890F1B400675916 /* WFBarItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFBarItemViewController.m; sourceTree = "<group>"; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
 		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 				35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */,
 				22159CF6184F75700061A8DE /* WeatherWidgetViewController.h */,
 				22159CF7184F75700061A8DE /* WeatherWidgetViewController.m */,
+				35E4F2E01890F1B400675916 /* WFBarItemViewController.h */,
+				35E4F2E11890F1B400675916 /* WFBarItemViewController.m */,
 			);
 			name = common;
 			sourceTree = "<group>";
@@ -872,6 +878,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35E4F2E21890F1B400675916 /* WFBarItemViewController.h in Sources */,
+				35E4F2E31890F1B400675916 /* WFBarItemViewController.m in Sources */,
 				22FECF64164FFCA600720705 /* main.m in Sources */,
 				22B39A81182BECFE0027B360 /* FloatTable.m in Sources */,
 				22FECF68164FFCA600720705 /* WFAppDelegate.m in Sources */,
