@@ -25,6 +25,7 @@
     _array = [[NSArray alloc]
             initWithObjects:@"小黑", @"小白", @"小花", @"小二",@"aaa",@"cca",@"bbb",@"aaa",@"cca",@"bbb", nil];
     _footerView = [[WFFooterView alloc] initWithFrame:CGRectMake(90, 5, 40, 40)];
+    //添加下拉刷新效果
     _tableView.tableFooterView = _footerView;
 }
 
@@ -41,7 +42,7 @@
     NSUInteger index = [indexPath row];
     [cell.textLabel setText:_array[index]];
 //    if(indexPath.row >5){
-//
+//todo  download newData for tableView
 //    }
     return cell;
 }
