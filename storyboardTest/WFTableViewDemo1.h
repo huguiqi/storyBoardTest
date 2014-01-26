@@ -10,4 +10,6 @@
 
 @interface WFTableViewDemo1 : WFJJViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
 @end

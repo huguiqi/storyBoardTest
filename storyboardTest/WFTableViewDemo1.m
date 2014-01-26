@@ -7,8 +7,11 @@
 //
 
 #import "WFTableViewDemo1.h"
+#import "WFFooterView.h"
 
-@interface WFTableViewDemo1 ()
+@interface WFTableViewDemo1 (){
+    WFFooterView * _footerView;
+}
 
 @property(nonatomic, strong) NSArray *array;
 
@@ -21,7 +24,8 @@
     [super viewDidLoad];
     _array = [[NSArray alloc]
             initWithObjects:@"小黑", @"小白", @"小花", @"小二",@"aaa",@"cca",@"bbb",@"aaa",@"cca",@"bbb", nil];
-
+    _footerView = [[WFFooterView alloc] initWithFrame:CGRectMake(90, 5, 40, 40)];
+    _tableView.tableFooterView = _footerView;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -36,9 +40,9 @@
     }
     NSUInteger index = [indexPath row];
     [cell.textLabel setText:_array[index]];
-    if(indexPath.row >5){
-//        [tableView.tableFooterView addSubview:<#(UIView *)view#>];
-    }
+//    if(indexPath.row >5){
+//
+//    }
     return cell;
 }
 
