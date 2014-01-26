@@ -10,6 +10,8 @@
 #import "MacAddress.h"
 #import "UserDefaultHelper.h"
 
+#define PLUS(x,y)      x+y
+
 @interface IndexViewController ()
 
 -(IBAction)testMacAddress:sender;
@@ -22,7 +24,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
 	// Do any additional setup after loading the view.
 }
 

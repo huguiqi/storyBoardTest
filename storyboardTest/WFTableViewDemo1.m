@@ -37,7 +37,7 @@
     NSUInteger index = [indexPath row];
     [cell.textLabel setText:_array[index]];
     if(indexPath.row >5){
-        [tableView.tableFooterView addSubview:<#(UIView *)view#>];
+//        [tableView.tableFooterView addSubview:<#(UIView *)view#>];
     }
     return cell;
 }
