@@ -11,9 +11,48 @@
 #import "UMSocial.h"
 #import "MobClick.h"
 
+@interface WFAppDelegate ()
+
+@property (nonatomic, unsafe_unretained) UIBackgroundTaskIdentifier backgroundTaskIdentifier;
+
+@property (nonatomic, strong) NSTimer *myTimer;
+
+@end
+
 @implementation WFAppDelegate
 
 
+- (BOOL) isMultitaskingSupported{
+    BOOL result = NO;
+    if ([[UIDevice currentDevice]
+         respondsToSelector:@selector(isMultitaskingSupported)]){
+        result = [[UIDevice currentDevice] isMultitaskingSupported];
+    }
+    return result;
+}
+
+- (void) timerMethod:(NSTimer *)paramSender{
+    NSTimeInterval backgroundTimeRemaining = [[UIApplication sharedApplication] backgroundTimeRemaining];
+    if (backgroundTimeRemaining == DBL_MAX){
+        NSLog(@"Background Time Remaining = Undetermined");
+    }else{
+        NSLog(@"Background Time Remaining = %.02f Seconds",
+              backgroundTimeRemaining);
+    }
+}
+
+- (void) endBackgroundTask{
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    __weak WFAppDelegate *weakSelf = self;
+    dispatch_async(mainQueue, ^(void) {
+        WFAppDelegate *strongSelf = weakSelf;
+        if (strongSelf != nil){
+            [strongSelf.myTimer invalidate];
+            [[UIApplication sharedApplication]
+            endBackgroundTask:self.backgroundTaskIdentifier];
+            strongSelf.backgroundTaskIdentifier = UIBackgroundTaskInvalid;
+    } });
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -53,6 +92,16 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     NSLog(@"didBackgroud....");
+    
+    if ([self isMultitaskingSupported] == NO){
+        return;
+    }
+    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                     target:self selector:@selector(timerMethod:) userInfo:nil
+                                    repeats:YES];
+    self.backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^(void) {
+        [self endBackgroundTask];
+    }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
