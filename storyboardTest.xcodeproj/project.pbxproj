@@ -90,6 +90,7 @@
 		3570AB7118113C2F00C851D2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7018113C2F00C851D2 /* libstdc++.dylib */; };
 		3570AB7318113C3E00C851D2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3570AB7218113C3E00C851D2 /* libz.dylib */; };
 		3579CB791820B7B1008163A5 /* JJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3579CB781820B7B1008163A5 /* JJNavigationBar.m */; };
+		35B142DB18AB55B7006A27AA /* WFLoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B142DA18AB55B7006A27AA /* WFLoginForm.m */; };
 		35BD56FE173A3B1F00606275 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35BD56FD173A3B1F00606275 /* glass.wav */; };
 		35CDBFD61828CC16001B1A6E /* WFJJNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */; };
 		35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */; };
@@ -240,6 +241,8 @@
 		3570AB7218113C3E00C851D2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		3579CB771820B7B1008163A5 /* JJNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJNavigationBar.h; sourceTree = "<group>"; };
 		3579CB781820B7B1008163A5 /* JJNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJNavigationBar.m; sourceTree = "<group>"; };
+		35B142D918AB55B7006A27AA /* WFLoginForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginForm.h; sourceTree = "<group>"; };
+		35B142DA18AB55B7006A27AA /* WFLoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginForm.m; sourceTree = "<group>"; };
 		35BD56FD173A3B1F00606275 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		35BD56FF173A3B8000606275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		35CDBFD41828CC16001B1A6E /* WFJJNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFJJNavigationViewController.h; sourceTree = "<group>"; };
@@ -540,6 +543,8 @@
 				22FECF81164FFE3800720705 /* WFLoginViewViewController.m */,
 				22159CF9184F7C5B0061A8DE /* WeatherViewController.h */,
 				22159CFA184F7C5B0061A8DE /* WeatherViewController.m */,
+				35B142D918AB55B7006A27AA /* WFLoginForm.h */,
+				35B142DA18AB55B7006A27AA /* WFLoginForm.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -898,6 +903,7 @@
 			files = (
 				35E4F2E21890F1B400675916 /* WFBarItemViewController.h in Sources */,
 				35E4F2E31890F1B400675916 /* WFBarItemViewController.m in Sources */,
+				35B142DB18AB55B7006A27AA /* WFLoginForm.m in Sources */,
 				22FECF64164FFCA600720705 /* main.m in Sources */,
 				22B39A81182BECFE0027B360 /* FloatTable.m in Sources */,
 				22FECF68164FFCA600720705 /* WFAppDelegate.m in Sources */,

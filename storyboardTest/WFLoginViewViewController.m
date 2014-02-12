@@ -37,7 +37,11 @@
     //a way of  custom keyboardWindow
     passwordFiled.delegate = self;
     keyboardColor = [DeviceInfo systemVersion]<7.0?[UIColor colorWithRed:0.3725 green:0.4000 blue:0.4510 alpha:1]:[UIColor whiteColor];
-}
+    
+    //Listening for and Reacting to Notifications
+    self.loginForm = [[WFLoginForm alloc] init];
+    
+    }
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -120,11 +124,20 @@
 @synthesize switchOFF;
 @synthesize buttonOK;
 
-- (IBAction)clickSomething:(id)sender {
-
-    NSString *userName = [userNameField text];
-    NSString *password = [passwordFiled text];
-    NSLog(@"the userName is %@,and password is %@", userName, password);
+- (IBAction)postNotification:(id)sender {
+    
+    //发送通知给监听器告诉它值已改变，监听器便会重新设置新的form值
+    NSNotification *notification =
+    [NSNotification
+     notificationWithName:kSetLoginFormNotification
+     object:nil
+     userInfo:@{kSetUserNameKey : self.userNameField.text,
+                kSetPasswordKey : self.passwordFiled.text,
+                kSetAgeKey : self.ageFiled.text}];
+    
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    
+    NSLog(@"the userName is %@,and password is %@, age is %i", self.loginForm.userName, self.loginForm.password,self.loginForm.age);
 }
 
 

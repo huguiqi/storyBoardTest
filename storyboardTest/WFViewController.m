@@ -7,7 +7,6 @@
 //
 
 #import "WFViewController.h"
-#import "WFLoginViewViewController.h"
 
 @interface WFViewController ()
 

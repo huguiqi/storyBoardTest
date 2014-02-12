@@ -97,8 +97,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ghd-BF-mco">
-                                <rect key="frame" x="121" y="169" width="78" height="35"/>
-                                <state key="normal" title="确定">
+                                <rect key="frame" x="162" y="273" width="78" height="35"/>
+                                <state key="normal" title="showList">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,6 +188,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="gwn-TB-khY" kind="push" id="pBk-0f-FNC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oeh-cF-DuR">
+                                <rect key="frame" x="134" y="173" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="确定">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postNotification:" destination="2" eventType="touchUpInside" id="avC-Gg-YjU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1033,7 +1043,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1P-jk-xb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="924"/>
+            <point key="canvasLocation" x="600" y="916"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="YP7-8A-lem">

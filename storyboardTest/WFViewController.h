@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class WFLoginViewViewController;
 
 
 @interface WFViewController : UIViewController
 
-@property(nonatomic,retain) IBOutlet WFLoginViewViewController *loginView;
 
 @end

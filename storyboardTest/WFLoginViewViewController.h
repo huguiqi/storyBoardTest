@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WFCityListViewController.h"
 #import "WFJJViewController.h"
+#import "WFLoginForm.h"
 
 @interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate,UITextFieldDelegate>
 {
@@ -31,8 +32,10 @@
 
 @property(nonatomic, strong) WFCityListViewController *cityListViewController;
 
+@property(nonatomic,strong) WFLoginForm *loginForm;
 
--(IBAction)clickSomething:(id)sender;
+
+-(IBAction)postNotification:(id)sender;
 
 -(IBAction)textFieldDoneEditing:(id)sender;
 
