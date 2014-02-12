@@ -78,9 +78,29 @@
     //使用友盟统计
     [MobClick startWithAppkey:kUMAppkey];
     
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    /* Time and timezone settings */
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:8.0];
+    notification.timeZone = [[NSCalendar currentCalendar] timeZone];
+    notification.alertBody =
+    NSLocalizedString(@"A new item is downloaded.", nil);
+    /* Action settings */
+    notification.hasAction = YES;
+    notification.alertAction = NSLocalizedString(@"View", nil);
+    notification.soundName = UILocalNotificationDefaultSoundName;
+    /* Badge settings */
+    notification.applicationIconBadgeNumber =
+    [UIApplication sharedApplication].applicationIconBadgeNumber + 1;
+    /* Additional information, user info */
+    notification.userInfo = @{@"Key 1" : @"Value 1",
+                              @"Key 2" : @"Value 2"};
+    /* Schedule the notification */
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

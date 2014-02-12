@@ -32,4 +32,10 @@
     self.age = [paramNotification.userInfo[kSetAgeKey] integerValue];
 }
 
+-(void)dealloc
+{
+    //移除监听
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
