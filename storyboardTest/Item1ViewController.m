@@ -15,6 +15,9 @@
 
 @interface Item1ViewController ()
 
+@property(nonatomic) NSMutableArray *cityArray;
+
+
 @end
 
 @implementation Item1ViewController
@@ -25,6 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self initBackToIndexBtn];
+    _cityArray = [[NSMutableArray alloc] initWithCapacity:3];
 }
 
 -(void)initBackToIndexBtn
@@ -94,13 +98,13 @@
 -(IBAction)writeToUserDefaults:(id)sender
 {
 //    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithUser:@"xiaohei"];//one method
-    
-    NSMutableArray *cityArray = [[NSMutableArray alloc] initWithCapacity:3];
-    [cityArray addObject:@"aaaaa"];
-    [cityArray addObject:@"bbbb"];
+    [_cityArray addObject:@"aaaaa"];
+    [_cityArray addObject:@"bbbb"];
 //    [defaults setObject:cityArray forKey:@"recentThreeCities"];
-    [[NSUserDefaults standardUserDefaults] setObject:cityArray forKey:@"recentThreeCities2"];
-    
+    [[NSUserDefaults standardUserDefaults] setObject:_cityArray forKey:@"recentThreeCities2"];
+    //synchronize Because this method is automatically invoked at periodic intervals, use this method only if you cannot wait for the automatic synchronization (for example, if your application is about to exit) or if you want to update the user defaults to what is on disk even though you have not made any changes.
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+   
 }
 
 -(IBAction)readUserDefaults:(id)sender
