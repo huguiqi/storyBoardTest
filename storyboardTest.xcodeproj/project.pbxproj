@@ -20,6 +20,7 @@
 		22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB017788F9000BADFE7 /* cover 480x300-take2.png */; };
 		22736AB417788F9000BADFE7 /* cover320x416.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB117788F9000BADFE7 /* cover320x416.png */; };
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
+		22A80A3718B2623400BCEC6A /* AccountForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A80A3618B2623400BCEC6A /* AccountForm.m */; };
 		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
 		22A87860175E437800E82C69 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785F175E437800E82C69 /* IndexViewController.m */; };
 		22B39A81182BECFE0027B360 /* FloatTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B39A80182BECFE0027B360 /* FloatTable.m */; };
@@ -124,6 +125,8 @@
 		22736AB117788F9000BADFE7 /* cover320x416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover320x416.png; sourceTree = "<group>"; };
 		2295571916F222CC00C0DBD2 /* WFWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFWebViewDemo.h; sourceTree = "<group>"; };
 		2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFWebViewDemo.m; sourceTree = "<group>"; };
+		22A80A3518B2623400BCEC6A /* AccountForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountForm.h; sourceTree = "<group>"; };
+		22A80A3618B2623400BCEC6A /* AccountForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountForm.m; sourceTree = "<group>"; };
 		22A8785A175E429600E82C69 /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
 		22A8785B175E429600E82C69 /* MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddress.m; sourceTree = "<group>"; };
 		22A8785E175E437800E82C69 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
@@ -545,6 +548,8 @@
 				22159CFA184F7C5B0061A8DE /* WeatherViewController.m */,
 				35B142D918AB55B7006A27AA /* WFLoginForm.h */,
 				35B142DA18AB55B7006A27AA /* WFLoginForm.m */,
+				22A80A3518B2623400BCEC6A /* AccountForm.h */,
+				22A80A3618B2623400BCEC6A /* AccountForm.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -915,6 +920,7 @@
 				2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */,
 				22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */,
 				22FB90981710774C007A3933 /* WFScrollViewDemo.m in Sources */,
+				22A80A3718B2623400BCEC6A /* AccountForm.m in Sources */,
 				22159CFB184F7C5B0061A8DE /* WeatherViewController.m in Sources */,
 				22FFBE84171477F900A3D396 /* FileManager.m in Sources */,
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,

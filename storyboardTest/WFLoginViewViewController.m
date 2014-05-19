@@ -11,6 +11,7 @@
 #import "WFCityListViewController.h"
 #import "WFBarItemViewController.h"
 #import "DeviceInfo.h"
+#import "AccountForm.h"
 
 #define RGB 
 
@@ -19,6 +20,8 @@
     BOOL isHidden;
     UIColor *keyboardColor;
 }
+
+@property(nonatomic,strong) AccountForm *accountForm;
 
 @end
 
@@ -39,14 +42,23 @@
     keyboardColor = [DeviceInfo systemVersion]<7.0?[UIColor colorWithRed:0.3725 green:0.4000 blue:0.4510 alpha:1]:[UIColor whiteColor];
     
     //Listening for and Reacting to Notifications
-    self.loginForm = [[WFLoginForm alloc] init];
+//    self.loginForm = [[WFLoginForm alloc] init];
+    self.loginForm = [WFLoginForm new];
+    _accountForm = [[AccountForm alloc] init];
     
+    [_loginForm addObserver:_accountForm
+              forKeyPath:@"userName"
+                 options:(NSKeyValueObservingOptionNew)
+                 context:NULL];
+
     }
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
 }
+
 
 -(void)noticePushBarController:(WFBarItemViewController *)barItemController{
     [self.navigationController pushViewController:barItemController animated:YES];
@@ -126,18 +138,33 @@
 
 - (IBAction)postNotification:(id)sender {
     
-    //发送通知给监听器告诉它值已改变，监听器便会重新设置新的form值
-    NSNotification *notification =
-    [NSNotification
-     notificationWithName:kSetLoginFormNotification
-     object:nil
-     userInfo:@{kSetUserNameKey : self.userNameField.text,
-                kSetPasswordKey : self.passwordFiled.text,
-                kSetAgeKey : self.ageFiled.text}];
+//    //发送通知给监听器告诉它值已改变，监听器便会重新设置新的form值(此场景只使用彼此没有互相引用的情况下，不在同一块的对象代码互相通信)
+//    NSNotification *notification =
+//    [NSNotification
+//     notificationWithName:kSetLoginFormNotification
+//     object:nil
+//     userInfo:@{kSetUserNameKey : self.userNameField.text,
+//                kSetPasswordKey : self.passwordFiled.text,
+//                kSetAgeKey : self.ageFiled.text}];
+//    
+//    [[NSNotificationCenter defaultCenter] postNotification:notification];
+//    
+//    NSLog(@"the userName is %@,and password is %@, age is %i", self.loginForm.userName, self.loginForm.password,self.loginForm.age);
     
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    @try{
+        [_loginForm setUserName:self.userNameField.text];
+        _loginForm.password = self.passwordFiled.text;
+//        _loginForm.age = [self.ageFiled.text integerValue];
+    }
+    @catch(NSException *exception) {
+        NSLog(@"exception:%@", exception);
+    }
+    @finally {
+        
+    }
+
     
-    NSLog(@"the userName is %@,and password is %@, age is %i", self.loginForm.userName, self.loginForm.password,self.loginForm.age);
+
 }
 
 
@@ -162,6 +189,7 @@
     }
     NSString *newText = [[NSString alloc] initWithFormat:@"%d", age];
     ageFiled.text = newText;
+    [self willChangeValueForKey:@"@ageFeild.text"];
 }
 
 - (IBAction)turnSwitchEvent:(id)sender {
@@ -231,6 +259,13 @@
         [self.navigationController setNavigationBarHidden:YES animated:YES];
     }
     
+}
+
+
+
+-(void)dealloc
+{
+[_loginForm removeObserver:_accountForm forKeyPath:@"userName"];
 }
 
 
