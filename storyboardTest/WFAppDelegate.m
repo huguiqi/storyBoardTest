@@ -8,8 +8,6 @@
 
 #import "WFAppDelegate.h"
 #import "Constant.h"
-#import "UMSocial.h"
-#import "MobClick.h"
 
 @interface WFAppDelegate ()
 
@@ -57,26 +55,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    //打开调试log的开关
-    [UMSocialData openLog:YES];
-    
-    //如果你要支持不同的屏幕方向，需要这样设置，否则在iPhone只支持一个竖屏方向
-    [UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
-    
-    //设置友盟社会化组件appkey
-    [UMSocialData setAppKey:kUMAppkey];
-    
-    //设置微信AppId
-    [UMSocialConfig setWXAppId:@"wxd9a39c7122aa6516" url:nil];
-    //打开Qzone的SSO开关
-    [UMSocialConfig setSupportQzoneSSO:YES importClasses:@[[QQApiInterface class],[TencentOAuth class]]];
-    //设置手机QQ的AppId，指定你的分享url，若传nil，将使用友盟的网址
-    [UMSocialConfig setQQAppId:@"100424468" url:nil importClasses:@[[QQApiInterface class],[TencentOAuth class]]];
-    //打开新浪微博的SSO开关
-    [UMSocialConfig setSupportSinaSSO:YES];
-    
-    //使用友盟统计
-    [MobClick startWithAppkey:kUMAppkey];
+//    //打开调试log的开关
+//    [UMSocialData openLog:YES];
+//    
+//    //如果你要支持不同的屏幕方向，需要这样设置，否则在iPhone只支持一个竖屏方向
+//    [UMSocialConfig setSupportedInterfaceOrientations:UIInterfaceOrientationMaskAll];
+//    
+//    //设置友盟社会化组件appkey
+//    [UMSocialData setAppKey:kUMAppkey];
+//    
+//    //设置微信AppId
+//    [UMSocialConfig setWXAppId:@"wxd9a39c7122aa6516" url:nil];
+//    //打开Qzone的SSO开关
+//    [UMSocialConfig setSupportQzoneSSO:YES importClasses:@[[QQApiInterface class],[TencentOAuth class]]];
+//    //设置手机QQ的AppId，指定你的分享url，若传nil，将使用友盟的网址
+//    [UMSocialConfig setQQAppId:@"100424468" url:nil importClasses:@[[QQApiInterface class],[TencentOAuth class]]];
+//    //打开新浪微博的SSO开关
+//    [UMSocialConfig setSupportSinaSSO:YES];
+//    
+//    //使用友盟统计
+//    [MobClick startWithAppkey:kUMAppkey];
     
     
     UILocalNotification *notification = [[UILocalNotification alloc] init];
