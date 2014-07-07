@@ -43,6 +43,10 @@
 
 }
 
+-(IBAction)testCGRectOffset:(id)sender{
+
+}
+
 #pragma --UIView.transform about
 -(IBAction)testTransform:(id)sender{
     //1,iphone支持仿射变换(affine transformation),此实现是core graphics实现的一部分，仿射变换有：旋转，伸缩，转化
