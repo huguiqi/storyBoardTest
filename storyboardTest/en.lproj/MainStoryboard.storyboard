@@ -1256,8 +1256,9 @@
         <scene sceneID="6cr-bE-Rgq">
             <objects>
                 <navigationController definesPresentationContext="YES" id="1Fn-rb-Bve" customClass="WFJJNavigationViewController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="fyA-Am-NCj">
+                    <navigationBar key="navigationBar" alpha="0.55000000000000004" contentMode="scaleToFill" translucent="NO" backIndicatorImage="hotel-topbar-back.png" id="fyA-Am-NCj">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.62745098040000002" green="0.54901960780000003" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ESV-PB-8LI">
@@ -1342,6 +1343,7 @@
         <image name="cloudy.png" width="39" height="55"/>
         <image name="cover320x416.png" width="320" height="416"/>
         <image name="hotel-next.png" width="6" height="9"/>
+        <image name="hotel-topbar-back.png" width="19" height="21"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
