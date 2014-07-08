@@ -9,6 +9,7 @@
 #import "IndexViewController.h"
 #import "MacAddress.h"
 #import "UserDefaultHelper.h"
+#import "WFLoginFillter.h"
 
 #define PLUS(x,y)      x+y
 
@@ -57,9 +58,26 @@
     NSMutableDictionary *testDefaultDict = [UserDefaultHelper readFromCache:@"myDefaultTest"];
     NSLog(@"----a0 is %@",[testDefaultDict objectForKey:@"a0"]);
     
-    
-    
 }
+
+-(IBAction)toBookIng:(id)sender
+{
+    WFLoginFillter *loginFillter = [[WFLoginFillter alloc] init];
+    
+    
+    [loginFillter from:self to:self.bookingViewController];
+//    [self.loginViewWidgt showLoginView];
+}
+
+
+-(WFBookingViewController *)bookingViewController
+{
+    if (!_bookingViewController) {
+        _bookingViewController = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"WFBookingViewController"];
+    }
+    return _bookingViewController;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -59,6 +59,8 @@
 		3526E12317CB4C9C0065E360 /* map_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12117CB4C9C0065E360 /* map_bubble.png */; };
 		3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12217CB4C9C0065E360 /* map_bubble@2x.png */; };
 		3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3527181417978F8F005FA9CA /* UserDefaultHelper.m */; };
+		3532F761196BB8F100CCF2A8 /* WFBookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532F760196BB8F100CCF2A8 /* WFBookingViewController.m */; };
+		3532F764196BC80000CCF2A8 /* WFLoginFillter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532F763196BC80000CCF2A8 /* WFLoginFillter.m */; };
 		3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */; };
 		3540AEF9182B8E0E006B12FD /* FloatDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */; };
 		3540AF00182C74D4006B12FD /* hotel-topbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AEFE182C74D4006B12FD /* hotel-topbar-back.png */; };
@@ -174,6 +176,10 @@
 		3526E12217CB4C9C0065E360 /* map_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_bubble@2x.png"; sourceTree = "<group>"; };
 		3527181317978F8F005FA9CA /* UserDefaultHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultHelper.h; sourceTree = "<group>"; };
 		3527181417978F8F005FA9CA /* UserDefaultHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultHelper.m; sourceTree = "<group>"; };
+		3532F75F196BB8F100CCF2A8 /* WFBookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBookingViewController.h; sourceTree = "<group>"; };
+		3532F760196BB8F100CCF2A8 /* WFBookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBookingViewController.m; sourceTree = "<group>"; };
+		3532F762196BC80000CCF2A8 /* WFLoginFillter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginFillter.h; sourceTree = "<group>"; };
+		3532F763196BC80000CCF2A8 /* WFLoginFillter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginFillter.m; sourceTree = "<group>"; };
 		3540AEF4182B7D1C006B12FD /* UINavigationBar+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Categories.h"; sourceTree = "<group>"; };
 		3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Categories.m"; sourceTree = "<group>"; };
 		3540AEF7182B8E0E006B12FD /* FloatDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatDemoViewController.h; sourceTree = "<group>"; };
@@ -301,6 +307,8 @@
 				3527181217978F6C005FA9CA /* Helper */,
 				22A8785A175E429600E82C69 /* MacAddress.h */,
 				22A8785B175E429600E82C69 /* MacAddress.m */,
+				3532F762196BC80000CCF2A8 /* WFLoginFillter.h */,
+				3532F763196BC80000CCF2A8 /* WFLoginFillter.m */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -490,6 +498,7 @@
 		22FECF7D164FFDE500720705 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				3532F75B196BB7AF00CCF2A8 /* widget */,
 				22FECF7F164FFDF600720705 /* floatView */,
 				22FECF7E164FFDEE00720705 /* city */,
 				22FB908D171048C8007A3933 /* barItem */,
@@ -604,6 +613,15 @@
 				3527181417978F8F005FA9CA /* UserDefaultHelper.m */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		3532F75B196BB7AF00CCF2A8 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				3532F75F196BB8F100CCF2A8 /* WFBookingViewController.h */,
+				3532F760196BB8F100CCF2A8 /* WFBookingViewController.m */,
+			);
+			name = widget;
 			sourceTree = "<group>";
 		};
 		354890741739FA8000E1EF4B /* shakeDemo */ = {
@@ -772,6 +790,7 @@
 				22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */,
 				35166F6E1831C8A400F82BAA /* FloatViewObj.m in Sources */,
 				22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */,
+				3532F764196BC80000CCF2A8 /* WFLoginFillter.m in Sources */,
 				2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */,
 				22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */,
 				22FB90981710774C007A3933 /* WFScrollViewDemo.m in Sources */,
@@ -790,6 +809,7 @@
 				3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */,
 				35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */,
 				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
+				3532F761196BB8F100CCF2A8 /* WFBookingViewController.m in Sources */,
 				22A8785C175E429600E82C69 /* MacAddress.m in Sources */,
 				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
 				22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */,

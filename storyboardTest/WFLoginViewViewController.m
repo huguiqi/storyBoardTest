@@ -261,6 +261,22 @@
     
 }
 
+-(void)showLoginView
+{
+    [UIView animateWithDuration:0.5 animations:^(void){
+        self.loginMainView.frame = CGRectOffset(self.loginMainView.frame, 320, 0);
+    }];
+}
+
+
+-(IBAction)closeLoginView:(id)sender{
+    
+    [UIView animateWithDuration:0.5 animations:^(void){
+        self.loginMainView.frame = CGRectOffset(self.loginMainView.frame, -320, 0);
+    }];
+
+}
+
 
 
 -(void)dealloc

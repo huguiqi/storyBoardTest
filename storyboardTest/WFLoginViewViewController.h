@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "WFCityListViewController.h"
-#import "WFJJViewController.h"
 #import "WFLoginForm.h"
 
-@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate,UITextFieldDelegate>
+@interface WFLoginViewViewController : UIViewController <CityListViewDelegate,UITextFieldDelegate>
 {
     CGPoint startLocation;
 }
@@ -29,6 +28,8 @@
 @property(nonatomic,retain) IBOutlet UIButton *buttonOK;
 
 @property(nonatomic,retain) IBOutlet UIView *conditionView;
+
+@property (nonatomic,strong) IBOutlet UIControl *loginMainView;
 
 @property(nonatomic, strong) WFCityListViewController *cityListViewController;
 
@@ -50,6 +51,8 @@
 -(IBAction)toBarItemView:(id)sender;
 
 -(IBAction)showNavigationBar:(id)sender;
+
+-(void)showLoginView;
 
   
 @end

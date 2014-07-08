@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WFLoginViewViewController.h"
+#import "WFJJViewController.h"
+#import "WFBookingViewController.h"
 
-@interface IndexViewController : UIViewController
+@interface IndexViewController : WFJJViewController
 
 @property(nonatomic,weak) IBOutlet UIView *topView;
+
+@property (nonatomic,strong) WFBookingViewController *bookingViewController;
+
+-(IBAction)toBookIng:(id)sender;
+
 
 @end
