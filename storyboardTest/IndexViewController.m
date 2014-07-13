@@ -9,7 +9,6 @@
 #import "IndexViewController.h"
 #import "MacAddress.h"
 #import "UserDefaultHelper.h"
-#import "WFLoginFillter.h"
 
 #define PLUS(x,y)      x+y
 
@@ -26,6 +25,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 -(IBAction)testMacAddress:sender
@@ -60,14 +60,7 @@
     
 }
 
--(IBAction)toBookIng:(id)sender
-{
-    WFLoginFillter *loginFillter = [[WFLoginFillter alloc] init];
-    
-    
-    [loginFillter from:self to:self.bookingViewController];
-//    [self.loginViewWidgt showLoginView];
-}
+
 
 
 -(WFBookingViewController *)bookingViewController
@@ -77,6 +70,7 @@
     }
     return _bookingViewController;
 }
+
 
 
 - (void)didReceiveMemoryWarning

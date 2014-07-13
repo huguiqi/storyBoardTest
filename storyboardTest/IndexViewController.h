@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WFLoginViewViewController.h"
 #import "WFJJViewController.h"
 #import "WFBookingViewController.h"
 
@@ -17,7 +16,7 @@
 
 @property (nonatomic,strong) WFBookingViewController *bookingViewController;
 
--(IBAction)toBookIng:(id)sender;
+
 
 
 @end

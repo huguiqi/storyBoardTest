@@ -9,3 +9,5 @@
 #define kUMAppkey  @"518a09fe56240b42b703acbb"
 #define kTrackingId  @"UA-39572739-1"
 #define kLogEnable NO
+
+#define SUGUE_LIST_TO_BOOKING       @"fromListToBooking"

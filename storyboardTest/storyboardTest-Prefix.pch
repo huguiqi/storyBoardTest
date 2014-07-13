@@ -11,6 +11,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "Constant.h"
+    #import "WFAppDelegate.h"
 #endif
 
 //A better version of NSLog  有大学问,宏代码换行必须后加反斜杆(\),##代表连接参数(A,##B),加while是为了解决代码结尾可能会多出分号导致编译出错的问题
@@ -25,3 +27,5 @@
 #define NSLogRect(rect) NSLog(@"%s x:%.4f, y:%.4f, w:%.4f, h:%.4f", #rect, rect.origin.x, rect.origin.y, rect.size.width, rect.size.height)
 #define NSLogSize(size) NSLog(@"%s w:%.4f, h:%.4f", #size, size.width, size.height)
 #define NSLogPoint(point) NSLog(@"%s x:%.4f, y:%.4f", #point, point.x, point.y)
+
+#define TheAppDelegate (WFAppDelegate *)[UIApplication sharedApplication].delegate

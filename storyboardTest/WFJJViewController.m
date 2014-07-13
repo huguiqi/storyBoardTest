@@ -20,9 +20,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
-    
-    self.loginViewWidgt.loginMainView.frame = CGRectOffset(self.loginViewWidgt.loginMainView.frame, -320, 0);
-    [self.view addSubview:self.loginViewWidgt.loginMainView];
+
 }
 
 
@@ -101,16 +99,6 @@
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://1010-1666"]];
     }
-}
-
--(WFLoginViewViewController *)loginViewWidgt
-{
-    if (!_loginViewWidgt) {
-        _loginViewWidgt = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"WFLoginWidget"];
-        [_loginViewWidgt loadView];
-        [_loginViewWidgt viewDidLoad];
-    }
-    return _loginViewWidgt;
 }
 
 

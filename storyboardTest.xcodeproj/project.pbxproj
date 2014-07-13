@@ -14,6 +14,7 @@
 		22159CFE184F85390061A8DE /* hotel-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CFC184F85390061A8DE /* hotel-next.png */; };
 		22159CFF184F85390061A8DE /* hotel-next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CFD184F85390061A8DE /* hotel-next@2x.png */; };
 		2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */; };
+		22589B7919722C64000F4975 /* WFLoginWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */; };
 		226C65071726CE2000050864 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C65061726CE2000050864 /* Item2ViewController.m */; };
 		22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22736AAD1778859D00BADFE7 /* CrosswiseViewController.m */; };
 		22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AAF17788F9000BADFE7 /* BFlyCircle.png */; };
@@ -60,7 +61,6 @@
 		3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3526E12217CB4C9C0065E360 /* map_bubble@2x.png */; };
 		3527181517978F8F005FA9CA /* UserDefaultHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3527181417978F8F005FA9CA /* UserDefaultHelper.m */; };
 		3532F761196BB8F100CCF2A8 /* WFBookingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532F760196BB8F100CCF2A8 /* WFBookingViewController.m */; };
-		3532F764196BC80000CCF2A8 /* WFLoginFillter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532F763196BC80000CCF2A8 /* WFLoginFillter.m */; };
 		3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */; };
 		3540AEF9182B8E0E006B12FD /* FloatDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3540AEF8182B8E0E006B12FD /* FloatDemoViewController.m */; };
 		3540AF00182C74D4006B12FD /* hotel-topbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3540AEFE182C74D4006B12FD /* hotel-topbar-back.png */; };
@@ -103,6 +103,8 @@
 		22159CFD184F85390061A8DE /* hotel-next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-next@2x.png"; sourceTree = "<group>"; };
 		2244B6CD17807BD70029F7FA /* UIViewCurlUpOrDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCurlUpOrDownViewController.h; sourceTree = "<group>"; };
 		2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCurlUpOrDownViewController.m; sourceTree = "<group>"; };
+		22589B7719722C64000F4975 /* WFLoginWidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginWidgetViewController.h; sourceTree = "<group>"; };
+		22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginWidgetViewController.m; sourceTree = "<group>"; };
 		226C65051726CE2000050864 /* Item2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item2ViewController.h; sourceTree = "<group>"; };
 		226C65061726CE2000050864 /* Item2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item2ViewController.m; sourceTree = "<group>"; };
 		22736AAC1778859D00BADFE7 /* CrosswiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrosswiseViewController.h; sourceTree = "<group>"; };
@@ -178,8 +180,6 @@
 		3527181417978F8F005FA9CA /* UserDefaultHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultHelper.m; sourceTree = "<group>"; };
 		3532F75F196BB8F100CCF2A8 /* WFBookingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBookingViewController.h; sourceTree = "<group>"; };
 		3532F760196BB8F100CCF2A8 /* WFBookingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBookingViewController.m; sourceTree = "<group>"; };
-		3532F762196BC80000CCF2A8 /* WFLoginFillter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginFillter.h; sourceTree = "<group>"; };
-		3532F763196BC80000CCF2A8 /* WFLoginFillter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginFillter.m; sourceTree = "<group>"; };
 		3540AEF4182B7D1C006B12FD /* UINavigationBar+Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Categories.h"; sourceTree = "<group>"; };
 		3540AEF5182B7D1C006B12FD /* UINavigationBar+Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Categories.m"; sourceTree = "<group>"; };
 		3540AEF7182B8E0E006B12FD /* FloatDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatDemoViewController.h; sourceTree = "<group>"; };
@@ -255,6 +255,7 @@
 		1BBDFBB304D87956C41940DF /* common */ = {
 			isa = PBXGroup;
 			children = (
+				22589B7619722C1C000F4975 /* widget */,
 				22A87859175E426F00E82C69 /* utils */,
 				35015172172BAF5C00D72B8C /* catearey */,
 				22FFBE81171477D900A3D396 /* fileManager */,
@@ -264,8 +265,6 @@
 				35CDBFD51828CC16001B1A6E /* WFJJNavigationViewController.m */,
 				35CDBFD71828CCC5001B1A6E /* WFJJViewController.h */,
 				35CDBFD81828CCC5001B1A6E /* WFJJViewController.m */,
-				22159CF6184F75700061A8DE /* WeatherWidgetViewController.h */,
-				22159CF7184F75700061A8DE /* WeatherWidgetViewController.m */,
 				35E4F2E01890F1B400675916 /* WFBarItemViewController.h */,
 				35E4F2E11890F1B400675916 /* WFBarItemViewController.m */,
 			);
@@ -279,6 +278,17 @@
 				2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */,
 			);
 			name = curlUPOrDown;
+			sourceTree = "<group>";
+		};
+		22589B7619722C1C000F4975 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				22159CF6184F75700061A8DE /* WeatherWidgetViewController.h */,
+				22159CF7184F75700061A8DE /* WeatherWidgetViewController.m */,
+				22589B7719722C64000F4975 /* WFLoginWidgetViewController.h */,
+				22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */,
+			);
+			name = widget;
 			sourceTree = "<group>";
 		};
 		22736AAB1778850000BADFE7 /* crosswiseAndVertical */ = {
@@ -307,8 +317,6 @@
 				3527181217978F6C005FA9CA /* Helper */,
 				22A8785A175E429600E82C69 /* MacAddress.h */,
 				22A8785B175E429600E82C69 /* MacAddress.m */,
-				3532F762196BC80000CCF2A8 /* WFLoginFillter.h */,
-				3532F763196BC80000CCF2A8 /* WFLoginFillter.m */,
 			);
 			name = utils;
 			sourceTree = "<group>";
@@ -790,8 +798,8 @@
 				22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */,
 				35166F6E1831C8A400F82BAA /* FloatViewObj.m in Sources */,
 				22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */,
-				3532F764196BC80000CCF2A8 /* WFLoginFillter.m in Sources */,
 				2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */,
+				22589B7919722C64000F4975 /* WFLoginWidgetViewController.m in Sources */,
 				22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */,
 				22FB90981710774C007A3933 /* WFScrollViewDemo.m in Sources */,
 				22A80A3718B2623400BCEC6A /* AccountForm.m in Sources */,

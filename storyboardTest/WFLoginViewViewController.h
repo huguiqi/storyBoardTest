@@ -8,51 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "WFCityListViewController.h"
-#import "WFLoginForm.h"
+#import "WFLoginWidgetViewController.h"
+#import "WFJJViewController.h"
 
-@interface WFLoginViewViewController : UIViewController <CityListViewDelegate,UITextFieldDelegate>
+@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate>
 {
     CGPoint startLocation;
 }
 
-@property(nonatomic,retain) IBOutlet UITextField *userNameField;
-
-@property(nonatomic,retain) IBOutlet UITextField *passwordFiled;
-
-@property(nonatomic,retain) IBOutlet UITextField *ageFiled;
-
-@property(nonatomic,retain) IBOutlet UISwitch *switchON;
-
-@property(nonatomic,retain) IBOutlet UISwitch *switchOFF;
-
-@property(nonatomic,retain) IBOutlet UIButton *buttonOK;
-
 @property(nonatomic,retain) IBOutlet UIView *conditionView;
-
-@property (nonatomic,strong) IBOutlet UIControl *loginMainView;
 
 @property(nonatomic, strong) WFCityListViewController *cityListViewController;
 
-@property(nonatomic,strong) WFLoginForm *loginForm;
+@property (nonatomic,strong) WFLoginWidgetViewController *loginViewWidgt;
 
-
--(IBAction)postNotification:(id)sender;
-
--(IBAction)textFieldDoneEditing:(id)sender;
-
--(IBAction)backgroupTap:(id)sender;
-
--(IBAction)slideAgeChange:(id)sender;
-
--(IBAction)turnSwitchEvent:(id)sender;
-
--(IBAction)toggleController:(id)sender;
 
 -(IBAction)toBarItemView:(id)sender;
 
 -(IBAction)showNavigationBar:(id)sender;
-
--(void)showLoginView;
 
   
 @end

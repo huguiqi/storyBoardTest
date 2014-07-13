@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WFJJNavigationViewController.h"
-#import "WFLoginViewViewController.h"
 
 @interface WFJJViewController : UIViewController<NavigationBackDelegate>
 
-//@property (nonatomic,strong) WFLoginViewViewController *loginViewWidgt;
-@property (nonatomic,strong) WFLoginViewViewController *loginViewWidgt;
 
 @end
