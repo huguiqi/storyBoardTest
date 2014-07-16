@@ -10,6 +10,7 @@
 #import "WFCityListViewController.h"
 #import "WFLoginWidgetViewController.h"
 #import "WFJJViewController.h"
+#import "WFPopViewController.h"
 
 @interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate>
 {
@@ -21,6 +22,9 @@
 @property(nonatomic, strong) WFCityListViewController *cityListViewController;
 
 @property (nonatomic,strong) WFLoginWidgetViewController *loginViewWidgt;
+
+@property (nonatomic,strong) WFPopViewController *popViewController;
+
 
 
 -(IBAction)toBarItemView:(id)sender;

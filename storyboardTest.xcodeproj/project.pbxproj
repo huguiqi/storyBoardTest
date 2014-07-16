@@ -85,6 +85,7 @@
 		35CDBFDC1828CDC6001B1A6E /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */; };
 		35E4F2E21890F1B400675916 /* WFBarItemViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 35E4F2E01890F1B400675916 /* WFBarItemViewController.h */; };
 		35E4F2E31890F1B400675916 /* WFBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4F2E11890F1B400675916 /* WFBarItemViewController.m */; };
+		35E7D509197679460030838F /* WFPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E7D508197679460030838F /* WFPopViewController.m */; };
 		35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1BAF917326F2500FBE740 /* Item3ViewController.m */; };
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
@@ -218,6 +219,8 @@
 		35CDBFDB1828CDC6001B1A6E /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		35E4F2E01890F1B400675916 /* WFBarItemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFBarItemViewController.h; sourceTree = "<group>"; };
 		35E4F2E11890F1B400675916 /* WFBarItemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFBarItemViewController.m; sourceTree = "<group>"; };
+		35E7D507197679460030838F /* WFPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFPopViewController.h; sourceTree = "<group>"; };
+		35E7D508197679460030838F /* WFPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPopViewController.m; sourceTree = "<group>"; };
 		35F1BAF817326F2500FBE740 /* Item3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item3ViewController.h; sourceTree = "<group>"; };
 		35F1BAF917326F2500FBE740 /* Item3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item3ViewController.m; sourceTree = "<group>"; };
 		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 				22159CF7184F75700061A8DE /* WeatherWidgetViewController.m */,
 				22589B7719722C64000F4975 /* WFLoginWidgetViewController.h */,
 				22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */,
+				35E7D507197679460030838F /* WFPopViewController.h */,
+				35E7D508197679460030838F /* WFPopViewController.m */,
 			);
 			name = widget;
 			sourceTree = "<group>";
@@ -798,6 +803,7 @@
 				22FECF82164FFE3800720705 /* WFLoginViewViewController.m in Sources */,
 				35166F6E1831C8A400F82BAA /* FloatViewObj.m in Sources */,
 				22FECF85164FFE6200720705 /* WFCityListViewController.m in Sources */,
+				35E7D509197679460030838F /* WFPopViewController.m in Sources */,
 				2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */,
 				22589B7919722C64000F4975 /* WFLoginWidgetViewController.m in Sources */,
 				22FB9090171050A5007A3933 /* Item1ViewController.m in Sources */,

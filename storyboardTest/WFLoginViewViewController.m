@@ -65,6 +65,8 @@
     return _cityListViewController;
 }
 
+
+
 - (IBAction)showCityListView:(id)sender {
     [UIView beginAnimations:@"showCityList" context:nil];
     [UIView setAnimationRepeatCount:1];
@@ -110,6 +112,11 @@
     [self.loginViewWidgt check:self segueTo:SUGUE_LIST_TO_BOOKING];
 }
 
+-(IBAction)testScreenView:(id)sender
+{
+    [self.popViewController showItemView];
+}
+
 -(WFLoginWidgetViewController *)loginViewWidgt
 {
     if (!_loginViewWidgt) {
@@ -120,6 +127,15 @@
     return _loginViewWidgt;
 }
 
+-(WFPopViewController *) popViewController{
+    if (!_popViewController) {
+        _popViewController = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"WFPopViewController"];
+//        [_popViewController loadView];
+//        [_popViewController viewDidLoad];
+        [self.view addSubview:_popViewController.view];
+    }
+    return _popViewController;
+}
 
 
 
