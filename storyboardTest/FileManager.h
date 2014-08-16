@@ -12,5 +12,7 @@
 
 + (NSString *)filePath:(NSString *)fileName;
 + (NSString *)fileCachesPath:(NSString *)fileName;
++ (NSString *)fileResourcePath:(NSString *)fileName type:(NSString *)type;
++(NSString *)fileResourcePathForUnitTest:(Class)aClass name:(NSString *)fileName type:(NSString *)type;
 
 @end

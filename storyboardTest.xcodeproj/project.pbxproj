@@ -14,6 +14,14 @@
 		22159CFE184F85390061A8DE /* hotel-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CFC184F85390061A8DE /* hotel-next.png */; };
 		22159CFF184F85390061A8DE /* hotel-next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CFD184F85390061A8DE /* hotel-next@2x.png */; };
 		2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */; };
+		2245B7D7199DE0E200898267 /* BusinessTest.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7D6199DE0E200898267 /* BusinessTest.geojson */; };
+		2245B7D9199DF00A00898267 /* BusinessTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7D8199DF00A00898267 /* BusinessTest.plist */; };
+		2245B7E1199F0F0D00898267 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2245B7E0199F0F0D00898267 /* XCTest.framework */; };
+		2245B7E2199F0F0D00898267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FECF59164FFCA600720705 /* Foundation.framework */; };
+		2245B7E3199F0F0D00898267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FECF57164FFCA600720705 /* UIKit.framework */; };
+		2245B7E9199F0F0D00898267 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7E7199F0F0D00898267 /* InfoPlist.strings */; };
+		2245B7EB199F0F0D00898267 /* storyboardTest_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245B7EA199F0F0D00898267 /* storyboardTest_Tests.m */; };
+		2245B7F3199F12CF00898267 /* Metros.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7F2199F12CF00898267 /* Metros.geojson */; };
 		22589B7919722C64000F4975 /* WFLoginWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */; };
 		226C65071726CE2000050864 /* Item2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226C65061726CE2000050864 /* Item2ViewController.m */; };
 		22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22736AAD1778859D00BADFE7 /* CrosswiseViewController.m */; };
@@ -93,6 +101,16 @@
 		4B114DB33FC47EDC9071BD85 /* WFFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1142FAAA3450A8E66B514E /* WFFooterView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2245B7ED199F0F0D00898267 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22FECF4A164FFCA600720705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22FECF52164FFCA600720705;
+			remoteInfo = storyboardTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		22159CF2184F75290061A8DE /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
 		22159CF3184F75290061A8DE /* cloudy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudy@2x.png"; sourceTree = "<group>"; };
@@ -104,6 +122,15 @@
 		22159CFD184F85390061A8DE /* hotel-next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hotel-next@2x.png"; sourceTree = "<group>"; };
 		2244B6CD17807BD70029F7FA /* UIViewCurlUpOrDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCurlUpOrDownViewController.h; sourceTree = "<group>"; };
 		2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCurlUpOrDownViewController.m; sourceTree = "<group>"; };
+		2245B7D6199DE0E200898267 /* BusinessTest.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BusinessTest.geojson; path = ../storyboardTest/BusinessTest.geojson; sourceTree = "<group>"; };
+		2245B7D8199DF00A00898267 /* BusinessTest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = BusinessTest.plist; path = ../storyboardTest/BusinessTest.plist; sourceTree = "<group>"; };
+		2245B7DF199F0F0C00898267 /* storyboardTest Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storyboardTest Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2245B7E0199F0F0D00898267 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2245B7E6199F0F0D00898267 /* storyboardTest Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "storyboardTest Tests-Info.plist"; sourceTree = "<group>"; };
+		2245B7E8199F0F0D00898267 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2245B7EA199F0F0D00898267 /* storyboardTest_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboardTest_Tests.m; sourceTree = "<group>"; };
+		2245B7EC199F0F0D00898267 /* storyboardTest Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "storyboardTest Tests-Prefix.pch"; sourceTree = "<group>"; };
+		2245B7F2199F12CF00898267 /* Metros.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Metros.geojson; sourceTree = "<group>"; };
 		22589B7719722C64000F4975 /* WFLoginWidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFLoginWidgetViewController.h; sourceTree = "<group>"; };
 		22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFLoginWidgetViewController.m; sourceTree = "<group>"; };
 		226C65051726CE2000050864 /* Item2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item2ViewController.h; sourceTree = "<group>"; };
@@ -231,6 +258,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2245B7DC199F0F0C00898267 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2245B7E1199F0F0D00898267 /* XCTest.framework in Frameworks */,
+				2245B7E3199F0F0D00898267 /* UIKit.framework in Frameworks */,
+				2245B7E2199F0F0D00898267 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22FECF50164FFCA600720705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +318,28 @@
 				2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */,
 			);
 			name = curlUPOrDown;
+			sourceTree = "<group>";
+		};
+		2245B7E4199F0F0D00898267 /* storyboardTest Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2245B7EA199F0F0D00898267 /* storyboardTest_Tests.m */,
+				2245B7E5199F0F0D00898267 /* Supporting Files */,
+			);
+			path = "storyboardTest Tests";
+			sourceTree = "<group>";
+		};
+		2245B7E5199F0F0D00898267 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2245B7D6199DE0E200898267 /* BusinessTest.geojson */,
+				2245B7D8199DF00A00898267 /* BusinessTest.plist */,
+				2245B7E6199F0F0D00898267 /* storyboardTest Tests-Info.plist */,
+				2245B7E7199F0F0D00898267 /* InfoPlist.strings */,
+				2245B7EC199F0F0D00898267 /* storyboardTest Tests-Prefix.pch */,
+				2245B7F2199F12CF00898267 /* Metros.geojson */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		22589B7619722C1C000F4975 /* widget */ = {
@@ -415,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				22FECF5D164FFCA600720705 /* storyboardTest */,
+				2245B7E4199F0F0D00898267 /* storyboardTest Tests */,
 				22FECF56164FFCA600720705 /* Frameworks */,
 				22FECF54164FFCA600720705 /* Products */,
 			);
@@ -424,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				22FECF53164FFCA600720705 /* storyboardTest.app */,
+				2245B7DF199F0F0C00898267 /* storyboardTest Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -446,6 +507,7 @@
 				22FECF57164FFCA600720705 /* UIKit.framework */,
 				22FECF59164FFCA600720705 /* Foundation.framework */,
 				22FECF5B164FFCA600720705 /* CoreGraphics.framework */,
+				2245B7E0199F0F0D00898267 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -699,6 +761,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2245B7DE199F0F0C00898267 /* storyboardTest Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2245B7EF199F0F0D00898267 /* Build configuration list for PBXNativeTarget "storyboardTest Tests" */;
+			buildPhases = (
+				2245B7DB199F0F0C00898267 /* Sources */,
+				2245B7DC199F0F0C00898267 /* Frameworks */,
+				2245B7DD199F0F0C00898267 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2245B7EE199F0F0D00898267 /* PBXTargetDependency */,
+			);
+			name = "storyboardTest Tests";
+			productName = "storyboardTest Tests";
+			productReference = 2245B7DF199F0F0C00898267 /* storyboardTest Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		22FECF52164FFCA600720705 /* storyboardTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FECF77164FFCA600720705 /* Build configuration list for PBXNativeTarget "storyboardTest" */;
@@ -726,6 +806,9 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = huguiqi;
 				TargetAttributes = {
+					2245B7DE199F0F0C00898267 = {
+						TestTargetID = 22FECF52164FFCA600720705;
+					};
 					22FECF52164FFCA600720705 = {
 						DevelopmentTeam = 4Z78PCW342;
 					};
@@ -751,15 +834,26 @@
 			projectRoot = "";
 			targets = (
 				22FECF52164FFCA600720705 /* storyboardTest */,
+				2245B7DE199F0F0C00898267 /* storyboardTest Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2245B7DD199F0F0C00898267 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2245B7E9199F0F0D00898267 /* InfoPlist.strings in Resources */,
+				2245B7F3199F12CF00898267 /* Metros.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22FECF51164FFCA600720705 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2245B7D9199DF00A00898267 /* BusinessTest.plist in Resources */,
 				3540AF05182C74EC006B12FD /* hotel-topbar-phone@2x.png in Resources */,
 				22159CF5184F75290061A8DE /* cloudy@2x.png in Resources */,
 				22FECF62164FFCA600720705 /* InfoPlist.strings in Resources */,
@@ -769,6 +863,7 @@
 				22FECF71164FFCA600720705 /* MainStoryboard.storyboard in Resources */,
 				22159CF4184F75290061A8DE /* cloudy.png in Resources */,
 				22FB9095171076D9007A3933 /* IMG_1142.JPG in Resources */,
+				2245B7D7199DE0E200898267 /* BusinessTest.geojson in Resources */,
 				3540AF04182C74EC006B12FD /* hotel-topbar-phone.png in Resources */,
 				22159CFE184F85390061A8DE /* hotel-next.png in Resources */,
 				3540AF01182C74D4006B12FD /* hotel-topbar-back@2x.png in Resources */,
@@ -788,6 +883,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2245B7DB199F0F0C00898267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2245B7EB199F0F0D00898267 /* storyboardTest_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22FECF4F164FFCA600720705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,7 +948,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2245B7EE199F0F0D00898267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22FECF52164FFCA600720705 /* storyboardTest */;
+			targetProxy = 2245B7ED199F0F0D00898267 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2245B7E7199F0F0D00898267 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2245B7E8199F0F0D00898267 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		22FECF60164FFCA600720705 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -865,6 +984,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2245B7F0199F0F0D00898267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/storyboardTest.app/storyboardTest";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "storyboardTest Tests/storyboardTest Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "storyboardTest Tests/storyboardTest Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2245B7F1199F0F0D00898267 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/storyboardTest.app/storyboardTest";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "storyboardTest Tests/storyboardTest Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "storyboardTest Tests/storyboardTest Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		22FECF75164FFCA600720705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -977,6 +1165,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2245B7EF199F0F0D00898267 /* Build configuration list for PBXNativeTarget "storyboardTest Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2245B7F0199F0F0D00898267 /* Debug */,
+				2245B7F1199F0F0D00898267 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		22FECF4D164FFCA600720705 /* Build configuration list for PBXProject "storyboardTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

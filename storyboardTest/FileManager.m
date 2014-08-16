@@ -22,4 +22,16 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     return [documentsDirectory stringByAppendingPathComponent:fileName];
 }
+
++(NSString *)fileResourcePathForUnitTest:(Class)aClass name:(NSString *)fileName type:(NSString *)type
+{
+     NSString *filePath = [[NSBundle bundleForClass:aClass] pathForResource:fileName ofType:type];
+    return filePath;
+}
+
++ (NSString *)fileResourcePath:(NSString *)fileName type:(NSString *)type
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:type];
+    return filePath;
+}
 @end
