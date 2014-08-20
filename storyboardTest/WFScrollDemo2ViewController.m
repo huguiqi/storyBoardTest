@@ -9,9 +9,6 @@
 #import "WFScrollDemo2ViewController.h"
 
 @interface WFScrollDemo2ViewController ()
-{
-    CGRect scrollFrame;
-}
 
 @end
 
@@ -23,8 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.scrollView.contentSize = CGSizeMake(320, 480);
-    scrollFrame = self.scrollView.frame;
+    self.scrollView.contentSize = CGSizeMake(150*2, 80);
+
 }
 
 //-(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -37,12 +34,18 @@
     
 //}
 
-//-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-//{
-//     NSLog(@"ContentOffset  x is  %f,yis %f",scrollView.contentOffset.x,scrollView.contentOffset.y);
-//    
-//     self.scrollView.frame = CGRectMake(scrollFrame.origin.x, scrollFrame.origin.y - scrollView.contentOffset.y, scrollFrame.size.width, scrollFrame.size.height);
-//}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    CGPoint contentOffset = scrollView.contentOffset;
+    NSLog(@"ContentOffset  x is  %f,yis %f",contentOffset.x,contentOffset.y);
+    CGRect bounts = scrollView.bounds;
+    [self.pageControl setCurrentPage:contentOffset.x/bounts.size.width];
+}
+
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

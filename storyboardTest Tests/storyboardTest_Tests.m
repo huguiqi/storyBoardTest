@@ -92,4 +92,9 @@
     NSLog(@"landMarkPath:%@",businessPath);
 }
 
+-(void)testJSONConvertBean
+{
+    
+}
+
 @end

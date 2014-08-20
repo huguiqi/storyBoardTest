@@ -11,5 +11,6 @@
 @interface WFScrollDemo2ViewController : WFJJViewController<UIScrollViewDelegate>
 
 @property(nonatomic,weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic,weak) IBOutlet UIPageControl *pageControl;
 
 @end

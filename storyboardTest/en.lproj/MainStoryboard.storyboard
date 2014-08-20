@@ -510,27 +510,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="x4v-ks-R8d">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" id="yXa-DM-pFB">
+                                <rect key="frame" x="85" y="33" width="155" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="I7a-uB-NvE">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="x4v-ks-R8d">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BFlyCircle.png" id="7oY-Vy-qpI">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BFlyCircle.png" id="aqP-98-Cw8">
+                                                <rect key="frame" x="150" y="0.0" width="150" height="80"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="weS-Kt-xsF" id="lNR-wD-MCS"/>
+                                        </connections>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="98i-8s-iEf">
+                                        <rect key="frame" x="58" y="65" width="39" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.95294117649999999" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="weS-Kt-xsF" id="lNR-wD-MCS"/>
-                                </connections>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.4941176471" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="b6s-05-TxP"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="pageControl" destination="98i-8s-iEf" id="XDq-YI-Nsv"/>
                         <outlet property="scrollView" destination="x4v-ks-R8d" id="Keg-NN-8kp"/>
                     </connections>
                 </viewController>
