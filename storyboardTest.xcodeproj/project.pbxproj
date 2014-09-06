@@ -28,6 +28,7 @@
 		22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AAF17788F9000BADFE7 /* BFlyCircle.png */; };
 		22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB017788F9000BADFE7 /* cover 480x300-take2.png */; };
 		22736AB417788F9000BADFE7 /* cover320x416.png in Resources */ = {isa = PBXBuildFile; fileRef = 22736AB117788F9000BADFE7 /* cover320x416.png */; };
+		227F6AB219AA2DFF0024A08A /* ZHNumberSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 227F6AB119AA2DFF0024A08A /* ZHNumberSortTest.m */; };
 		2295571B16F222CC00C0DBD2 /* WFWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */; };
 		22A80A3718B2623400BCEC6A /* AccountForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A80A3618B2623400BCEC6A /* AccountForm.m */; };
 		22A8785C175E429600E82C69 /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8785B175E429600E82C69 /* MacAddress.m */; };
@@ -140,6 +141,7 @@
 		22736AAF17788F9000BADFE7 /* BFlyCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BFlyCircle.png; sourceTree = "<group>"; };
 		22736AB017788F9000BADFE7 /* cover 480x300-take2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cover 480x300-take2.png"; sourceTree = "<group>"; };
 		22736AB117788F9000BADFE7 /* cover320x416.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover320x416.png; sourceTree = "<group>"; };
+		227F6AB119AA2DFF0024A08A /* ZHNumberSortTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNumberSortTest.m; sourceTree = "<group>"; };
 		2295571916F222CC00C0DBD2 /* WFWebViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFWebViewDemo.h; sourceTree = "<group>"; };
 		2295571A16F222CC00C0DBD2 /* WFWebViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFWebViewDemo.m; sourceTree = "<group>"; };
 		22A80A3518B2623400BCEC6A /* AccountForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountForm.h; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				2245B7EA199F0F0D00898267 /* storyboardTest_Tests.m */,
+				227F6AB119AA2DFF0024A08A /* ZHNumberSortTest.m */,
 				2245B7E5199F0F0D00898267 /* Supporting Files */,
 			);
 			path = "storyboardTest Tests";
@@ -887,6 +890,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227F6AB219AA2DFF0024A08A /* ZHNumberSortTest.m in Sources */,
 				2245B7EB199F0F0D00898267 /* storyboardTest_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1172,6 +1176,7 @@
 				2245B7F1199F0F0D00898267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22FECF4D164FFCA600720705 /* Build configuration list for PBXProject "storyboardTest" */ = {
 			isa = XCConfigurationList;

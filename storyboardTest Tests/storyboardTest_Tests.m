@@ -70,7 +70,6 @@
 
 -(void)testJSONConvertDictForMetros
 {
-//    NSString *jsonPath = [FileManager fileResourcePath:@"Metros" type:@"geojson"];
     NSString *jsonPath = [FileManager fileResourcePathForUnitTest:self.class name:@"Metros" type:@"geojson"];
     NSError *error;
     NSString *parseJason = [[NSString alloc] initWithContentsOfFile:jsonPath encoding:NSUTF8StringEncoding error:nil];
