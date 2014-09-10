@@ -12,7 +12,7 @@
 #import "WFJJViewController.h"
 #import "WFPopViewController.h"
 
-@interface WFLoginViewViewController : WFJJViewController <CityListViewDelegate>
+@interface WFFloatViewDemoController : WFJJViewController <CityListViewDelegate>
 {
     CGPoint startLocation;
 }

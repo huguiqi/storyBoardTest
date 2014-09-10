@@ -7,17 +7,17 @@
 //
 
 
-#import "WFLoginViewViewController.h"
+#import "WFFloatViewDemoController.h"
 #import "WFCityListViewController.h"
 #import "WFBarItemViewController.h"
 #import "DeviceInfo.h"
 
 
-@interface WFLoginViewViewController ()
+@interface WFFloatViewDemoController ()
 
 @end
 
-@implementation WFLoginViewViewController
+@implementation WFFloatViewDemoController
 
 
 - (void)viewDidLoad {
@@ -130,8 +130,6 @@
 -(WFPopViewController *) popViewController{
     if (!_popViewController) {
         _popViewController = [[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"WFPopViewController"];
-//        [_popViewController loadView];
-//        [_popViewController viewDidLoad];
         [self.view addSubview:_popViewController.view];
     }
     return _popViewController;

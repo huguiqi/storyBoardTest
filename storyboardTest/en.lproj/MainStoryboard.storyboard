@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="-704" y="-2202"/>
         </scene>
-        <!--Login View View Controller-->
+        <!--Float View Demo Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController storyboardIdentifier="WFLoginWidget" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="WFLoginViewViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FloatViewDemoController" id="2" customClass="WFFloatViewDemoController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxQ-6t-gnc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -273,10 +273,11 @@
                                             <action selector="slideAgeChange:" destination="YWP-HO-50R" eventType="valueChanged" id="8OU-zi-mc6"/>
                                         </connections>
                                     </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aAd-Yf-D2W">
-                                        <rect key="frame" x="112" y="193" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aAd-Yf-D2W">
+                                        <rect key="frame" x="46" y="184" width="80" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="确定">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="登陆并预订">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -285,8 +286,95 @@
                                             <action selector="postNotification:" destination="2" eventType="touchUpInside" id="BFX-su-goq"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cJ7-JP-fL4">
+                                        <rect key="frame" x="137" y="184" width="81" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="保存入库">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveToSqlite:" destination="YWP-HO-50R" eventType="touchUpInside" id="0GF-b6-6yI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vb2-fp-ULn">
+                                        <rect key="frame" x="216" y="182" width="81" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="显示条目">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadAccountList:" destination="YWP-HO-50R" eventType="touchUpInside" id="EZf-dY-2v6"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="qpO-1K-YbL" customClass="AccountListView">
+                                        <rect key="frame" x="40" y="220" width="250" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="22" id="dIY-Yg-1KT">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="180"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <prototypes>
+                                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" id="YN0-oo-eWq" customClass="AccountCell">
+                                                        <rect key="frame" x="0.0" y="1" width="250" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YN0-oo-eWq" id="IUA-aa-GPq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="250" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MgW-q5-2f3">
+                                                                    <rect key="frame" x="5" y="5" width="60" height="30"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" red="0.4941176471" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m26-ln-doF">
+                                                                    <rect key="frame" x="66" y="5" width="60" height="30"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" red="0.4941176471" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zRa-lh-KqE">
+                                                                    <rect key="frame" x="127" y="5" width="60" height="30"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" red="0.4941176471" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4i-47-Jx0">
+                                                                    <rect key="frame" x="188" y="5" width="60" height="30"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <color key="backgroundColor" red="0.4941176471" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="ageLabel" destination="zRa-lh-KqE" id="30B-5F-Xl7"/>
+                                                            <outlet property="genderLabel" destination="o4i-47-Jx0" id="gZN-3g-3UM"/>
+                                                            <outlet property="nameLabel" destination="MgW-q5-2f3" id="ibR-eh-akc"/>
+                                                            <outlet property="passwordLabel" destination="m26-ln-doF" id="qco-lN-SN3"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="qpO-1K-YbL" id="IZb-kU-fz3"/>
+                                                    <outlet property="delegate" destination="qpO-1K-YbL" id="FQc-DZ-k0G"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="accountTable" destination="dIY-Yg-1KT" id="lqd-yQ-YnD"/>
+                                        </connections>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.21568629145622253" green="0.58039218187332153" blue="0.85882359743118286" alpha="1" colorSpace="deviceRGB"/>
                                 <connections>
                                     <action selector="backgroupTap:" destination="YWP-HO-50R" eventType="touchUpInside" id="tKL-uV-SCt"/>
                                 </connections>
@@ -313,6 +401,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="accountListView" destination="qpO-1K-YbL" id="RhQ-aU-UAx"/>
                         <outlet property="ageFiled" destination="LEM-EY-l8F" id="uIB-pz-obd"/>
                         <outlet property="loginMainView" destination="des-j3-OCo" id="NLm-Ot-FZH"/>
                         <outlet property="passwordFiled" destination="csB-Tf-2ie" id="t78-Er-qO3"/>
@@ -321,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSX-KF-iR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-2879"/>
+            <point key="canvasLocation" x="-704" y="-2886"/>
         </scene>
         <!--Pop View Controller-->
         <scene sceneID="ehL-py-Kbh">
@@ -361,7 +450,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oT3-yY-7c2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-2879"/>
+            <point key="canvasLocation" x="-291" y="-2886"/>
         </scene>
         <!--Item2 View Controller - blockTest-->
         <scene sceneID="k5F-ey-GYh">

@@ -22,4 +22,14 @@
     }
 }
 
+-(AccountEntity *)buildEntity
+{
+    AccountEntity *entity = [[AccountEntity alloc] init];
+    [entity setUserName:self.name];
+    [entity setPassword:self.password];
+    [entity setAge:self.age];
+    [entity setGender:self.gender];
+    return entity;
+}
+
 @end

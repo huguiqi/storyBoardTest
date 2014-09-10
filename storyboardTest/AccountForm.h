@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AccountEntity.h"
 
 @interface AccountForm : NSObject
 
 @property(nonatomic,copy) NSString *name;
-@property(nonatomic,copy) NSString *code;
+@property(nonatomic,copy) NSString *password;
+@property(nonatomic,copy) NSNumber *age;
+@property(nonatomic,copy) NSNumber *gender;
 @property(nonatomic,copy) NSString *desc;
+
+-(AccountEntity *)buildEntity;
 
 @end

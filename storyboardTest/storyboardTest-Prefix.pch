@@ -13,6 +13,7 @@
     #import <Foundation/Foundation.h>
     #import "Constant.h"
     #import "WFAppDelegate.h"
+    #import <CoreData/CoreData.h>
 #endif
 
 //A better version of NSLog  有大学问,宏代码换行必须后加反斜杆(\),##代表连接参数(A,##B),加while是为了解决代码结尾可能会多出分号导致编译出错的问题

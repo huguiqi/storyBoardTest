@@ -9,6 +9,8 @@
 #import "WFLoginWidgetViewController.h"
 #import "AccountForm.h"
 #import "DeviceInfo.h"
+#import "SqlDataTemplate.h"
+#import "AccountListView.h"
 
 
 #define TAG_LOGINVIEW   102
@@ -17,11 +19,11 @@
 {
     BOOL isHidden;
     UIColor *keyboardColor;
+    SqlDataTemplate *template;
 }
 
 @property(nonatomic,strong) AccountForm *accountForm;
-
-
+@property (nonatomic,weak) IBOutlet AccountListView *accountListView;
 
 @end
 
@@ -57,6 +59,7 @@
     
     self.view.frame = CGRectOffset(self.view.frame, -320, 0);
     
+    template = [[SqlDataTemplate alloc] init];
 }
 
 //buttonOk event
@@ -254,6 +257,39 @@
     [[keyboardWindow viewWithTag:8] removeFromSuperview];
 }
 
+
+-(IBAction)saveToSqlite:(id)sender
+{
+    [self buildAccountForm];
+    if ([template save:self.accountForm]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"入库成功" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"入库失败" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
+
+
+-(IBAction)loadAccountList:(id)sender
+{
+     self.accountListView.accountArray = [template loadAccountList];
+    if (!self.accountListView.accountArray || [self.accountListView.accountArray count] == 0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"没有数据" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }else{
+        [self.accountListView.accountTable reloadData];
+    }
+    
+}
+
+-(void)buildAccountForm{
+    self.accountForm.name =self.userNameField.text;
+    self.accountForm.age = [NSNumber numberWithInteger:[self.ageFiled.text integerValue]];
+    self.accountForm.password = self.passwordFiled.text;
+}
+
+
 -(void)dealloc
 {
     [_loginForm removeObserver:_accountForm forKeyPath:@"userName"];
@@ -265,16 +301,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
