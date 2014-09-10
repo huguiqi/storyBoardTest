@@ -110,18 +110,6 @@
     return _persistentStoreCoordinator;
 }
 
--(NSManagedObject *)giveEntity:(Class)entityClass{
-    
-    id newEntity = [NSEntityDescription insertNewObjectForEntityForName:@"Entity" inManagedObjectContext:self.managedObjectContext];
-    
-    if (entityClass == [AccountEntity class]) {
-        return (AccountEntity *)newEntity;
-    }
-    if (entityClass == [LoginEntity class]) {
-        return (LoginEntity *)newEntity;
-    }
-    return newEntity;
-}
 
 -(BOOL)save:(AccountForm *)form{
     NSError *err = nil;
