@@ -7,7 +7,6 @@
 //
 
 #import "LoginEntity.h"
-#import "AccountEntity.h"
 
 
 @implementation LoginEntity
@@ -15,8 +14,6 @@
 @dynamic loginName;
 @dynamic lastLoginTime;
 @dynamic flag;
-@dynamic accountId;
-@dynamic account;
 
 //-(void)awakeFromInsert{
 //    [super awakeFromInsert];

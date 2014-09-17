@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LoginEntity.h"
 
 @interface AccountEntity : NSManagedObject
 
@@ -16,6 +16,6 @@
 @property (nonatomic, retain) NSNumber * age;
 @property (nonatomic, retain) NSNumber * gender;
 @property (nonatomic, retain) NSNumber * id;
-@property (nonatomic, retain) NSNumber *accountId;
+@property (nonatomic, retain) LoginEntity *loginEntity;
 
 @end

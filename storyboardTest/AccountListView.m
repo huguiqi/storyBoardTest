@@ -41,7 +41,7 @@
     cell.passwordLabel.text = entity.password;
     cell.ageLabel.text = [NSString stringWithFormat:@"%@",entity.age];
     cell.genderLabel.text = currentRow%2==0? @"男":@"女";
-    
+    NSLog(@"logingName:%@",entity.loginEntity.loginName);
     return cell;
 }
 

@@ -18,9 +18,11 @@
 #import "AccountEntity.h"
 #import "LoginEntity.h"
 
+
 @interface SqlDataTemplate()
 {
     NSURL *storeUrl;
+    NSInteger *index;
 }
 @property (readonly, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, nonatomic) NSManagedObjectModel *managedObjectModel;
@@ -57,8 +59,10 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"WolfDB" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    //此处不是很懂，有时间研究下
+//    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"WolfDB" withExtension:@"momd"];
+//    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+     _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     return _managedObjectModel;
 }
 
@@ -68,10 +72,11 @@
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
     if (_persistentStoreCoordinator != nil) {
+        index = 0;
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [NSURL fileURLWithPath:[FileManager filePath:@"WolfDB.data"]];
+    NSURL *storeURL = [NSURL fileURLWithPath:[FileManager filePath:@"WolfDB.sqlite"]];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -80,29 +85,6 @@
     NSDictionary *options = @{ NSMigratePersistentStoresAutomaticallyOption : @YES, NSInferMappingModelAutomaticallyOption : @YES };
     
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
-        /*
-         Replace this implementation with code to handle the error appropriately.
-         
-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-         
-         Typical reasons for an error here include:
-         * The persistent store is not accessible;
-         * The schema for the persistent store is incompatible with current managed object model.
-         Check the error message to determine what the actual problem was.
-         
-         
-         If the persistent store is not accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
-         
-         If you encounter schema incompatibility errors during development, you can reduce their frequency by:
-         * Simply deleting the existing store:
-         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
-         
-         * Performing automatic lightweight migration by passing the following dictionary as the options parameter:
-         @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES}
-         
-         Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
-         
-         */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
@@ -115,11 +97,17 @@
     NSError *err = nil;
     
     AccountEntity *entity = (AccountEntity *)[NSEntityDescription insertNewObjectForEntityForName:@"AccountEntity" inManagedObjectContext:self.managedObjectContext];
+    
+    entity.loginEntity = (LoginEntity *)[NSEntityDescription insertNewObjectForEntityForName:@"LoginEntity" inManagedObjectContext:self.managedObjectContext];
+    NSLog(@"entity:%@",entity.loginEntity);
     entity.userName = form.name;
     entity.age = form.age;
     entity.password = form.password;
     entity.id = [[NSNumber alloc] initWithInt:1];
-    
+    index ++;
+    entity.loginEntity.loginName = form.name;
+    entity.loginEntity.lastLoginTime = [NSDate date];
+    entity.loginEntity.flag = [NSNumber numberWithInteger:index];
     BOOL success = [_managedObjectContext save:&err];
     if (!success) {
         NSLog(@"error saving:%@",err);
@@ -134,7 +122,7 @@
 	[request setEntity:entity];
 	
 	// Order the events by creation date, most recent first.
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"age" ascending:NO];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"age" ascending:YES];
 	[request setSortDescriptors:@[sortDescriptor]];
 	
 	// Execute the fetch -- create a mutable copy of the result.

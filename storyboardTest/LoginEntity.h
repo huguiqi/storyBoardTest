@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class AccountEntity;
 
 @interface LoginEntity : NSManagedObject
 
 @property (nonatomic, retain) NSString * loginName;
 @property (nonatomic, retain) NSDate * lastLoginTime;
 @property (nonatomic, retain) NSNumber * flag;
-@property (nonatomic, retain) NSNumber * accountId;
-@property (nonatomic, retain) AccountEntity *account;
 
 @end

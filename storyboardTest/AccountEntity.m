@@ -16,6 +16,5 @@
 @dynamic age;
 @dynamic gender;
 @dynamic id;
-@dynamic accountId;
 
 @end

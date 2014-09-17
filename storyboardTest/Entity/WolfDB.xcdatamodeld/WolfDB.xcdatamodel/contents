@@ -6,17 +6,15 @@
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="accountId" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoginEntity" inverseName="account" inverseEntity="LoginEntity" syncable="YES"/>
+        <relationship name="loginEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LoginEntity" syncable="YES"/>
     </entity>
     <entity name="LoginEntity" representedClassName="LoginEntity" syncable="YES">
-        <attribute name="accountId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="flag" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lastLoginTime" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="loginName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AccountEntity" inverseName="accountId" inverseEntity="AccountEntity" syncable="YES"/>
     </entity>
     <elements>
         <element name="AccountEntity" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="LoginEntity" positionX="-54" positionY="18" width="128" height="118"/>
+        <element name="LoginEntity" positionX="-54" positionY="18" width="128" height="88"/>
     </elements>
 </model>
