@@ -106,6 +106,7 @@
 		35F4A8CB17407634004C48F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BD56FF173A3B8000606275 /* AudioToolbox.framework */; };
 		35F92C5617C74FA800D505CD /* MapKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F92C5517C74FA800D505CD /* MapKitViewController.m */; };
 		35F92C5917C74FF000D505CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F92C5717C74FD200D505CD /* MapKit.framework */; };
+		35FECA8519F65ABD00C79E4E /* BezierPathDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FECA8419F65ABD00C79E4E /* BezierPathDemo.m */; };
 		4B114DB33FC47EDC9071BD85 /* WFFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1142FAAA3450A8E66B514E /* WFFooterView.m */; };
 /* End PBXBuildFile section */
 
@@ -274,6 +275,8 @@
 		35F92C5417C74FA800D505CD /* MapKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapKitViewController.h; sourceTree = "<group>"; };
 		35F92C5517C74FA800D505CD /* MapKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapKitViewController.m; sourceTree = "<group>"; };
 		35F92C5717C74FD200D505CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		35FECA8319F65ABD00C79E4E /* BezierPathDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathDemo.h; sourceTree = "<group>"; };
+		35FECA8419F65ABD00C79E4E /* BezierPathDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathDemo.m; sourceTree = "<group>"; };
 		4B114237BA658983CC01EC65 /* WFFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFooterView.h; sourceTree = "<group>"; };
 		4B1142FAAA3450A8E66B514E /* WFFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -477,6 +480,7 @@
 		22FB908D171048C8007A3933 /* barItem */ = {
 			isa = PBXGroup;
 			children = (
+				35FECA8219F65A2800C79E4E /* UIBezierPath */,
 				357030AC1890FE1000110D3D /* tableView */,
 				35F92C5317C74F7200D505CD /* MapViewDemo */,
 				35603FD4178C00E8000D0BB5 /* customerSugueDemo */,
@@ -817,6 +821,15 @@
 			name = MapViewDemo;
 			sourceTree = "<group>";
 		};
+		35FECA8219F65A2800C79E4E /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				35FECA8319F65ABD00C79E4E /* BezierPathDemo.h */,
+				35FECA8419F65ABD00C79E4E /* BezierPathDemo.m */,
+			);
+			name = UIBezierPath;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -976,6 +989,7 @@
 				22FB90981710774C007A3933 /* WFScrollViewDemo.m in Sources */,
 				22A80A3718B2623400BCEC6A /* AccountForm.m in Sources */,
 				22159CFB184F7C5B0061A8DE /* WeatherViewController.m in Sources */,
+				35FECA8519F65ABD00C79E4E /* BezierPathDemo.m in Sources */,
 				22DC961019C04619004A0E91 /* AccountListView.m in Sources */,
 				22FFBE84171477F900A3D396 /* FileManager.m in Sources */,
 				226C65071726CE2000050864 /* Item2ViewController.m in Sources */,

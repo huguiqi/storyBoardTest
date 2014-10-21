@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Index View Controller - 主页-->
+        <!--主页-->
         <scene sceneID="t1a-X1-Hse">
             <objects>
                 <viewController id="kIm-ag-wVt" customClass="IndexViewController" sceneMemberID="viewController">
@@ -452,7 +451,7 @@
             </objects>
             <point key="canvasLocation" x="-291" y="-2886"/>
         </scene>
-        <!--Item2 View Controller - blockTest-->
+        <!--blockTest-->
         <scene sceneID="k5F-ey-GYh">
             <objects>
                 <viewController id="UE6-aZ-avL" customClass="Item2ViewController" sceneMemberID="viewController">
@@ -643,7 +642,7 @@
             </objects>
             <point key="canvasLocation" x="2214" y="227"/>
         </scene>
-        <!--Item1 View Controller - 第一个Item-->
+        <!--第一个Item-->
         <scene sceneID="SvR-KZ-4vG">
             <objects>
                 <viewController id="RNy-GM-QUq" customClass="Item1ViewController" sceneMemberID="viewController">
@@ -815,7 +814,7 @@
             </objects>
             <point key="canvasLocation" x="2214" y="-513"/>
         </scene>
-        <!--About Geometry View Controller - UIView视图与几何动画-->
+        <!--UIView视图与几何动画-->
         <scene sceneID="Vrw-94-Hhk">
             <objects>
                 <viewController id="puH-3k-mSe" customClass="AboutGeometryViewController" sceneMemberID="viewController">
@@ -906,7 +905,7 @@
             </objects>
             <point key="canvasLocation" x="1388" y="2703"/>
         </scene>
-        <!--View Center View Controller - UIViewCenterTest-->
+        <!--UIViewCenterTest-->
         <scene sceneID="8mU-ao-V4b">
             <objects>
                 <viewController id="ZrJ-Df-qJL" customClass="UIViewCenterViewController" sceneMemberID="viewController">
@@ -951,7 +950,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="999" contentMode="center" image="BFlyCircle.png" id="L8F-12-YRU">
-                                <rect key="frame" x="0.0" y="534" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </imageView>
@@ -1034,7 +1032,7 @@
             </objects>
             <point key="canvasLocation" x="-704" y="-850"/>
         </scene>
-        <!--View Controller - TableViewTest-->
+        <!--TableViewTest-->
         <scene sceneID="v6C-LM-YW3">
             <objects>
                 <viewController id="d1x-T9-F0u" sceneMemberID="viewController">
@@ -1323,7 +1321,7 @@
             </objects>
             <point key="canvasLocation" x="-1323" y="-1532"/>
         </scene>
-        <!--Item3 View Controller - 测试代码-->
+        <!--测试代码-->
         <scene sceneID="5E1-6I-YlK">
             <objects>
                 <viewController id="7Nj-LE-G2F" customClass="Item3ViewController" sceneMemberID="viewController">
@@ -1366,6 +1364,16 @@
                                 </state>
                                 <connections>
                                     <action selector="testCameraPhoto:" destination="7Nj-LE-G2F" eventType="touchUpInside" id="rxJ-A1-EDj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mgw-EY-IWQ">
+                                <rect key="frame" x="194" y="45" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="画圈圈">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q8l-J2-GVg" kind="push" id="ldZ-kY-IcU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1417,6 +1425,21 @@
             </objects>
             <point key="canvasLocation" x="1800" y="-1496"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uQz-rK-Cnf">
+            <objects>
+                <viewController id="q8l-J2-GVg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nDX-8J-VQa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G1v-iU-JEt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVp-65-fQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="-2202"/>
+        </scene>
         <!--Accelerometer View Controller-->
         <scene sceneID="Jaz-K5-1BP">
             <objects>
@@ -1430,7 +1453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULI-UQ-Zk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="-1496"/>
+            <point key="canvasLocation" x="1183" y="-1496"/>
         </scene>
         <!--View Curl Up Or Down View Controller-->
         <scene sceneID="Usn-AE-GQw">
