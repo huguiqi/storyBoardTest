@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1Fn-rb-Bve">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -1425,16 +1426,26 @@
             </objects>
             <point key="canvasLocation" x="1800" y="-1496"/>
         </scene>
-        <!--View Controller-->
+        <!--Bezier Path Demo-->
         <scene sceneID="uQz-rK-Cnf">
             <objects>
-                <viewController id="q8l-J2-GVg" sceneMemberID="viewController">
+                <viewController id="q8l-J2-GVg" customClass="BezierPathDemo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDX-8J-VQa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Ama-hR-qfc">
+                                <rect key="frame" x="50" y="40" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="G1v-iU-JEt"/>
+                    <connections>
+                        <outlet property="pathView" destination="Ama-hR-qfc" id="8Ah-4n-Err"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVp-65-fQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,4 +10,6 @@
 
 @interface BezierPathDemo : WFViewController
 
+@property (nonatomic,weak) IBOutlet UIView *pathView;
+
 @end

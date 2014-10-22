@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIBezierPath *bgPath = [UIBezierPath new];
+//    [bgPath moveToPoint:CGPointMake(55, 0)];
+    [bgPath addArcWithCenter:CGPointMake(65, 55) radius:55 startAngle:-M_PI_2 endAngle: 3*M_PI_2 clockwise:YES];
+    
+    CAShapeLayer *bgLayer = [CAShapeLayer new];
+    bgLayer.frame = self.view.bounds;
+    bgLayer.path = [bgPath CGPath];
+    bgLayer.fillColor = [[UIColor redColor] CGColor];
+    bgLayer.lineWidth = 0;
+    [self.pathView.layer addSublayer:bgLayer];
 }
 
 - (void)didReceiveMemoryWarning {
