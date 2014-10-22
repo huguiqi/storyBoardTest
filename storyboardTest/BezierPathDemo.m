@@ -18,8 +18,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+}
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
     UIBezierPath *bgPath = [UIBezierPath new];
-//    [bgPath moveToPoint:CGPointMake(55, 0)];
+        [bgPath moveToPoint:CGPointMake(55, 0)];
     [bgPath addArcWithCenter:CGPointMake(65, 55) radius:55 startAngle:-M_PI_2 endAngle: 3*M_PI_2 clockwise:YES];
     
     CAShapeLayer *bgLayer = [CAShapeLayer new];
