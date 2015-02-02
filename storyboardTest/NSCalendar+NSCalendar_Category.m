@@ -27,4 +27,10 @@
     return [[self components:NSDayCalendarUnit fromDate:date1 toDate:date2 options:0] day];
 }
 
+-(NSDateComponents *)compareDateComponents:(NSInteger)day{
+    NSDate *tempDate = [[NSDate date] dateByAddingTimeInterval:60 * 60 * 24 * day];
+    NSDateComponents *compareDateComponents = [self components:NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit fromDate:tempDate];
+    return compareDateComponents;
+}
+
 @end

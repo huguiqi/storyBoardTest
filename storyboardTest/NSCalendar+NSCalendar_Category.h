@@ -12,4 +12,6 @@
 
 -(NSInteger) daysFromDate:(NSDate *) startDate toDate:(NSDate *) endDate;
 
+-(NSDateComponents *)compareDateComponents:(NSInteger)day;
+
 @end
