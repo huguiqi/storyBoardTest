@@ -11,6 +11,7 @@
 #import "WFCityListViewController.h"
 #import "WFBarItemViewController.h"
 #import "DeviceInfo.h"
+#import "GidSliderViewController.h"
 
 
 @interface WFFloatViewDemoController ()
@@ -40,6 +41,13 @@
 
 -(void)noticePushBarController:(WFBarItemViewController *)barItemController{
     [self.navigationController pushViewController:barItemController animated:YES];
+}
+
+-(IBAction)toGidSliderView{
+
+    GidSliderViewController *gidSliderController = [[GidSliderViewController alloc] initWithNibName:@"GidSliderViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:gidSliderController animated:YES];
 }
 
 

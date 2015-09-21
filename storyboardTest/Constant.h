@@ -20,3 +20,5 @@
 #define kLogEnable NO
 
 #define SUGUE_LIST_TO_BOOKING       @"fromListToBooking"
+
+#define SUGUE_INDEX_TO_SEARCH       @"fromIndexToSearchBarController"

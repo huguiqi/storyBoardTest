@@ -71,6 +71,12 @@
     return _bookingViewController;
 }
 
+-(IBAction)onTapTest:(id)sender{
+    NSLog(@"UILabel 本身不支持手势，如果要加的话，必须设置它的userInteractionEnabled=YES ");
+    
+    [self performSegueWithIdentifier:SUGUE_INDEX_TO_SEARCH sender:nil];
+}
+
 
 
 - (void)didReceiveMemoryWarning

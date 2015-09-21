@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220C8E261BAFC87E0008B678 /* GidSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220C8E241BAFC87E0008B678 /* GidSliderViewController.m */; };
+		220C8E271BAFC87E0008B678 /* GidSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220C8E251BAFC87E0008B678 /* GidSliderViewController.xib */; };
+		220C8E2A1BAFCB1D0008B678 /* 外卖@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220C8E291BAFCB1D0008B678 /* 外卖@2x.png */; };
+		220C8E2D1BAFD9EF0008B678 /* 货物@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 220C8E2C1BAFD9EF0008B678 /* 货物@2x.png */; };
+		220C8E2F1BAFDB2F0008B678 /* 未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 220C8E2E1BAFDB2F0008B678 /* 未选.png */; };
+		220C8E331BAFE8E90008B678 /* GidSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 220C8E321BAFE8E90008B678 /* GidSlider.m */; };
 		22159CF4184F75290061A8DE /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CF2184F75290061A8DE /* cloudy.png */; };
 		22159CF5184F75290061A8DE /* cloudy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22159CF3184F75290061A8DE /* cloudy@2x.png */; };
 		22159CF8184F75700061A8DE /* WeatherWidgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22159CF7184F75700061A8DE /* WeatherWidgetViewController.m */; };
@@ -18,6 +24,9 @@
 		221BD94419BAE1CA00E557C9 /* WolfDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 221BD94219BAE1CA00E557C9 /* WolfDB.xcdatamodeld */; };
 		221BD94819BAEA0C00E557C9 /* AccountEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BD94719BAEA0C00E557C9 /* AccountEntity.m */; };
 		221BD94B19BAEA0C00E557C9 /* LoginEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BD94A19BAEA0C00E557C9 /* LoginEntity.m */; };
+		22282EC21B8C0C8800BC1082 /* WFSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282EC11B8C0C8800BC1082 /* WFSearchViewController.m */; };
+		22282EC51B8C125700BC1082 /* WFSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282EC41B8C125700BC1082 /* WFSearchResultViewController.m */; };
+		22282EC81B8D8BED00BC1082 /* WFDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22282EC71B8D8BED00BC1082 /* WFDisplayViewController.m */; };
 		2244B6CF17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */; };
 		2245B7D7199DE0E200898267 /* BusinessTest.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7D6199DE0E200898267 /* BusinessTest.geojson */; };
 		2245B7D9199DF00A00898267 /* BusinessTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2245B7D8199DF00A00898267 /* BusinessTest.plist */; };
@@ -143,6 +152,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220C8E231BAFC87E0008B678 /* GidSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GidSliderViewController.h; path = GidSlider/GidSliderViewController.h; sourceTree = "<group>"; };
+		220C8E241BAFC87E0008B678 /* GidSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GidSliderViewController.m; path = GidSlider/GidSliderViewController.m; sourceTree = "<group>"; };
+		220C8E251BAFC87E0008B678 /* GidSliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GidSliderViewController.xib; path = GidSlider/GidSliderViewController.xib; sourceTree = "<group>"; };
+		220C8E291BAFCB1D0008B678 /* 外卖@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外卖@2x.png"; sourceTree = "<group>"; };
+		220C8E2C1BAFD9EF0008B678 /* 货物@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "货物@2x.png"; sourceTree = "<group>"; };
+		220C8E2E1BAFDB2F0008B678 /* 未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "未选.png"; sourceTree = "<group>"; };
+		220C8E311BAFE8E90008B678 /* GidSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GidSlider.h; path = GidSlider/GidSlider.h; sourceTree = "<group>"; };
+		220C8E321BAFE8E90008B678 /* GidSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GidSlider.m; path = GidSlider/GidSlider.m; sourceTree = "<group>"; };
 		22159CF2184F75290061A8DE /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
 		22159CF3184F75290061A8DE /* cloudy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloudy@2x.png"; sourceTree = "<group>"; };
 		22159CF6184F75700061A8DE /* WeatherWidgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherWidgetViewController.h; sourceTree = "<group>"; };
@@ -159,6 +176,12 @@
 		221BD94719BAEA0C00E557C9 /* AccountEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountEntity.m; sourceTree = "<group>"; };
 		221BD94919BAEA0C00E557C9 /* LoginEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginEntity.h; sourceTree = "<group>"; };
 		221BD94A19BAEA0C00E557C9 /* LoginEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginEntity.m; sourceTree = "<group>"; };
+		22282EC01B8C0C8800BC1082 /* WFSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFSearchViewController.h; sourceTree = "<group>"; };
+		22282EC11B8C0C8800BC1082 /* WFSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFSearchViewController.m; sourceTree = "<group>"; };
+		22282EC31B8C125700BC1082 /* WFSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFSearchResultViewController.h; sourceTree = "<group>"; };
+		22282EC41B8C125700BC1082 /* WFSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFSearchResultViewController.m; sourceTree = "<group>"; };
+		22282EC61B8D8BED00BC1082 /* WFDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFDisplayViewController.h; sourceTree = "<group>"; };
+		22282EC71B8D8BED00BC1082 /* WFDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFDisplayViewController.m; sourceTree = "<group>"; };
 		2244B6CD17807BD70029F7FA /* UIViewCurlUpOrDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewCurlUpOrDownViewController.h; sourceTree = "<group>"; };
 		2244B6CE17807BD70029F7FA /* UIViewCurlUpOrDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewCurlUpOrDownViewController.m; sourceTree = "<group>"; };
 		2245B7D6199DE0E200898267 /* BusinessTest.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BusinessTest.geojson; path = ../storyboardTest/BusinessTest.geojson; sourceTree = "<group>"; };
@@ -383,6 +406,28 @@
 			name = common;
 			sourceTree = "<group>";
 		};
+		220C8E281BAFCA8E0008B678 /* GidSlider */ = {
+			isa = PBXGroup;
+			children = (
+				220C8E2E1BAFDB2F0008B678 /* 未选.png */,
+				220C8E2C1BAFD9EF0008B678 /* 货物@2x.png */,
+				220C8E291BAFCB1D0008B678 /* 外卖@2x.png */,
+			);
+			name = GidSlider;
+			sourceTree = "<group>";
+		};
+		220C8E301BAFE8C10008B678 /* GidSlider */ = {
+			isa = PBXGroup;
+			children = (
+				220C8E231BAFC87E0008B678 /* GidSliderViewController.h */,
+				220C8E241BAFC87E0008B678 /* GidSliderViewController.m */,
+				220C8E251BAFC87E0008B678 /* GidSliderViewController.xib */,
+				220C8E311BAFE8E90008B678 /* GidSlider.h */,
+				220C8E321BAFE8E90008B678 /* GidSlider.m */,
+			);
+			name = GidSlider;
+			sourceTree = "<group>";
+		};
 		221BD93B19BADACC00E557C9 /* coreDataOnSqllit */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +448,17 @@
 				221BD94719BAEA0C00E557C9 /* AccountEntity.m */,
 			);
 			name = entity;
+			sourceTree = "<group>";
+		};
+		22282EBF1B8C0C3800BC1082 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				22282EC01B8C0C8800BC1082 /* WFSearchViewController.h */,
+				22282EC11B8C0C8800BC1082 /* WFSearchViewController.m */,
+				22282EC31B8C125700BC1082 /* WFSearchResultViewController.h */,
+				22282EC41B8C125700BC1082 /* WFSearchResultViewController.m */,
+			);
+			name = SearchBar;
 			sourceTree = "<group>";
 		};
 		2244B6CC17807B990029F7FA /* curlUPOrDown */ = {
@@ -448,6 +504,7 @@
 				22589B7819722C64000F4975 /* WFLoginWidgetViewController.m */,
 				35E7D507197679460030838F /* WFPopViewController.h */,
 				35E7D508197679460030838F /* WFPopViewController.m */,
+				220C8E301BAFE8C10008B678 /* GidSlider */,
 			);
 			name = widget;
 			sourceTree = "<group>";
@@ -534,6 +591,8 @@
 			children = (
 				22A8785E175E437800E82C69 /* IndexViewController.h */,
 				22A8785F175E437800E82C69 /* IndexViewController.m */,
+				22282EC61B8D8BED00BC1082 /* WFDisplayViewController.h */,
+				22282EC71B8D8BED00BC1082 /* WFDisplayViewController.m */,
 			);
 			name = index;
 			sourceTree = "<group>";
@@ -606,6 +665,7 @@
 		22FB90931710752E007A3933 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				220C8E281BAFCA8E0008B678 /* GidSlider */,
 				229BDEB51A762E9900DA5D48 /* TimeSquare */,
 				22159CFC184F85390061A8DE /* hotel-next.png */,
 				22159CFD184F85390061A8DE /* hotel-next@2x.png */,
@@ -702,6 +762,7 @@
 		22FECF7A164FFDA600720705 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22282EBF1B8C0C3800BC1082 /* SearchBar */,
 				3570AAA918111DB300C851D2 /* Library */,
 				22A8785D175E436200E82C69 /* index */,
 				22FECF7D164FFDE500720705 /* login */,
@@ -1029,12 +1090,14 @@
 				3540AF01182C74D4006B12FD /* hotel-topbar-back@2x.png in Resources */,
 				35BD56FE173A3B1F00606275 /* glass.wav in Resources */,
 				229BDEC21A762EEA00DA5D48 /* CalendarRow.png in Resources */,
+				220C8E271BAFC87E0008B678 /* GidSliderViewController.xib in Resources */,
 				22736AB217788F9000BADFE7 /* BFlyCircle.png in Resources */,
 				22159CFF184F85390061A8DE /* hotel-next@2x.png in Resources */,
 				229BDEC01A762EEA00DA5D48 /* CalendarPreviousMonth.png in Resources */,
 				229BDEC41A762EEA00DA5D48 /* CalendarRowBottom.png in Resources */,
 				3540AF00182C74D4006B12FD /* hotel-topbar-back.png in Resources */,
 				22736AB317788F9000BADFE7 /* cover 480x300-take2.png in Resources */,
+				220C8E2D1BAFD9EF0008B678 /* 货物@2x.png in Resources */,
 				229BDEC11A762EEA00DA5D48 /* CalendarPreviousMonth@2x.png in Resources */,
 				229BDEC71A762EEA00DA5D48 /* CalendarSelectedDate@2x.png in Resources */,
 				22736AB417788F9000BADFE7 /* cover320x416.png in Resources */,
@@ -1043,6 +1106,8 @@
 				229BDEC31A762EEA00DA5D48 /* CalendarRow@2x.png in Resources */,
 				229BDEC81A762EEA00DA5D48 /* CalendarTodaysDate.png in Resources */,
 				3526E12317CB4C9C0065E360 /* map_bubble.png in Resources */,
+				220C8E2A1BAFCB1D0008B678 /* 外卖@2x.png in Resources */,
+				220C8E2F1BAFDB2F0008B678 /* 未选.png in Resources */,
 				3526E12417CB4C9C0065E360 /* map_bubble@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1064,6 +1129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				229BDF101A764F2700DA5D48 /* WFCalendarViewController.m in Sources */,
+				220C8E261BAFC87E0008B678 /* GidSliderViewController.m in Sources */,
 				229BDF031A764DDB00DA5D48 /* TimesSquare.h in Sources */,
 				229BDF041A764DDB00DA5D48 /* TSQCalendarCell.h in Sources */,
 				229BDF051A764DDB00DA5D48 /* TSQCalendarMonthHeaderCell.h in Sources */,
@@ -1101,6 +1167,7 @@
 				3540AEF9182B8E0E006B12FD /* FloatDemoViewController.m in Sources */,
 				22159CF8184F75700061A8DE /* WeatherWidgetViewController.m in Sources */,
 				3540AEF6182B7D1C006B12FD /* UINavigationBar+Categories.m in Sources */,
+				22282EC81B8D8BED00BC1082 /* WFDisplayViewController.m in Sources */,
 				35F1BAFA17326F2500FBE740 /* Item3ViewController.m in Sources */,
 				3501D11F1737A6B1002F74D6 /* AccelerometerFilter.m in Sources */,
 				3501D1221737A737002F74D6 /* AccelerometerViewController.m in Sources */,
@@ -1108,11 +1175,13 @@
 				3548907A1739FC7300E1EF4B /* ShakeViewController.m in Sources */,
 				35CDBFD91828CCC5001B1A6E /* WFJJViewController.m in Sources */,
 				22BC618C175653520079C4AE /* AboutGeometryViewController.m in Sources */,
+				22282EC21B8C0C8800BC1082 /* WFSearchViewController.m in Sources */,
 				3532F761196BB8F100CCF2A8 /* WFBookingViewController.m in Sources */,
 				22A8785C175E429600E82C69 /* MacAddress.m in Sources */,
 				22A87860175E437800E82C69 /* IndexViewController.m in Sources */,
 				22BC837A1770B0A900E71986 /* UIView-ViewFrameGeometry.m in Sources */,
 				229BDF151A764F8000DA5D48 /* TSQTACalendarRowCell.m in Sources */,
+				220C8E331BAFE8E90008B678 /* GidSlider.m in Sources */,
 				229BDEF21A764ACA00DA5D48 /* TSQCalendarMonthHeaderCell.m in Sources */,
 				22BC837D1770B26700E71986 /* UIViewCenterViewController.m in Sources */,
 				22736AAE1778859D00BADFE7 /* CrosswiseViewController.m in Sources */,
@@ -1129,6 +1198,7 @@
 				3526E11A17CAFA2E0065E360 /* HotelAnnotation.m in Sources */,
 				229BDEF31A764ACA00DA5D48 /* TSQCalendarRowCell.m in Sources */,
 				3526E12017CB25C80065E360 /* HotelAnnotationView.m in Sources */,
+				22282EC51B8C125700BC1082 /* WFSearchResultViewController.m in Sources */,
 				4B114DB33FC47EDC9071BD85 /* WFFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
